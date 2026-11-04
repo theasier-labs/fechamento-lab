@@ -1,0 +1,1018 @@
+{
+  "meta": {
+    "semente": "aurora-2026-10",
+    "mes": "2026-10",
+    "aviso": "DOCUMENTO FICTÍCIO",
+    "geradoPor": "fechamento-lab"
+  },
+  "cliente": {
+    "nome": "Padaria Aurora Ltda (FICTÍCIA)",
+    "fantasia": "Padaria Aurora",
+    "responsavel": "Aurora",
+    "cnpj": "96516791000186"
+  },
+  "escritorio": {
+    "nome": "Escritório Exemplo Contabilidade (FICTÍCIO)"
+  },
+  "banco": {
+    "nome": "Banco Exemplo S.A. (FICTÍCIO)",
+    "agencia": "0001",
+    "conta": "12345-6"
+  },
+  "fornecedores": [
+    {
+      "id": "F01",
+      "nome": "Moinho Sol Nascente Ltda",
+      "categoria": "farinha",
+      "faixa": [
+        80000,
+        450000
+      ],
+      "itens": [
+        "Farinha de trigo tipo 1 (saco 50 kg)",
+        "Farinha integral (saco 25 kg)",
+        "Fermento biológico (caixa)"
+      ],
+      "cnpj": "05887713000132"
+    },
+    {
+      "id": "F02",
+      "nome": "Laticínios Vale Verde Ltda",
+      "categoria": "laticínios",
+      "faixa": [
+        60000,
+        300000
+      ],
+      "itens": [
+        "Leite integral (caixa com 12)",
+        "Manteiga sem sal (bloco 5 kg)",
+        "Queijo muçarela (peça)"
+      ],
+      "cnpj": "37120131000112"
+    },
+    {
+      "id": "F03",
+      "nome": "Embalagens Brisa Ltda",
+      "categoria": "embalagens",
+      "faixa": [
+        30000,
+        180000
+      ],
+      "itens": [
+        "Sacos de papel kraft (milheiro)",
+        "Caixas para bolo (pacote)",
+        "Etiquetas adesivas (rolo)"
+      ],
+      "cnpj": "89622220000160"
+    },
+    {
+      "id": "F04",
+      "nome": "Gás Cabo Azul Distribuidora Ltda",
+      "categoria": "gás",
+      "faixa": [
+        35000,
+        70000
+      ],
+      "itens": [
+        "Botijão de gás 45 kg"
+      ],
+      "cnpj": "10368049000155"
+    },
+    {
+      "id": "F05",
+      "nome": "Potiguar Energia Fictícia S.A.",
+      "categoria": "energia",
+      "faixa": [
+        90000,
+        180000
+      ],
+      "itens": [
+        "Fornecimento de energia elétrica (mês)"
+      ],
+      "cnpj": "16676918000195"
+    },
+    {
+      "id": "F06",
+      "nome": "Doces e Açúcar Estrela Ltda",
+      "categoria": "açúcar",
+      "faixa": [
+        50000,
+        250000
+      ],
+      "itens": [
+        "Açúcar refinado (fardo)",
+        "Chocolate em barra (caixa)",
+        "Essência de baunilha (frasco)"
+      ],
+      "cnpj": "53736853000152"
+    },
+    {
+      "id": "F07",
+      "nome": "Ovos Campo Alegre Ltda",
+      "categoria": "ovos",
+      "faixa": [
+        30000,
+        120000
+      ],
+      "itens": [
+        "Ovos brancos (caixa com 30 dúzias)"
+      ],
+      "cnpj": "93619583000114"
+    },
+    {
+      "id": "F08",
+      "nome": "Forno Certo Manutenção Ltda",
+      "categoria": "manutenção",
+      "faixa": [
+        25000,
+        90000
+      ],
+      "itens": [
+        "Manutenção preventiva de forno",
+        "Troca de resistência"
+      ],
+      "cnpj": "29405158000123"
+    },
+    {
+      "id": "F09",
+      "nome": "Papelaria Ponto Final Ltda",
+      "categoria": "papelaria",
+      "faixa": [
+        5000,
+        25000
+      ],
+      "itens": [
+        "Bobina de papel térmico (caixa)",
+        "Material de escritório"
+      ],
+      "cnpj": "84564187000146"
+    },
+    {
+      "id": "F10",
+      "nome": "Rota Leve Transportes Ltda",
+      "categoria": "frete",
+      "faixa": [
+        15000,
+        60000
+      ],
+      "itens": [
+        "Frete de mercadorias"
+      ],
+      "cnpj": "38693453000113"
+    },
+    {
+      "id": "F11",
+      "nome": "Fibra Boa Internet Ltda",
+      "categoria": "internet",
+      "faixa": [
+        12000,
+        25000
+      ],
+      "itens": [
+        "Serviço de internet banda larga (mês)"
+      ],
+      "cnpj": "93185602000141"
+    },
+    {
+      "id": "F12",
+      "nome": "Brilho Total Limpeza Ltda",
+      "categoria": "limpeza",
+      "faixa": [
+        8000,
+        40000
+      ],
+      "itens": [
+        "Produtos de limpeza (kit)",
+        "Detergente industrial (galão)"
+      ],
+      "cnpj": "58147263000108"
+    },
+    {
+      "id": "F13",
+      "nome": "Frutas do Sítio Ltda",
+      "categoria": "frutas",
+      "faixa": [
+        20000,
+        90000
+      ],
+      "itens": [
+        "Frutas variadas (caixa)",
+        "Polpa de fruta (pacote)"
+      ],
+      "cnpj": "53966880000111"
+    },
+    {
+      "id": "F14",
+      "nome": "Abrigo Seguradora Fictícia Ltda",
+      "categoria": "seguro",
+      "faixa": [
+        30000,
+        60000
+      ],
+      "itens": [
+        "Prêmio de seguro empresarial (parcela)"
+      ],
+      "cnpj": "31405581000175"
+    }
+  ],
+  "extrato": [
+    {
+      "data": "2026-10-01",
+      "descricao": "CREDITO CARTAO DEBITO",
+      "valor": 363399,
+      "tipo": "recebimento",
+      "id": "L001",
+      "fitid": "20261000001"
+    },
+    {
+      "data": "2026-10-02",
+      "descricao": "CREDITO CARTAO DEBITO",
+      "valor": 112804,
+      "tipo": "recebimento",
+      "id": "L002",
+      "fitid": "20261000002"
+    },
+    {
+      "data": "2026-10-03",
+      "descricao": "PAG FEIRA DO PRODUTOR",
+      "valor": -32000,
+      "tipo": "sem_nota_com_comprovante",
+      "despesa": {
+        "descricao": "PAG FEIRA DO PRODUTOR",
+        "beneficiario": "Feira do Produtor",
+        "valor": 32000,
+        "motivo": "compra de frutas e verduras"
+      },
+      "id": "L003",
+      "fitid": "20261000003"
+    },
+    {
+      "data": "2026-10-04",
+      "descricao": "CREDITO CARTAO DEBITO",
+      "valor": 109663,
+      "tipo": "recebimento",
+      "id": "L004",
+      "fitid": "20261000004"
+    },
+    {
+      "data": "2026-10-04",
+      "descricao": "PIX RECEBIDO CLIENTE",
+      "valor": 109696,
+      "tipo": "recebimento",
+      "id": "L005",
+      "fitid": "20261000005"
+    },
+    {
+      "data": "2026-10-04",
+      "descricao": "TARIFA TED",
+      "valor": -1260,
+      "tipo": "tarifa",
+      "id": "L006",
+      "fitid": "20261000006"
+    },
+    {
+      "data": "2026-10-05",
+      "descricao": "PAG BOLETO ABRIGO SEGURAD",
+      "valor": -37175,
+      "tipo": "dif",
+      "notas": [
+        "NF-033"
+      ],
+      "id": "L007",
+      "fitid": "20261000007"
+    },
+    {
+      "data": "2026-10-05",
+      "descricao": "PIX ENVIADO CARLOS ELETRICISTA",
+      "valor": -28000,
+      "tipo": "sem_nota_com_comprovante",
+      "despesa": {
+        "descricao": "PIX ENVIADO CARLOS ELETRICISTA",
+        "beneficiario": "Carlos Eletricista",
+        "valor": 28000,
+        "motivo": "troca de tomadas"
+      },
+      "id": "L008",
+      "fitid": "20261000008"
+    },
+    {
+      "data": "2026-10-07",
+      "descricao": "PAG BOLETO 15050.41824",
+      "valor": -87950,
+      "tipo": "nome_ausente",
+      "notas": [
+        "NF-038"
+      ],
+      "id": "L009",
+      "fitid": "20261000009"
+    },
+    {
+      "data": "2026-10-08",
+      "descricao": "PAG BOLETO LATICINIOS VAL",
+      "valor": -217200,
+      "tipo": "ok",
+      "notas": [
+        "NF-029"
+      ],
+      "id": "L010",
+      "fitid": "20261000010"
+    },
+    {
+      "data": "2026-10-09",
+      "descricao": "PAG BOLETO 92711.35552",
+      "valor": -48400,
+      "tipo": "nome_ausente",
+      "notas": [
+        "NF-018"
+      ],
+      "id": "L011",
+      "fitid": "20261000011"
+    },
+    {
+      "data": "2026-10-10",
+      "descricao": "DEP DINHEIRO CAIXA",
+      "valor": 56560,
+      "tipo": "recebimento",
+      "id": "L012",
+      "fitid": "20261000012"
+    },
+    {
+      "data": "2026-10-10",
+      "descricao": "PAG BOLETO 54839.16510",
+      "valor": -50190,
+      "tipo": "nome_ausente",
+      "notas": [
+        "NF-030"
+      ],
+      "id": "L013",
+      "fitid": "20261000013"
+    },
+    {
+      "data": "2026-10-10",
+      "descricao": "PAG BOLETO FORNO CERTO MA",
+      "valor": -32590,
+      "tipo": "ok",
+      "notas": [
+        "NF-005"
+      ],
+      "id": "L014",
+      "fitid": "20261000014"
+    },
+    {
+      "data": "2026-10-10",
+      "descricao": "PAG BOLETO OVOS CAMPO ALE",
+      "valor": -84690,
+      "tipo": "ok",
+      "notas": [
+        "NF-006"
+      ],
+      "id": "L015",
+      "fitid": "20261000015"
+    },
+    {
+      "data": "2026-10-10",
+      "descricao": "TED ENVIADA OVOS CAMPO ALE",
+      "valor": -95300,
+      "tipo": "ok",
+      "notas": [
+        "NF-026"
+      ],
+      "id": "L016",
+      "fitid": "20261000016"
+    },
+    {
+      "data": "2026-10-11",
+      "descricao": "CREDITO MAQUININHA",
+      "valor": 430495,
+      "tipo": "recebimento",
+      "id": "L017",
+      "fitid": "20261000017"
+    },
+    {
+      "data": "2026-10-11",
+      "descricao": "IOF OPERACAO",
+      "valor": -780,
+      "tipo": "tarifa",
+      "id": "L018",
+      "fitid": "20261000018"
+    },
+    {
+      "data": "2026-10-11",
+      "descricao": "PAG BOLETO FORNO CERTO MA",
+      "valor": -32590,
+      "tipo": "duplicado",
+      "duplicaDe": "L014",
+      "notas": [],
+      "id": "L019",
+      "fitid": "20261000019"
+    },
+    {
+      "data": "2026-10-11",
+      "descricao": "PAG BOLETO GAS CABO AZUL",
+      "valor": -60600,
+      "tipo": "ok",
+      "notas": [
+        "NF-008"
+      ],
+      "id": "L020",
+      "fitid": "20261000020"
+    },
+    {
+      "data": "2026-10-11",
+      "descricao": "PIX ENVIADO JOSE PEDREIRO",
+      "valor": -45000,
+      "tipo": "sem_nota_com_comprovante",
+      "despesa": {
+        "descricao": "PIX ENVIADO JOSE PEDREIRO",
+        "beneficiario": "José Pedreiro",
+        "valor": 45000,
+        "motivo": "reparo da bancada"
+      },
+      "id": "L021",
+      "fitid": "20261000021"
+    },
+    {
+      "data": "2026-10-11",
+      "descricao": "PIX ENVIADO LATICINIOS VAL",
+      "valor": -62450,
+      "tipo": "ok",
+      "notas": [
+        "NF-014"
+      ],
+      "id": "L022",
+      "fitid": "20261000022"
+    },
+    {
+      "data": "2026-10-11",
+      "descricao": "PIX ENVIADO LUIS CHAVEIRO",
+      "valor": -9000,
+      "tipo": "sem_nota_com_comprovante",
+      "despesa": {
+        "descricao": "PIX ENVIADO LUIS CHAVEIRO",
+        "beneficiario": "Luís Chaveiro",
+        "valor": 9000,
+        "motivo": "cópia de chaves"
+      },
+      "id": "L023",
+      "fitid": "20261000023"
+    },
+    {
+      "data": "2026-10-11",
+      "descricao": "PIX ENVIADO MOINHO SOL NAS",
+      "valor": -208390,
+      "tipo": "ok",
+      "notas": [
+        "NF-028"
+      ],
+      "id": "L024",
+      "fitid": "20261000024"
+    },
+    {
+      "data": "2026-10-11",
+      "descricao": "TARIFA EMISSAO BOLETO",
+      "valor": -1190,
+      "tipo": "tarifa",
+      "id": "L025",
+      "fitid": "20261000025"
+    },
+    {
+      "data": "2026-10-12",
+      "descricao": "PAG BOLETO FRUTAS DO SITI",
+      "valor": -36790,
+      "tipo": "ok",
+      "notas": [
+        "NF-022"
+      ],
+      "id": "L026",
+      "fitid": "20261000026"
+    },
+    {
+      "data": "2026-10-12",
+      "descricao": "PIX ENVIADO PEDRO ENTREGAS",
+      "valor": -12000,
+      "tipo": "sem_nota_sem_documento",
+      "despesa": {
+        "descricao": "PIX ENVIADO PEDRO ENTREGAS",
+        "beneficiario": "Pedro Entregas",
+        "valor": 12000,
+        "motivo": "entregas"
+      },
+      "id": "L027",
+      "fitid": "20261000027"
+    },
+    {
+      "data": "2026-10-12",
+      "descricao": "PIX ENVIADO POTIGUAR ENERG",
+      "valor": -106700,
+      "tipo": "ok",
+      "notas": [
+        "NF-023"
+      ],
+      "id": "L028",
+      "fitid": "20261000028"
+    },
+    {
+      "data": "2026-10-12",
+      "descricao": "PIX RECEBIDO CLIENTE",
+      "valor": 97631,
+      "tipo": "recebimento",
+      "id": "L029",
+      "fitid": "20261000029"
+    },
+    {
+      "data": "2026-10-13",
+      "descricao": "PIX ENVIADO BRILHO TOTAL L",
+      "valor": -27090,
+      "tipo": "ok",
+      "notas": [
+        "NF-009"
+      ],
+      "id": "L030",
+      "fitid": "20261000030"
+    },
+    {
+      "data": "2026-10-14",
+      "descricao": "PAG BOLETO 51273.17408",
+      "valor": -231590,
+      "tipo": "nome_ausente",
+      "notas": [
+        "NF-011"
+      ],
+      "id": "L031",
+      "fitid": "20261000031"
+    },
+    {
+      "data": "2026-10-14",
+      "descricao": "PIX RECEBIDO CLIENTE",
+      "valor": 286586,
+      "tipo": "recebimento",
+      "id": "L032",
+      "fitid": "20261000032"
+    },
+    {
+      "data": "2026-10-14",
+      "descricao": "TARIFA PACOTE SERVICOS",
+      "valor": -4500,
+      "tipo": "tarifa",
+      "id": "L033",
+      "fitid": "20261000033"
+    },
+    {
+      "data": "2026-10-14",
+      "descricao": "TED ENVIADA PAPELARIA PONT",
+      "valor": -13550,
+      "tipo": "ok",
+      "notas": [
+        "NF-001"
+      ],
+      "id": "L034",
+      "fitid": "20261000034"
+    },
+    {
+      "data": "2026-10-15",
+      "descricao": "PAG BOLETO LATICINIOS VAL",
+      "valor": -150490,
+      "tipo": "ok",
+      "notas": [
+        "NF-037"
+      ],
+      "id": "L035",
+      "fitid": "20261000035"
+    },
+    {
+      "data": "2026-10-15",
+      "descricao": "PIX ENVIADO OVOS CAMPO ALE",
+      "valor": -62450,
+      "tipo": "ok",
+      "notas": [
+        "NF-032"
+      ],
+      "id": "L036",
+      "fitid": "20261000036"
+    },
+    {
+      "data": "2026-10-17",
+      "descricao": "CREDITO CARTAO DEBITO",
+      "valor": 449235,
+      "tipo": "recebimento",
+      "id": "L037",
+      "fitid": "20261000037"
+    },
+    {
+      "data": "2026-10-17",
+      "descricao": "PIX ENVIADO FIBRA BOA INTE",
+      "valor": -20590,
+      "tipo": "ok",
+      "notas": [
+        "NF-024"
+      ],
+      "id": "L038",
+      "fitid": "20261000038"
+    },
+    {
+      "data": "2026-10-18",
+      "descricao": "PIX ENVIADO FORNO CERTO MA",
+      "valor": -79700,
+      "tipo": "ok",
+      "notas": [
+        "NF-012"
+      ],
+      "id": "L039",
+      "fitid": "20261000039"
+    },
+    {
+      "data": "2026-10-19",
+      "descricao": "TED ENVIADA DOCES E ACUCAR",
+      "valor": -128462,
+      "tipo": "dif",
+      "notas": [
+        "NF-025"
+      ],
+      "id": "L040",
+      "fitid": "20261000040"
+    },
+    {
+      "data": "2026-10-20",
+      "descricao": "PAG BOLETO OVOS CAMPO ALE",
+      "valor": -157640,
+      "tipo": "agrupado",
+      "notas": [
+        "NF-013",
+        "NF-016"
+      ],
+      "id": "L041",
+      "fitid": "20261000041"
+    },
+    {
+      "data": "2026-10-21",
+      "descricao": "PAG BOLETO FRUTAS DO SITI",
+      "valor": -77400,
+      "tipo": "ok",
+      "notas": [
+        "NF-017"
+      ],
+      "id": "L042",
+      "fitid": "20261000042"
+    },
+    {
+      "data": "2026-10-21",
+      "descricao": "PIX ENVIADO BRILHO TOTAL L",
+      "valor": -24490,
+      "tipo": "ok",
+      "notas": [
+        "NF-036"
+      ],
+      "id": "L043",
+      "fitid": "20261000043"
+    },
+    {
+      "data": "2026-10-21",
+      "descricao": "PIX ENVIADO MARIA ENTREGADORA",
+      "valor": -18000,
+      "tipo": "sem_nota_com_comprovante",
+      "despesa": {
+        "descricao": "PIX ENVIADO MARIA ENTREGADORA",
+        "beneficiario": "Maria Entregadora",
+        "valor": 18000,
+        "motivo": "entregas do fim de semana"
+      },
+      "id": "L044",
+      "fitid": "20261000044"
+    },
+    {
+      "data": "2026-10-22",
+      "descricao": "DEB AUTOM TAXA LIXO MUNICIPAL",
+      "valor": -15000,
+      "tipo": "sem_nota_sem_documento",
+      "despesa": {
+        "descricao": "DEB AUTOM TAXA LIXO MUNICIPAL",
+        "beneficiario": "Prefeitura (taxa)",
+        "valor": 15000,
+        "motivo": "taxa de lixo"
+      },
+      "id": "L045",
+      "fitid": "20261000045"
+    },
+    {
+      "data": "2026-10-22",
+      "descricao": "PAG BOLETO 15538.16241",
+      "valor": -25900,
+      "tipo": "nome_ausente",
+      "notas": [
+        "NF-002"
+      ],
+      "id": "L046",
+      "fitid": "20261000046"
+    },
+    {
+      "data": "2026-10-22",
+      "descricao": "PIX ENVIADO ANA COSTUREIRA",
+      "valor": -60000,
+      "tipo": "sem_nota_com_comprovante",
+      "despesa": {
+        "descricao": "PIX ENVIADO ANA COSTUREIRA",
+        "beneficiario": "Ana Costureira",
+        "valor": 60000,
+        "motivo": "uniformes da equipe"
+      },
+      "id": "L047",
+      "fitid": "20261000047"
+    },
+    {
+      "data": "2026-10-23",
+      "descricao": "TED ENVIADA DOCES E ACUCAR",
+      "valor": -58590,
+      "tipo": "ok",
+      "notas": [
+        "NF-007"
+      ],
+      "id": "L048",
+      "fitid": "20261000048"
+    },
+    {
+      "data": "2026-10-24",
+      "descricao": "DEP DINHEIRO CAIXA",
+      "valor": 451476,
+      "tipo": "recebimento",
+      "id": "L049",
+      "fitid": "20261000049"
+    },
+    {
+      "data": "2026-10-24",
+      "descricao": "TARIFA PIX EXCEDENTE",
+      "valor": -650,
+      "tipo": "tarifa",
+      "id": "L050",
+      "fitid": "20261000050"
+    },
+    {
+      "data": "2026-10-25",
+      "descricao": "PIX ENVIADO PAPELARIA PONT",
+      "valor": -10290,
+      "tipo": "ok",
+      "notas": [
+        "NF-031"
+      ],
+      "id": "L051",
+      "fitid": "20261000051"
+    },
+    {
+      "data": "2026-10-25",
+      "descricao": "TED ENVIADA ABRIGO SEGURAD",
+      "valor": -54300,
+      "tipo": "ok",
+      "notas": [
+        "NF-015"
+      ],
+      "id": "L052",
+      "fitid": "20261000052"
+    },
+    {
+      "data": "2026-10-26",
+      "descricao": "PAG BOLETO ASSOCIACAO COMERCIAL",
+      "valor": -22000,
+      "tipo": "sem_nota_sem_documento",
+      "despesa": {
+        "descricao": "PAG BOLETO ASSOCIACAO COMERCIAL",
+        "beneficiario": "Associação Comercial",
+        "valor": 22000,
+        "motivo": "mensalidade da associação"
+      },
+      "id": "L053",
+      "fitid": "20261000053"
+    },
+    {
+      "data": "2026-10-26",
+      "descricao": "PIX ENVIADO FORNO CERTO MA",
+      "valor": -84390,
+      "tipo": "ok",
+      "notas": [
+        "NF-004"
+      ],
+      "id": "L054",
+      "fitid": "20261000054"
+    },
+    {
+      "data": "2026-10-27",
+      "descricao": "CREDITO CARTAO DEBITO",
+      "valor": 510665,
+      "tipo": "recebimento",
+      "id": "L055",
+      "fitid": "20261000055"
+    },
+    {
+      "data": "2026-10-27",
+      "descricao": "DEP DINHEIRO CAIXA",
+      "valor": 113455,
+      "tipo": "recebimento",
+      "id": "L056",
+      "fitid": "20261000056"
+    },
+    {
+      "data": "2026-10-28",
+      "descricao": "PIX ENVIADO RAIMUNDO MECANICO",
+      "valor": -38000,
+      "tipo": "sem_nota_sem_documento",
+      "despesa": {
+        "descricao": "PIX ENVIADO RAIMUNDO MECANICO",
+        "beneficiario": "Raimundo Mecânico",
+        "valor": 38000,
+        "motivo": "conserto da van"
+      },
+      "id": "L057",
+      "fitid": "20261000057"
+    },
+    {
+      "data": "2026-10-29",
+      "descricao": "PIX ENVIADO DOCES E ACUCAR",
+      "valor": -152850,
+      "tipo": "ok",
+      "notas": [
+        "NF-027"
+      ],
+      "id": "L058",
+      "fitid": "20261000058"
+    },
+    {
+      "data": "2026-10-29",
+      "descricao": "PIX ENVIADO POTIGUAR ENERG",
+      "valor": -131128,
+      "tipo": "dif",
+      "notas": [
+        "NF-019"
+      ],
+      "id": "L059",
+      "fitid": "20261000059"
+    },
+    {
+      "data": "2026-10-29",
+      "descricao": "TARIFA MANUTENCAO CONTA",
+      "valor": -2990,
+      "tipo": "tarifa",
+      "id": "L060",
+      "fitid": "20261000060"
+    },
+    {
+      "data": "2026-10-29",
+      "descricao": "TED ENVIADA LATICINIOS VAL",
+      "valor": -210000,
+      "tipo": "ok",
+      "notas": [
+        "NF-035"
+      ],
+      "id": "L061",
+      "fitid": "20261000061"
+    },
+    {
+      "data": "2026-10-30",
+      "descricao": "CREDITO CARTAO DEBITO",
+      "valor": 418902,
+      "tipo": "recebimento",
+      "id": "L062",
+      "fitid": "20261000062"
+    },
+    {
+      "data": "2026-10-30",
+      "descricao": "CREDITO MAQUININHA",
+      "valor": 538892,
+      "tipo": "recebimento",
+      "id": "L063",
+      "fitid": "20261000063"
+    },
+    {
+      "data": "2026-10-30",
+      "descricao": "CREDITO MAQUININHA",
+      "valor": 582411,
+      "tipo": "recebimento",
+      "id": "L064",
+      "fitid": "20261000064"
+    }
+  ],
+  "comprovantes": [
+    {
+      "id": "CV-01",
+      "dificuldade": 4,
+      "conjunto": "teste"
+    },
+    {
+      "id": "CV-02",
+      "dificuldade": 4,
+      "conjunto": "teste"
+    },
+    {
+      "id": "CV-03",
+      "dificuldade": 2,
+      "conjunto": "calibracao"
+    },
+    {
+      "id": "CV-04",
+      "dificuldade": 2,
+      "conjunto": "calibracao"
+    },
+    {
+      "id": "CV-05",
+      "dificuldade": 1,
+      "conjunto": "teste"
+    },
+    {
+      "id": "CV-06",
+      "dificuldade": 2,
+      "conjunto": "teste"
+    },
+    {
+      "id": "CV-07",
+      "dificuldade": 3,
+      "conjunto": "teste"
+    },
+    {
+      "id": "CV-08",
+      "dificuldade": 4,
+      "conjunto": "dev"
+    },
+    {
+      "id": "CV-09",
+      "dificuldade": 4,
+      "conjunto": "calibracao"
+    },
+    {
+      "id": "CV-10",
+      "dificuldade": 4,
+      "conjunto": "calibracao"
+    },
+    {
+      "id": "CV-11",
+      "dificuldade": 4,
+      "conjunto": "dev"
+    },
+    {
+      "id": "CV-12",
+      "dificuldade": 1,
+      "conjunto": "teste"
+    },
+    {
+      "id": "CV-13",
+      "dificuldade": 3,
+      "conjunto": "teste"
+    },
+    {
+      "id": "CV-14",
+      "dificuldade": 1,
+      "conjunto": "teste"
+    },
+    {
+      "id": "CV-15",
+      "dificuldade": 2,
+      "conjunto": "dev"
+    },
+    {
+      "id": "CV-16",
+      "dificuldade": 1,
+      "conjunto": "teste"
+    },
+    {
+      "id": "CV-17",
+      "dificuldade": 2,
+      "conjunto": "teste"
+    },
+    {
+      "id": "CV-18",
+      "dificuldade": 1,
+      "conjunto": "dev"
+    },
+    {
+      "id": "CV-19",
+      "dificuldade": 1,
+      "conjunto": "calibracao"
+    },
+    {
+      "id": "CV-20",
+      "dificuldade": 3,
+      "conjunto": "dev"
+    },
+    {
+      "id": "CV-21",
+      "dificuldade": 1,
+      "conjunto": "calibracao"
+    },
+    {
+      "id": "CV-22",
+      "dificuldade": 3,
+      "conjunto": "dev"
+    },
+    {
+      "id": "CV-23",
+      "dificuldade": 2,
+      "conjunto": "dev"
+    },
+    {
+      "id": "CV-24",
+      "dificuldade": 3,
+      "conjunto": "teste"
+    },
+    {
+      "id": "CV-25",
+      "dificuldade": 3,
+      "conjunto": "dev"
+    }
+  ]
+}

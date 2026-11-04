@@ -1,0 +1,1412 @@
+{
+  "meta": {
+    "semente": "aurora-2026-10",
+    "mes": "2026-10"
+  },
+  "lancamentos": {
+    "L001": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L002": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "calibracao"
+    },
+    "L003": {
+      "categoria": "despesa_sem_nota",
+      "vinculo": {
+        "tipo": "comprovante",
+        "ids": [
+          "CV-01"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": "documento_nao_fiscal",
+      "resolvidoPor": "ia",
+      "conjunto": "dev"
+    },
+    "L004": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L005": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L006": {
+      "categoria": "tarifa",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "tarifa",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L007": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-033"
+        ]
+      },
+      "situacao": "divergencia",
+      "motivo": "valor_diferente",
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L008": {
+      "categoria": "despesa_sem_nota",
+      "vinculo": {
+        "tipo": "comprovante",
+        "ids": [
+          "CV-02"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": "documento_nao_fiscal",
+      "resolvidoPor": "ia",
+      "conjunto": "dev"
+    },
+    "L009": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-038"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "calibracao"
+    },
+    "L010": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-029"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L011": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-018"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L012": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L013": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-030"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L014": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-005"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L015": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-006"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L016": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-026"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L017": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "calibracao"
+    },
+    "L018": {
+      "categoria": "tarifa",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "tarifa",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "calibracao"
+    },
+    "L019": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "pendente",
+      "motivo": "pagamento_duplicado",
+      "resolvidoPor": "regra",
+      "conjunto": "calibracao"
+    },
+    "L020": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-008"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "calibracao"
+    },
+    "L021": {
+      "categoria": "despesa_sem_nota",
+      "vinculo": {
+        "tipo": "comprovante",
+        "ids": [
+          "CV-03"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": "documento_nao_fiscal",
+      "resolvidoPor": "ia",
+      "conjunto": "dev"
+    },
+    "L022": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-014"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L023": {
+      "categoria": "despesa_sem_nota",
+      "vinculo": {
+        "tipo": "comprovante",
+        "ids": [
+          "CV-04"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": "documento_nao_fiscal",
+      "resolvidoPor": "ia",
+      "conjunto": "teste"
+    },
+    "L024": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-028"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L025": {
+      "categoria": "tarifa",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "tarifa",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L026": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-022"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L027": {
+      "categoria": "despesa_sem_nota",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "pendente",
+      "motivo": "sem_documento",
+      "resolvidoPor": "pessoa",
+      "conjunto": "dev"
+    },
+    "L028": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-023"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L029": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L030": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-009"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L031": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-011"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L032": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L033": {
+      "categoria": "tarifa",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "tarifa",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L034": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-001"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L035": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-037"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L036": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-032"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "calibracao"
+    },
+    "L037": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "calibracao"
+    },
+    "L038": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-024"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L039": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-012"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L040": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-025"
+        ]
+      },
+      "situacao": "divergencia",
+      "motivo": "valor_diferente",
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L041": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "notas",
+        "ids": [
+          "NF-013",
+          "NF-016"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L042": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-017"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L043": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-036"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L044": {
+      "categoria": "despesa_sem_nota",
+      "vinculo": {
+        "tipo": "comprovante",
+        "ids": [
+          "CV-05"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": "documento_nao_fiscal",
+      "resolvidoPor": "ia",
+      "conjunto": "dev"
+    },
+    "L045": {
+      "categoria": "despesa_sem_nota",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "pendente",
+      "motivo": "sem_documento",
+      "resolvidoPor": "pessoa",
+      "conjunto": "dev"
+    },
+    "L046": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-002"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L047": {
+      "categoria": "despesa_sem_nota",
+      "vinculo": {
+        "tipo": "comprovante",
+        "ids": [
+          "CV-06"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": "documento_nao_fiscal",
+      "resolvidoPor": "ia",
+      "conjunto": "teste"
+    },
+    "L048": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-007"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L049": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L050": {
+      "categoria": "tarifa",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "tarifa",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "calibracao"
+    },
+    "L051": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-031"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "calibracao"
+    },
+    "L052": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-015"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "calibracao"
+    },
+    "L053": {
+      "categoria": "despesa_sem_nota",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "pendente",
+      "motivo": "sem_documento",
+      "resolvidoPor": "pessoa",
+      "conjunto": "calibracao"
+    },
+    "L054": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-004"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "calibracao"
+    },
+    "L055": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L056": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L057": {
+      "categoria": "despesa_sem_nota",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "pendente",
+      "motivo": "sem_documento",
+      "resolvidoPor": "pessoa",
+      "conjunto": "calibracao"
+    },
+    "L058": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-027"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L059": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-019"
+        ]
+      },
+      "situacao": "divergencia",
+      "motivo": "valor_diferente",
+      "resolvidoPor": "regra",
+      "conjunto": "calibracao"
+    },
+    "L060": {
+      "categoria": "tarifa",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "tarifa",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "teste"
+    },
+    "L061": {
+      "categoria": "pagamento_fornecedor",
+      "vinculo": {
+        "tipo": "nota",
+        "ids": [
+          "NF-035"
+        ]
+      },
+      "situacao": "conciliado",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L062": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "calibracao"
+    },
+    "L063": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    },
+    "L064": {
+      "categoria": "recebimento",
+      "vinculo": {
+        "tipo": null,
+        "ids": []
+      },
+      "situacao": "fora_do_escopo",
+      "motivo": null,
+      "resolvidoPor": "regra",
+      "conjunto": "dev"
+    }
+  },
+  "comprovantes": {
+    "CV-01": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 32000,
+        "data": "2026-10-03",
+        "beneficiario": "Feira do Produtor",
+        "pagador": "Padaria Aurora",
+        "descricao": "compra de frutas e verduras",
+        "idTransacao": "E920155342026109320"
+      },
+      "dificuldade": 4,
+      "conjunto": "teste",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L003"
+    },
+    "CV-02": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 28000,
+        "data": "2026-10-05",
+        "beneficiario": "Carlos Eletricista",
+        "pagador": "Padaria Aurora",
+        "descricao": "troca de tomadas",
+        "idTransacao": "E681961002026108202"
+      },
+      "dificuldade": 4,
+      "conjunto": "teste",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L008"
+    },
+    "CV-03": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 45000,
+        "data": "2026-10-11",
+        "beneficiario": "José Pedreiro",
+        "pagador": "Padaria Aurora",
+        "descricao": "reparo da bancada",
+        "idTransacao": "E158843972026102171"
+      },
+      "dificuldade": 2,
+      "conjunto": "calibracao",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L021"
+    },
+    "CV-04": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 9000,
+        "data": "2026-10-11",
+        "beneficiario": "Luís Chaveiro",
+        "pagador": "Padaria Aurora",
+        "descricao": "cópia de chaves",
+        "idTransacao": "E101651012026105333"
+      },
+      "dificuldade": 2,
+      "conjunto": "calibracao",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L023"
+    },
+    "CV-05": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 18000,
+        "data": "2026-10-21",
+        "beneficiario": "Maria Entregadora",
+        "pagador": "Padaria Aurora",
+        "descricao": "entregas do fim de semana",
+        "idTransacao": "E340181902026101256"
+      },
+      "dificuldade": 1,
+      "conjunto": "teste",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L044"
+    },
+    "CV-06": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 60000,
+        "data": "2026-10-22",
+        "beneficiario": "Ana Costureira",
+        "pagador": "Padaria Aurora",
+        "descricao": "uniformes da equipe",
+        "idTransacao": "E780535912026104249"
+      },
+      "dificuldade": 2,
+      "conjunto": "teste",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L047"
+    },
+    "CV-07": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 20590,
+        "data": "2026-10-17",
+        "beneficiario": "Fibra Boa Internet Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 416",
+        "idTransacao": "E642944402026107991"
+      },
+      "dificuldade": 3,
+      "conjunto": "teste",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L038"
+    },
+    "CV-08": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 10290,
+        "data": "2026-10-25",
+        "beneficiario": "Papelaria Ponto Final Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 332",
+        "idTransacao": "E980118522026107986"
+      },
+      "dificuldade": 4,
+      "conjunto": "dev",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L051"
+    },
+    "CV-09": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 24490,
+        "data": "2026-10-21",
+        "beneficiario": "Brilho Total Limpeza Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 335",
+        "idTransacao": "E314847512026102351"
+      },
+      "dificuldade": 4,
+      "conjunto": "calibracao",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L043"
+    },
+    "CV-10": {
+      "campos": {
+        "tipo": "recibo",
+        "valor": 54300,
+        "data": "2026-10-25",
+        "beneficiario": "Abrigo Seguradora Fictícia Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 270",
+        "idTransacao": "E177731432026107108"
+      },
+      "dificuldade": 4,
+      "conjunto": "calibracao",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L052"
+    },
+    "CV-11": {
+      "campos": {
+        "tipo": "boleto",
+        "valor": 60600,
+        "data": "2026-10-11",
+        "beneficiario": "Gás Cabo Azul Distribuidora Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 377",
+        "idTransacao": "E963451782026105880"
+      },
+      "dificuldade": 4,
+      "conjunto": "dev",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L020"
+    },
+    "CV-12": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 62450,
+        "data": "2026-10-15",
+        "beneficiario": "Ovos Campo Alegre Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 896",
+        "idTransacao": "E524379572026103453"
+      },
+      "dificuldade": 1,
+      "conjunto": "teste",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L036"
+    },
+    "CV-13": {
+      "campos": {
+        "tipo": "recibo",
+        "valor": 13550,
+        "data": "2026-10-14",
+        "beneficiario": "Papelaria Ponto Final Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 320",
+        "idTransacao": "E460841462026106017"
+      },
+      "dificuldade": 3,
+      "conjunto": "teste",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L034"
+    },
+    "CV-14": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 217200,
+        "data": "2026-10-08",
+        "beneficiario": "Laticínios Vale Verde Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 253",
+        "idTransacao": "E481127852026104810"
+      },
+      "dificuldade": 1,
+      "conjunto": "teste",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L010"
+    },
+    "CV-15": {
+      "campos": {
+        "tipo": "boleto",
+        "valor": 152850,
+        "data": "2026-10-29",
+        "beneficiario": "Doces e Açúcar Estrela Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 594",
+        "idTransacao": "E415148712026104746"
+      },
+      "dificuldade": 2,
+      "conjunto": "dev",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L058"
+    },
+    "CV-16": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 210000,
+        "data": "2026-10-29",
+        "beneficiario": "Laticínios Vale Verde Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 262",
+        "idTransacao": "E383552812026107352"
+      },
+      "dificuldade": 1,
+      "conjunto": "teste",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L061"
+    },
+    "CV-17": {
+      "campos": {
+        "tipo": "boleto",
+        "valor": 208390,
+        "data": "2026-10-11",
+        "beneficiario": "Moinho Sol Nascente Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 394",
+        "idTransacao": "E268665242026106326"
+      },
+      "dificuldade": 2,
+      "conjunto": "teste",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L024"
+    },
+    "CV-18": {
+      "campos": {
+        "tipo": "boleto",
+        "valor": 36790,
+        "data": "2026-10-12",
+        "beneficiario": "Frutas do Sítio Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 439",
+        "idTransacao": "E374471132026105512"
+      },
+      "dificuldade": 1,
+      "conjunto": "dev",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L026"
+    },
+    "CV-19": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 95300,
+        "data": "2026-10-10",
+        "beneficiario": "Ovos Campo Alegre Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 894",
+        "idTransacao": "E484055052026103346"
+      },
+      "dificuldade": 1,
+      "conjunto": "calibracao",
+      "adversarial": false,
+      "distrator": false,
+      "linhaRef": "L016"
+    },
+    "CV-20": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 15700,
+        "data": "2026-09-22",
+        "beneficiario": "Prefeitura (taxa)",
+        "pagador": "Padaria Aurora",
+        "descricao": "taxa de lixo",
+        "idTransacao": "E718337772026107688"
+      },
+      "dificuldade": 3,
+      "conjunto": "dev",
+      "adversarial": false,
+      "distrator": true,
+      "linhaRef": null
+    },
+    "CV-21": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 12700,
+        "data": "2026-09-23",
+        "beneficiario": "Pedro Entregas",
+        "pagador": "Padaria Aurora",
+        "descricao": "entregas",
+        "idTransacao": "E140425512026101789"
+      },
+      "dificuldade": 1,
+      "conjunto": "calibracao",
+      "adversarial": false,
+      "distrator": true,
+      "linhaRef": null
+    },
+    "CV-22": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 22300,
+        "data": "2026-09-18",
+        "beneficiario": "Associação Comercial",
+        "pagador": "Padaria Aurora",
+        "descricao": "mensalidade da associação",
+        "idTransacao": "E209827242026103451"
+      },
+      "dificuldade": 3,
+      "conjunto": "dev",
+      "adversarial": false,
+      "distrator": true,
+      "linhaRef": null
+    },
+    "CV-23": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 150490,
+        "data": "2026-10-15",
+        "beneficiario": "Laticínios Vale Verde Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 265",
+        "idTransacao": "E814157512026105520"
+      },
+      "dificuldade": 2,
+      "conjunto": "dev",
+      "adversarial": true,
+      "distrator": false,
+      "linhaRef": "L035"
+    },
+    "CV-24": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 106700,
+        "data": "2026-10-12",
+        "beneficiario": "Potiguar Energia Fictícia S.A.",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 284",
+        "idTransacao": "E221787372026107945"
+      },
+      "dificuldade": 3,
+      "conjunto": "teste",
+      "adversarial": true,
+      "distrator": false,
+      "linhaRef": "L028"
+    },
+    "CV-25": {
+      "campos": {
+        "tipo": "pix",
+        "valor": 79700,
+        "data": "2026-10-18",
+        "beneficiario": "Forno Certo Manutenção Ltda",
+        "pagador": "Padaria Aurora",
+        "descricao": "Pagamento NF 590",
+        "idTransacao": "E298344132026108117"
+      },
+      "dificuldade": 3,
+      "conjunto": "dev",
+      "adversarial": true,
+      "distrator": false,
+      "linhaRef": "L039"
+    }
+  },
+  "notasDuplicadas": [
+    "NF-038"
+  ],
+  "pendencias": [
+    {
+      "tipo": "divergencia_valor",
+      "ref": "L007",
+      "descricao": "PAG BOLETO ABRIGO SEGURAD: valor difere da nota",
+      "valor": 37175,
+      "data": "2026-10-05"
+    },
+    {
+      "tipo": "pagamento_duplicado",
+      "ref": "L019",
+      "descricao": "PAG BOLETO FORNO CERTO MA: possível pagamento em duplicidade",
+      "valor": 32590,
+      "data": "2026-10-11"
+    },
+    {
+      "tipo": "despesa_sem_documento",
+      "ref": "L027",
+      "descricao": "PIX ENVIADO PEDRO ENTREGAS: sem documento",
+      "valor": 12000,
+      "data": "2026-10-12"
+    },
+    {
+      "tipo": "divergencia_valor",
+      "ref": "L040",
+      "descricao": "TED ENVIADA DOCES E ACUCAR: valor difere da nota",
+      "valor": 128462,
+      "data": "2026-10-19"
+    },
+    {
+      "tipo": "despesa_sem_documento",
+      "ref": "L045",
+      "descricao": "DEB AUTOM TAXA LIXO MUNICIPAL: sem documento",
+      "valor": 15000,
+      "data": "2026-10-22"
+    },
+    {
+      "tipo": "despesa_sem_documento",
+      "ref": "L053",
+      "descricao": "PAG BOLETO ASSOCIACAO COMERCIAL: sem documento",
+      "valor": 22000,
+      "data": "2026-10-26"
+    },
+    {
+      "tipo": "despesa_sem_documento",
+      "ref": "L057",
+      "descricao": "PIX ENVIADO RAIMUNDO MECANICO: sem documento",
+      "valor": 38000,
+      "data": "2026-10-28"
+    },
+    {
+      "tipo": "divergencia_valor",
+      "ref": "L059",
+      "descricao": "PIX ENVIADO POTIGUAR ENERG: valor difere da nota",
+      "valor": 131128,
+      "data": "2026-10-29"
+    },
+    {
+      "tipo": "nota_sem_pagamento",
+      "ref": "NF-021",
+      "descricao": "Gás Cabo Azul Distribuidora Ltda NF 380: vencida em 2026-10-13 sem pagamento no extrato",
+      "valor": 48300,
+      "data": "2026-10-13"
+    },
+    {
+      "tipo": "nota_sem_pagamento",
+      "ref": "NF-010",
+      "descricao": "Papelaria Ponto Final Ltda NF 327: vencida em 2026-10-11 sem pagamento no extrato",
+      "valor": 10090,
+      "data": "2026-10-11"
+    },
+    {
+      "tipo": "nota_sem_pagamento",
+      "ref": "NF-003",
+      "descricao": "Ovos Campo Alegre Ltda NF 868: vencida em 2026-10-20 sem pagamento no extrato",
+      "valor": 70490,
+      "data": "2026-10-20"
+    },
+    {
+      "tipo": "nota_duplicada",
+      "ref": "NF-038",
+      "descricao": "NF 599 (Forno Certo Manutenção Ltda) aparece duas vezes nos XMLs",
+      "valor": 87950,
+      "data": "2026-09-13"
+    }
+  ],
+  "pendenciasAposRegras": [
+    {
+      "tipo": "despesa_sem_documento",
+      "ref": "L003",
+      "descricao": "PAG FEIRA DO PRODUTOR: sem documento",
+      "valor": 32000,
+      "data": "2026-10-03"
+    },
+    {
+      "tipo": "divergencia_valor",
+      "ref": "L007",
+      "descricao": "PAG BOLETO ABRIGO SEGURAD: valor difere da nota",
+      "valor": 37175,
+      "data": "2026-10-05"
+    },
+    {
+      "tipo": "despesa_sem_documento",
+      "ref": "L008",
+      "descricao": "PIX ENVIADO CARLOS ELETRICISTA: sem documento",
+      "valor": 28000,
+      "data": "2026-10-05"
+    },
+    {
+      "tipo": "pagamento_duplicado",
+      "ref": "L019",
+      "descricao": "PAG BOLETO FORNO CERTO MA: possível pagamento em duplicidade",
+      "valor": 32590,
+      "data": "2026-10-11"
+    },
+    {
+      "tipo": "despesa_sem_documento",
+      "ref": "L021",
+      "descricao": "PIX ENVIADO JOSE PEDREIRO: sem documento",
+      "valor": 45000,
+      "data": "2026-10-11"
+    },
+    {
+      "tipo": "despesa_sem_documento",
+      "ref": "L023",
+      "descricao": "PIX ENVIADO LUIS CHAVEIRO: sem documento",
+      "valor": 9000,
+      "data": "2026-10-11"
+    },
+    {
+      "tipo": "despesa_sem_documento",
+      "ref": "L027",
+      "descricao": "PIX ENVIADO PEDRO ENTREGAS: sem documento",
+      "valor": 12000,
+      "data": "2026-10-12"
+    },
+    {
+      "tipo": "divergencia_valor",
+      "ref": "L040",
+      "descricao": "TED ENVIADA DOCES E ACUCAR: valor difere da nota",
+      "valor": 128462,
+      "data": "2026-10-19"
+    },
+    {
+      "tipo": "despesa_sem_documento",
+      "ref": "L044",
+      "descricao": "PIX ENVIADO MARIA ENTREGADORA: sem documento",
+      "valor": 18000,
+      "data": "2026-10-21"
+    },
+    {
+      "tipo": "despesa_sem_documento",
+      "ref": "L045",
+      "descricao": "DEB AUTOM TAXA LIXO MUNICIPAL: sem documento",
+      "valor": 15000,
+      "data": "2026-10-22"
+    },
+    {
+      "tipo": "despesa_sem_documento",
+      "ref": "L047",
+      "descricao": "PIX ENVIADO ANA COSTUREIRA: sem documento",
+      "valor": 60000,
+      "data": "2026-10-22"
+    },
+    {
+      "tipo": "despesa_sem_documento",
+      "ref": "L053",
+      "descricao": "PAG BOLETO ASSOCIACAO COMERCIAL: sem documento",
+      "valor": 22000,
+      "data": "2026-10-26"
+    },
+    {
+      "tipo": "despesa_sem_documento",
+      "ref": "L057",
+      "descricao": "PIX ENVIADO RAIMUNDO MECANICO: sem documento",
+      "valor": 38000,
+      "data": "2026-10-28"
+    },
+    {
+      "tipo": "divergencia_valor",
+      "ref": "L059",
+      "descricao": "PIX ENVIADO POTIGUAR ENERG: valor difere da nota",
+      "valor": 131128,
+      "data": "2026-10-29"
+    },
+    {
+      "tipo": "nota_sem_pagamento",
+      "ref": "NF-021",
+      "descricao": "Gás Cabo Azul Distribuidora Ltda NF 380: vencida em 2026-10-13 sem pagamento no extrato",
+      "valor": 48300,
+      "data": "2026-10-13"
+    },
+    {
+      "tipo": "nota_sem_pagamento",
+      "ref": "NF-010",
+      "descricao": "Papelaria Ponto Final Ltda NF 327: vencida em 2026-10-11 sem pagamento no extrato",
+      "valor": 10090,
+      "data": "2026-10-11"
+    },
+    {
+      "tipo": "nota_sem_pagamento",
+      "ref": "NF-003",
+      "descricao": "Ovos Campo Alegre Ltda NF 868: vencida em 2026-10-20 sem pagamento no extrato",
+      "valor": 70490,
+      "data": "2026-10-20"
+    },
+    {
+      "tipo": "nota_duplicada",
+      "ref": "NF-038",
+      "descricao": "NF 599 (Forno Certo Manutenção Ltda) aparece duas vezes nos XMLs",
+      "valor": 87950,
+      "data": "2026-09-13"
+    }
+  ],
+  "periodo": {
+    "inicio": "2026-10-01",
+    "fim": "2026-10-31"
+  }
+}

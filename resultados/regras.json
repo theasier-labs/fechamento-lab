@@ -1,0 +1,54 @@
+{
+  "descricao": "Motor por regras sozinho (sem IA) contra o gabarito",
+  "lancamentosDecididosPorRegra": {
+    "geral": {
+      "k": 54,
+      "n": 54,
+      "valor": 1,
+      "ic95": [
+        0.9335841332189981,
+        1
+      ]
+    },
+    "porConjunto": {
+      "dev": {
+        "k": 23,
+        "n": 23,
+        "valor": 1,
+        "ic95": [
+          0.8568788745827374,
+          1
+        ]
+      },
+      "calibracao": {
+        "k": 14,
+        "n": 14,
+        "valor": 1,
+        "ic95": [
+          0.7846829880728186,
+          1
+        ]
+      },
+      "teste": {
+        "k": 17,
+        "n": 17,
+        "valor": 1,
+        "ic95": [
+          0.8156763396284354,
+          1
+        ]
+      }
+    }
+  },
+  "pendencias": {
+    "precisao": 1,
+    "revocacao": 1,
+    "f1": 1,
+    "faltaram": [],
+    "sobraram": []
+  },
+  "restamParaIa": 6,
+  "errosDeLancamento": [],
+  "problemasDeLeitura": [],
+  "verificacoes": 0
+}

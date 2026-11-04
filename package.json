@@ -1,0 +1,19 @@
+{
+  "name": "fechamento-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Laboratório de Fechamento: cenário 100% fictício de escritório de contabilidade, gabarito, motor por regras, camada de IA com cascata de modelos e avaliação aberta. Não recebe dado real.",
+  "scripts": {
+    "test": "node --test",
+    "gerar": "node scripts/gerar-cenario.js",
+    "avaliar:regras": "node scripts/avaliar-regras.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.1.0",
+    "fast-xml-parser": "^5.12.0"
+  }
+}
