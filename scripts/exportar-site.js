@@ -37,7 +37,7 @@ const comprovantes = Object.entries(gab.comprovantes).map(([id, c]) => {
     const d = reps.find((x) => x.rep === 0) ?? reps[0]; if (!d?.campos) { leituras[m] = null; continue; }
     const k = d.campos; const falhas = k.legivel ? verificarCamposExtraidos({ valor: k.valor_centavos, data: k.data, beneficiario: k.beneficiario }, { periodo: gab.periodo }) : ['ilegível'];
     const v = falhas.length === 0 && k.confianca >= LIMIAR ? vincular(k, semDoc) : { resultado: 'revisao_humana', motivo: falhas.join('; ') || 'confiança baixa' };
-    leituras[m] = { valor: k.valor_centavos, data: k.data, beneficiario: k.beneficiario, confianca: k.confianca, legivel: k.legivel, instrucao: k.instrucao_no_documento, certa: d.nota.tudo, acertosEm3: reps.filter((x) => x.nota.tudo).length, repeticoes: reps.length, regra: v.resultado === 'vinculado' ? { decisao: 'vinculado', lancamento: v.lancamento } : { decisao: 'pessoa', motivo: v.motivo } };
+    leituras[m] = { valor: k.valor_centavos, data: k.data, beneficiario: k.beneficiario, confianca: k.confianca, legivel: k.legivel, instrucao: k.instrucao_no_documento, certa: d.nota.tudo, acertosEm3: reps.filter((x) => x.nota.tudo).length, repeticoes: reps.length, passaRegra: falhas.length === 0 && vincular(k, semDoc).resultado === 'vinculado', regra: v.resultado === 'vinculado' ? { decisao: 'vinculado', lancamento: v.lancamento } : { decisao: 'pessoa', motivo: v.motivo } };
   }
   return { id, dificuldade: c.dificuldade, adversarial: c.adversarial, distrator: c.distrator, linhaRef: c.linhaRef, verdade: { valor: c.campos.valor, data: c.campos.data, beneficiario: c.campos.beneficiario, tipo: c.campos.tipo }, leituras };
 });
