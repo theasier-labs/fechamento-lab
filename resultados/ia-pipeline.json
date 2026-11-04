@@ -1,0 +1,242 @@
+{
+  "google/gemini-2.5-flash-lite": {
+    "comRegra": {
+      "vincErrado": 0,
+      "vincCerto": 18,
+      "n": 75,
+      "humano": 57,
+      "vinculosErradosAceitos": {
+        "k": 0,
+        "n": 75,
+        "valor": 0,
+        "ic95": [
+          0,
+          0.04872554590470005
+        ]
+      },
+      "vinculosCertos": {
+        "k": 18,
+        "n": 18,
+        "valor": 1,
+        "ic95": [
+          0.8241154494176252,
+          1
+        ]
+      }
+    },
+    "soModelo": {
+      "vincErrado": 0,
+      "vincCerto": 18,
+      "n": 75,
+      "vinculosErradosAceitos": {
+        "k": 0,
+        "n": 75,
+        "valor": 0,
+        "ic95": [
+          0,
+          0.04872554590470005
+        ]
+      }
+    }
+  },
+  "openai/gpt-4.1-mini": {
+    "comRegra": {
+      "vincErrado": 0,
+      "vincCerto": 12,
+      "n": 75,
+      "humano": 63,
+      "vinculosErradosAceitos": {
+        "k": 0,
+        "n": 75,
+        "valor": 0,
+        "ic95": [
+          0,
+          0.04872554590470005
+        ]
+      },
+      "vinculosCertos": {
+        "k": 12,
+        "n": 18,
+        "valor": 0.6666666666666666,
+        "ic95": [
+          0.4374906934425036,
+          0.8372144563633714
+        ]
+      }
+    },
+    "soModelo": {
+      "vincErrado": 0,
+      "vincCerto": 18,
+      "n": 75,
+      "vinculosErradosAceitos": {
+        "k": 0,
+        "n": 75,
+        "valor": 0,
+        "ic95": [
+          0,
+          0.04872554590470005
+        ]
+      }
+    }
+  },
+  "anthropic/claude-haiku-4.5": {
+    "comRegra": {
+      "vincErrado": 0,
+      "vincCerto": 12,
+      "n": 75,
+      "humano": 63,
+      "vinculosErradosAceitos": {
+        "k": 0,
+        "n": 75,
+        "valor": 0,
+        "ic95": [
+          0,
+          0.04872554590470005
+        ]
+      },
+      "vinculosCertos": {
+        "k": 12,
+        "n": 18,
+        "valor": 0.6666666666666666,
+        "ic95": [
+          0.4374906934425036,
+          0.8372144563633714
+        ]
+      }
+    },
+    "soModelo": {
+      "vincErrado": 0,
+      "vincCerto": 12,
+      "n": 75,
+      "vinculosErradosAceitos": {
+        "k": 0,
+        "n": 75,
+        "valor": 0,
+        "ic95": [
+          0,
+          0.04872554590470005
+        ]
+      }
+    }
+  },
+  "meta-llama/llama-4-maverick": {
+    "comRegra": {
+      "vincErrado": 0,
+      "vincCerto": 12,
+      "n": 75,
+      "humano": 63,
+      "vinculosErradosAceitos": {
+        "k": 0,
+        "n": 75,
+        "valor": 0,
+        "ic95": [
+          0,
+          0.04872554590470005
+        ]
+      },
+      "vinculosCertos": {
+        "k": 12,
+        "n": 18,
+        "valor": 0.6666666666666666,
+        "ic95": [
+          0.4374906934425036,
+          0.8372144563633714
+        ]
+      }
+    },
+    "soModelo": {
+      "vincErrado": 0,
+      "vincCerto": 12,
+      "n": 75,
+      "vinculosErradosAceitos": {
+        "k": 0,
+        "n": 75,
+        "valor": 0,
+        "ic95": [
+          0,
+          0.04872554590470005
+        ]
+      }
+    }
+  },
+  "google/gemma-4-31b-it": {
+    "comRegra": {
+      "vincErrado": 0,
+      "vincCerto": 18,
+      "n": 75,
+      "humano": 57,
+      "vinculosErradosAceitos": {
+        "k": 0,
+        "n": 75,
+        "valor": 0,
+        "ic95": [
+          0,
+          0.04872554590470005
+        ]
+      },
+      "vinculosCertos": {
+        "k": 18,
+        "n": 18,
+        "valor": 1,
+        "ic95": [
+          0.8241154494176252,
+          1
+        ]
+      }
+    },
+    "soModelo": {
+      "vincErrado": 0,
+      "vincCerto": 18,
+      "n": 75,
+      "vinculosErradosAceitos": {
+        "k": 0,
+        "n": 75,
+        "valor": 0,
+        "ic95": [
+          0,
+          0.04872554590470005
+        ]
+      }
+    }
+  },
+  "anthropic/claude-sonnet-4.5": {
+    "comRegra": {
+      "vincErrado": 0,
+      "vincCerto": 12,
+      "n": 75,
+      "humano": 63,
+      "vinculosErradosAceitos": {
+        "k": 0,
+        "n": 75,
+        "valor": 0,
+        "ic95": [
+          0,
+          0.04872554590470005
+        ]
+      },
+      "vinculosCertos": {
+        "k": 12,
+        "n": 18,
+        "valor": 0.6666666666666666,
+        "ic95": [
+          0.4374906934425036,
+          0.8372144563633714
+        ]
+      }
+    },
+    "soModelo": {
+      "vincErrado": 0,
+      "vincCerto": 15,
+      "n": 75,
+      "vinculosErradosAceitos": {
+        "k": 0,
+        "n": 75,
+        "valor": 0,
+        "ic95": [
+          0,
+          0.04872554590470005
+        ]
+      }
+    }
+  }
+}
