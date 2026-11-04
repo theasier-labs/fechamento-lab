@@ -27,7 +27,12 @@ export class ProvedorOpenRouter {
     if (existsSync(arq)) return { ...JSON.parse(readFileSync(arq, 'utf8')), doCache: true };
     if (!this.chave) throw new Error('Chave do OpenRouter ausente (OPENROUTER_API_KEY ou ~/.theasier/openrouter-key)');
     const t0 = Date.now();
-    const r = await this.fetch('https://openrouter.ai/api/v1/chat/completions', { method: 'POST', headers: { Authorization: `Bearer ${this.chave}`, 'Content-Type': 'application/json', 'X-Title': 'Laboratorio de Fechamento' }, body: JSON.stringify(corpo) });
+    let r;
+    for (let tentativa = 0; tentativa < 4; tentativa++) { // 429 e 5xx são do provedor, não do pedido: espera e tenta de novo
+      r = await this.fetch('https://openrouter.ai/api/v1/chat/completions', { method: 'POST', headers: { Authorization: `Bearer ${this.chave}`, 'Content-Type': 'application/json', 'X-Title': 'Laboratorio de Fechamento' }, body: JSON.stringify(corpo) });
+      if (r.status !== 429 && r.status < 500) break;
+      await new Promise((ok) => setTimeout(ok, 1500 * 2 ** tentativa));
+    }
     if (r.status === 402) throw new Error('Limite de gasto da chave esgotado (402)');
     if (!r.ok) throw new Error(`OpenRouter respondeu ${r.status}: ${(await r.text()).slice(0, 200).replace(this.chave, '***')}`);
     const d = await r.json();

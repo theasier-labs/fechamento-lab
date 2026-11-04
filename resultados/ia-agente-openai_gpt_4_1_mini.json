@@ -1,0 +1,1067 @@
+{
+  "geradoEm": "2026-11-04",
+  "juiz": "anthropic/claude-sonnet-4.5",
+  "gastoUsd": 0.0012236,
+  "saida": {
+    "openai/gpt-4.1-mini": {
+      "agente": {
+        "acaoCorreta": {
+          "k": 35,
+          "n": 36,
+          "valor": 0.9722222222222222,
+          "ic95": [
+            0.8582996626496918,
+            0.9950797197044302
+          ]
+        },
+        "descartadasPelaRegra": 1,
+        "acaoErradaAceita": 0,
+        "passosMedios": 2.4722222222222223,
+        "custoPorPendenciaUsd": 0.0014383222222222225,
+        "porTipo": {
+          "despesa_sem_documento": {
+            "k": 12,
+            "n": 12,
+            "valor": 1,
+            "ic95": [
+              0.7574992425007574,
+              1
+            ]
+          },
+          "divergencia_valor": {
+            "k": 9,
+            "n": 9,
+            "valor": 1,
+            "ic95": [
+              0.7008472464490407,
+              1
+            ]
+          },
+          "nota_sem_pagamento": {
+            "k": 8,
+            "n": 9,
+            "valor": 0.8888888888888888,
+            "ic95": [
+              0.5649937852319399,
+              0.9801096286728695
+            ]
+          },
+          "pagamento_duplicado": {
+            "k": 3,
+            "n": 3,
+            "valor": 1,
+            "ic95": [
+              0.43849391955098227,
+              1
+            ]
+          },
+          "nota_duplicada": {
+            "k": 3,
+            "n": 3,
+            "valor": 1,
+            "ic95": [
+              0.43849391955098227,
+              1
+            ]
+          }
+        },
+        "detalhe": [
+          {
+            "ref": "L007",
+            "tipo": "divergencia_valor",
+            "rep": 0,
+            "acao": "conferir_valor_com_fornecedor",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0018051999999999999,
+            "ok": true,
+            "trilha": [
+              {
+                "ferramenta": "ver_lancamento",
+                "argumento": "L007",
+                "resultado": {
+                  "id": "L007",
+                  "data": "2026-10-05",
+                  "descricao": "PAG BOLETO ABRIGO SEGURAD",
+                  "valor": "R$ -371,75"
+                }
+              },
+              {
+                "ferramenta": "buscar_notas_do_emitente",
+                "argumento": "ABRIGO SEGURAD",
+                "resultado": [
+                  {
+                    "id": "NF-015",
+                    "emitente": "Abrigo Seguradora Fictícia Ltda",
+                    "numero": "270",
+                    "emissao": "2026-10-10",
+                    "vencimento": "2026-10-25",
+                    "valor": "R$ 543,00"
+                  },
+                  {
+                    "id": "NF-030",
+                    "emitente": "Abrigo Seguradora Fictícia Ltda",
+                    "numero": "278",
+                    "emissao": "2026-09-22",
+                    "vencimento": "2026-10-12",
+                    "valor": "R$ 501,90"
+                  },
+                  {
+                    "id": "NF-033",
+                    "emitente": "Abrigo Seguradora Fictícia Ltda",
+                    "numero": "284",
+                    "emissao": "2026-09-23",
+                    "vencimento": "2026-10-07",
+                    "valor": "R$ 365,90"
+                  }
+                ]
+              },
+              {
+                "ferramenta": "ver_nota",
+                "argumento": "NF-033",
+                "resultado": {
+                  "id": "NF-033",
+                  "emitente": "Abrigo Seguradora Fictícia Ltda",
+                  "numero": "284",
+                  "emissao": "2026-09-23",
+                  "vencimento": "2026-10-07",
+                  "valor": "R$ 365,90"
+                }
+              }
+            ],
+            "justificativa": "O pagamento no lançamento L007 é de R$371,75, enquanto a nota NF-033 tem valor de R$365,90, indicando diferença de valores que deve ser conferida com o fornecedor."
+          },
+          {
+            "ref": "L019",
+            "tipo": "pagamento_duplicado",
+            "rep": 0,
+            "acao": "verificar_pagamento_duplicado",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0016364,
+            "ok": true,
+            "trilha": [
+              {
+                "ferramenta": "buscar_lancamentos_parecidos",
+                "argumento": "L019",
+                "resultado": [
+                  {
+                    "id": "L014",
+                    "data": "2026-10-10",
+                    "descricao": "PAG BOLETO FORNO CERTO MA",
+                    "valor": "R$ -325,90"
+                  }
+                ]
+              },
+              {
+                "ferramenta": "ver_lancamento",
+                "argumento": "L014",
+                "resultado": {
+                  "id": "L014",
+                  "data": "2026-10-10",
+                  "descricao": "PAG BOLETO FORNO CERTO MA",
+                  "valor": "R$ -325,90"
+                }
+              },
+              {
+                "ferramenta": "ver_lancamento",
+                "argumento": "L019",
+                "resultado": {
+                  "id": "L019",
+                  "data": "2026-10-11",
+                  "descricao": "PAG BOLETO FORNO CERTO MA",
+                  "valor": "R$ -325,90"
+                }
+              }
+            ],
+            "justificativa": "Os lançamentos L014 e L019 são pagamentos com mesma descrição, valores e datas próximas, indicando possível pagamento duplicado."
+          },
+          {
+            "ref": "L027",
+            "tipo": "despesa_sem_documento",
+            "rep": 0,
+            "acao": "pedir_comprovante_ao_cliente",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0011304,
+            "ok": true,
+            "trilha": [
+              {
+                "ferramenta": "ver_lancamento",
+                "argumento": "L027",
+                "resultado": {
+                  "id": "L027",
+                  "data": "2026-10-12",
+                  "descricao": "PIX ENVIADO PEDRO ENTREGAS",
+                  "valor": "R$ -120,00"
+                }
+              },
+              {
+                "ferramenta": "buscar_notas_do_emitente",
+                "argumento": "Pedro Entregas",
+                "resultado": {
+                  "erro": "nenhuma nota desse emitente"
+                }
+              }
+            ],
+            "justificativa": "Não há nota fiscal emitida por Pedro Entregas que justifique o pagamento do lançamento L027. Portanto, é necessário pedir comprovante ao cliente para esclarecer a origem do pagamento."
+          },
+          {
+            "ref": "L040",
+            "tipo": "divergencia_valor",
+            "rep": 0,
+            "acao": "conferir_valor_com_fornecedor",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0018032,
+            "ok": true,
+            "trilha": [
+              {
+                "ferramenta": "ver_lancamento",
+                "argumento": "L040",
+                "resultado": {
+                  "id": "L040",
+                  "data": "2026-10-19",
+                  "descricao": "TED ENVIADA DOCES E ACUCAR",
+                  "valor": "R$ -1.284,62"
+                }
+              },
+              {
+                "ferramenta": "buscar_notas_do_emitente",
+                "argumento": "DOCES E ACUCAR",
+                "resultado": [
+                  {
+                    "id": "NF-007",
+                    "emitente": "Doces e Açúcar Estrela Ltda",
+                    "numero": "587",
+                    "emissao": "2026-10-14",
+                    "vencimento": "2026-10-23",
+                    "valor": "R$ 585,90"
+                  },
+                  {
+                    "id": "NF-025",
+                    "emitente": "Doces e Açúcar Estrela Ltda",
+                    "numero": "588",
+                    "emissao": "2026-09-29",
+                    "vencimento": "2026-10-17",
+                    "valor": "R$ 1.271,90"
+                  },
+                  {
+                    "id": "NF-027",
+                    "emitente": "Doces e Açúcar Estrela Ltda",
+                    "numero": "594",
+                    "emissao": "2026-10-12",
+                    "vencimento": "2026-10-27",
+                    "valor": "R$ 1.528,50"
+                  }
+                ]
+              },
+              {
+                "ferramenta": "ver_nota",
+                "argumento": "NF-025",
+                "resultado": {
+                  "id": "NF-025",
+                  "emitente": "Doces e Açúcar Estrela Ltda",
+                  "numero": "588",
+                  "emissao": "2026-09-29",
+                  "vencimento": "2026-10-17",
+                  "valor": "R$ 1.271,90"
+                }
+              }
+            ],
+            "justificativa": "O valor do lançamento L040 (R$ 1.284,62) difere do valor da nota NF-025 (R$ 1.271,90), indicando necessidade de conferência do valor com o fornecedor."
+          },
+          {
+            "ref": "L045",
+            "tipo": "despesa_sem_documento",
+            "rep": 0,
+            "acao": "pedir_comprovante_ao_cliente",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.001132,
+            "ok": true,
+            "trilha": [
+              {
+                "ferramenta": "ver_lancamento",
+                "argumento": "L045",
+                "resultado": {
+                  "id": "L045",
+                  "data": "2026-10-22",
+                  "descricao": "DEB AUTOM TAXA LIXO MUNICIPAL",
+                  "valor": "R$ -150,00"
+                }
+              },
+              {
+                "ferramenta": "buscar_mensagens",
+                "argumento": "taxa lixo municipal",
+                "resultado": {
+                  "erro": "nenhuma mensagem com esse termo"
+                }
+              }
+            ],
+            "justificativa": "Não há documento ou mensagem que explique o lançamento da taxa de lixo municipal; portanto, é necessário pedir comprovante ao cliente."
+          },
+          {
+            "ref": "L053",
+            "tipo": "despesa_sem_documento",
+            "rep": 0,
+            "acao": "pedir_comprovante_ao_cliente",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0011404,
+            "ok": true,
+            "trilha": [
+              {
+                "ferramenta": "ver_lancamento",
+                "argumento": "L053",
+                "resultado": {
+                  "id": "L053",
+                  "data": "2026-10-26",
+                  "descricao": "PAG BOLETO ASSOCIACAO COMERCIAL",
+                  "valor": "R$ -220,00"
+                }
+              },
+              {
+                "ferramenta": "buscar_notas_do_emitente",
+                "argumento": "ASSOCIACAO COMERCIAL",
+                "resultado": {
+                  "erro": "nenhuma nota desse emitente"
+                }
+              }
+            ],
+            "justificativa": "Não há nota fiscal da ASSOCIACAO COMERCIAL para o pagamento L053, portanto é necessário pedir comprovante ao cliente para justificar o lançamento."
+          },
+          {
+            "ref": "L057",
+            "tipo": "despesa_sem_documento",
+            "rep": 0,
+            "acao": "pedir_comprovante_ao_cliente",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0011448,
+            "ok": true,
+            "trilha": [
+              {
+                "ferramenta": "ver_lancamento",
+                "argumento": "L057",
+                "resultado": {
+                  "id": "L057",
+                  "data": "2026-10-28",
+                  "descricao": "PIX ENVIADO RAIMUNDO MECANICO",
+                  "valor": "R$ -380,00"
+                }
+              },
+              {
+                "ferramenta": "buscar_notas_do_emitente",
+                "argumento": "RAIMUNDO MECANICO",
+                "resultado": {
+                  "erro": "nenhuma nota desse emitente"
+                }
+              }
+            ],
+            "justificativa": "Não há nota fiscal do emitente Raimundo Mecanico para justificar o pagamento PIX, portanto solicitar comprovante ao cliente."
+          },
+          {
+            "ref": "L059",
+            "tipo": "divergencia_valor",
+            "rep": 0,
+            "acao": "conferir_valor_com_fornecedor",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0018,
+            "ok": true,
+            "trilha": [
+              {
+                "ferramenta": "ver_lancamento",
+                "argumento": "L059",
+                "resultado": {
+                  "id": "L059",
+                  "data": "2026-10-29",
+                  "descricao": "PIX ENVIADO POTIGUAR ENERG",
+                  "valor": "R$ -1.311,28"
+                }
+              },
+              {
+                "ferramenta": "buscar_notas_do_emitente",
+                "argumento": "POTIGUAR ENERG",
+                "resultado": [
+                  {
+                    "id": "NF-019",
+                    "emitente": "Potiguar Energia Fictícia S.A.",
+                    "numero": "276",
+                    "emissao": "2026-10-14",
+                    "vencimento": "2026-10-26",
+                    "valor": "R$ 1.291,90"
+                  },
+                  {
+                    "id": "NF-023",
+                    "emitente": "Potiguar Energia Fictícia S.A.",
+                    "numero": "284",
+                    "emissao": "2026-09-21",
+                    "vencimento": "2026-10-10",
+                    "valor": "R$ 1.067,00"
+                  },
+                  {
+                    "id": "NF-034",
+                    "emitente": "Potiguar Energia Fictícia S.A.",
+                    "numero": "288",
+                    "emissao": "2026-10-22",
+                    "vencimento": "2026-11-16",
+                    "valor": "R$ 1.323,50"
+                  }
+                ]
+              },
+              {
+                "ferramenta": "ver_nota",
+                "argumento": "NF-019",
+                "resultado": {
+                  "id": "NF-019",
+                  "emitente": "Potiguar Energia Fictícia S.A.",
+                  "numero": "276",
+                  "emissao": "2026-10-14",
+                  "vencimento": "2026-10-26",
+                  "valor": "R$ 1.291,90"
+                }
+              }
+            ],
+            "justificativa": "O pagamento L059 foi de R$ 1.311,28, enquanto a nota NF-019 tem valor de R$ 1.291,90, indicando diferença de valores que deve ser conferida com o fornecedor."
+          },
+          {
+            "ref": "NF-021",
+            "tipo": "nota_sem_pagamento",
+            "rep": 0,
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0016276,
+            "ok": true,
+            "trilha": [
+              {
+                "ferramenta": "ver_nota",
+                "argumento": "NF-021",
+                "resultado": {
+                  "id": "NF-021",
+                  "emitente": "Gás Cabo Azul Distribuidora Ltda",
+                  "numero": "380",
+                  "emissao": "2026-09-22",
+                  "vencimento": "2026-10-13",
+                  "valor": "R$ 483,00"
+                }
+              },
+              {
+                "ferramenta": "buscar_lancamentos_parecidos",
+                "argumento": "NF-021",
+                "resultado": {
+                  "erro": "lançamento não encontrado"
+                }
+              },
+              {
+                "ferramenta": "buscar_mensagens",
+                "argumento": "NF-021",
+                "resultado": {
+                  "erro": "nenhuma mensagem com esse termo"
+                }
+              }
+            ],
+            "justificativa": "A nota NF-021 está vencida e não há pagamento registrado nem mensagens explicativas. Portanto, é necessário verificar se a nota foi paga."
+          },
+          {
+            "ref": "NF-010",
+            "tipo": "nota_sem_pagamento",
+            "rep": 0,
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 4,
+            "custo": 0.0023896000000000004,
+            "ok": true,
+            "trilha": [
+              {
+                "ferramenta": "ver_nota",
+                "argumento": "NF-010",
+                "resultado": {
+                  "id": "NF-010",
+                  "emitente": "Papelaria Ponto Final Ltda",
+                  "numero": "327",
+                  "emissao": "2026-09-24",
+                  "vencimento": "2026-10-11",
+                  "valor": "R$ 100,90"
+                }
+              },
+              {
+                "ferramenta": "buscar_lancamentos_parecidos",
+                "argumento": "NF-010",
+                "resultado": {
+                  "erro": "lançamento não encontrado"
+                }
+              },
+              {
+                "ferramenta": "buscar_notas_do_emitente",
+                "argumento": "Papelaria Ponto Final Ltda",
+                "resultado": [
+                  {
+                    "id": "NF-001",
+                    "emitente": "Papelaria Ponto Final Ltda",
+                    "numero": "320",
+                    "emissao": "2026-09-21",
+                    "vencimento": "2026-10-13",
+                    "valor": "R$ 135,50"
+                  },
+                  {
+                    "id": "NF-010",
+                    "emitente": "Papelaria Ponto Final Ltda",
+                    "numero": "327",
+                    "emissao": "2026-09-24",
+                    "vencimento": "2026-10-11",
+                    "valor": "R$ 100,90"
+                  },
+                  {
+                    "id": "NF-020",
+                    "emitente": "Papelaria Ponto Final Ltda",
+                    "numero": "328",
+                    "emissao": "2026-10-25",
+                    "vencimento": "2026-11-19",
+                    "valor": "R$ 93,00"
+                  },
+                  {
+                    "id": "NF-031",
+                    "emitente": "Papelaria Ponto Final Ltda",
+                    "numero": "332",
+                    "emissao": "2026-10-06",
+                    "vencimento": "2026-10-26",
+                    "valor": "R$ 102,90"
+                  }
+                ]
+              },
+              {
+                "ferramenta": "buscar_mensagens",
+                "argumento": "Papelaria Ponto Final Ltda NF 327",
+                "resultado": {
+                  "erro": "nenhuma mensagem com esse termo"
+                }
+              }
+            ],
+            "justificativa": "A nota NF-010 está vencida e não há pagamento registrado no extrato nem mensagens ou comprovantes enviados pelo cliente. Portanto, é necessário verificar se a nota foi paga."
+          },
+          {
+            "ref": "NF-003",
+            "tipo": "nota_sem_pagamento",
+            "rep": 0,
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0017848,
+            "ok": true,
+            "trilha": [
+              {
+                "ferramenta": "ver_nota",
+                "argumento": "NF-003",
+                "resultado": {
+                  "id": "NF-003",
+                  "emitente": "Ovos Campo Alegre Ltda",
+                  "numero": "868",
+                  "emissao": "2026-09-28",
+                  "vencimento": "2026-10-20",
+                  "valor": "R$ 704,90"
+                }
+              },
+              {
+                "ferramenta": "buscar_lancamentos_parecidos",
+                "argumento": "NF-003",
+                "resultado": {
+                  "erro": "lançamento não encontrado"
+                }
+              },
+              {
+                "ferramenta": "buscar_notas_do_emitente",
+                "argumento": "Ovos Campo Alegre Ltda",
+                "resultado": [
+                  {
+                    "id": "NF-003",
+                    "emitente": "Ovos Campo Alegre Ltda",
+                    "numero": "868",
+                    "emissao": "2026-09-28",
+                    "vencimento": "2026-10-20",
+                    "valor": "R$ 704,90"
+                  },
+                  {
+                    "id": "NF-006",
+                    "emitente": "Ovos Campo Alegre Ltda",
+                    "numero": "876",
+                    "emissao": "2026-09-21",
+                    "vencimento": "2026-10-11",
+                    "valor": "R$ 846,90"
+                  },
+                  {
+                    "id": "NF-013",
+                    "emitente": "Ovos Campo Alegre Ltda",
+                    "numero": "878",
+                    "emissao": "2026-09-30",
+                    "vencimento": "2026-10-19",
+                    "valor": "R$ 915,90"
+                  },
+                  {
+                    "id": "NF-016",
+                    "emitente": "Ovos Campo Alegre Ltda",
+                    "numero": "887",
+                    "emissao": "2026-10-02",
+                    "vencimento": "2026-10-19",
+                    "valor": "R$ 660,50"
+                  },
+                  {
+                    "id": "NF-018",
+                    "emitente": "Ovos Campo Alegre Ltda",
+                    "numero": "888",
+                    "emissao": "2026-09-30",
+                    "vencimento": "2026-10-09",
+                    "valor": "R$ 484,00"
+                  },
+                  {
+                    "id": "NF-026",
+                    "emitente": "Ovos Campo Alegre Ltda",
+                    "numero": "894",
+                    "emissao": "2026-09-25",
+                    "vencimento": "2026-10-12",
+                    "valor": "R$ 953,00"
+                  },
+                  {
+                    "id": "NF-032",
+                    "emitente": "Ovos Campo Alegre Ltda",
+                    "numero": "896",
+                    "emissao": "2026-10-01",
+                    "vencimento": "2026-10-16",
+                    "valor": "R$ 624,50"
+                  }
+                ]
+              }
+            ],
+            "justificativa": "A nota NF-003 está vencida e não há lançamento de pagamento correspondente no extrato, portanto deve-se verificar se a nota foi paga."
+          },
+          {
+            "ref": "NF-038",
+            "tipo": "nota_duplicada",
+            "rep": 0,
+            "acao": "descartar_nota_duplicada",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0018748000000000003,
+            "ok": true,
+            "trilha": [
+              {
+                "ferramenta": "ver_nota",
+                "argumento": "NF-038",
+                "resultado": {
+                  "id": "NF-038",
+                  "emitente": "Forno Certo Manutenção Ltda",
+                  "numero": "599",
+                  "emissao": "2026-09-13",
+                  "vencimento": "2026-10-04",
+                  "valor": "R$ 879,50"
+                }
+              },
+              {
+                "ferramenta": "buscar_notas_do_emitente",
+                "argumento": "Forno Certo Manutenção Ltda",
+                "resultado": [
+                  {
+                    "id": "NF-002",
+                    "emitente": "Forno Certo Manutenção Ltda",
+                    "numero": "579",
+                    "emissao": "2026-10-08",
+                    "vencimento": "2026-10-22",
+                    "valor": "R$ 259,00"
+                  },
+                  {
+                    "id": "NF-004",
+                    "emitente": "Forno Certo Manutenção Ltda",
+                    "numero": "584",
+                    "emissao": "2026-10-18",
+                    "vencimento": "2026-10-27",
+                    "valor": "R$ 843,90"
+                  },
+                  {
+                    "id": "NF-005",
+                    "emitente": "Forno Certo Manutenção Ltda",
+                    "numero": "586",
+                    "emissao": "2026-09-24",
+                    "vencimento": "2026-10-09",
+                    "valor": "R$ 325,90"
+                  },
+                  {
+                    "id": "NF-012",
+                    "emitente": "Forno Certo Manutenção Ltda",
+                    "numero": "590",
+                    "emissao": "2026-10-08",
+                    "vencimento": "2026-10-20",
+                    "valor": "R$ 797,00"
+                  },
+                  {
+                    "id": "NF-038",
+                    "emitente": "Forno Certo Manutenção Ltda",
+                    "numero": "599",
+                    "emissao": "2026-09-13",
+                    "vencimento": "2026-10-04",
+                    "valor": "R$ 879,50"
+                  }
+                ]
+              },
+              {
+                "ferramenta": "buscar_lancamentos_parecidos",
+                "argumento": "NF-038",
+                "resultado": {
+                  "erro": "lançamento não encontrado"
+                }
+              }
+            ],
+            "justificativa": "A nota NF-038 foi encontrada apenas uma vez nos registros, apesar da reclamação de duplicidade nos XMLs. Portanto, a nota é duplicada e deve ser descartada para evitar lançamento duplicado."
+          },
+          {
+            "ref": "L007",
+            "tipo": "divergencia_valor",
+            "rep": 1,
+            "acao": "conferir_valor_com_fornecedor",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0017668,
+            "ok": true,
+            "justificativa": "O pagamento de R$ 371,75 difere do valor da nota NF-033 que é R$ 365,90. É necessário conferir com o fornecedor a razão dessa diferença."
+          },
+          {
+            "ref": "L019",
+            "tipo": "pagamento_duplicado",
+            "rep": 1,
+            "acao": "verificar_pagamento_duplicado",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0015584,
+            "ok": true,
+            "justificativa": "Existem dois pagamentos com a mesma descrição, valores e datas próximas, indicando possível pagamento duplicado."
+          },
+          {
+            "ref": "L027",
+            "tipo": "despesa_sem_documento",
+            "rep": 1,
+            "acao": "pedir_comprovante_ao_cliente",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0011516,
+            "ok": true,
+            "justificativa": "Não há nota fiscal do emitente PEDRO ENTREGAS para justificar o pagamento PIX de R$120,00 no lançamento L027; solicitar comprovante ao cliente."
+          },
+          {
+            "ref": "L040",
+            "tipo": "divergencia_valor",
+            "rep": 1,
+            "acao": "conferir_valor_com_fornecedor",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0017748,
+            "ok": true,
+            "justificativa": "O valor do lançamento L040 (R$ 1.284,62) difere do valor da nota NF-025 (R$ 1.271,90). Portanto, a ação adequada é conferir o valor com o fornecedor."
+          },
+          {
+            "ref": "L045",
+            "tipo": "despesa_sem_documento",
+            "rep": 1,
+            "acao": "pedir_comprovante_ao_cliente",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0011616,
+            "ok": true,
+            "justificativa": "Não há nota fiscal associada ao lançamento L045 e não foi encontrada nota do emitente. Portanto, é necessário pedir comprovante ao cliente para justificar o débito automático da taxa de lixo municipal."
+          },
+          {
+            "ref": "L053",
+            "tipo": "despesa_sem_documento",
+            "rep": 1,
+            "acao": "pedir_comprovante_ao_cliente",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0011404,
+            "ok": true,
+            "justificativa": "Não há nota fiscal da ASSOCIACAO COMERCIAL para o pagamento L053, portanto é necessário pedir comprovante ao cliente para justificar o lançamento."
+          },
+          {
+            "ref": "L057",
+            "tipo": "despesa_sem_documento",
+            "rep": 1,
+            "acao": "pedir_comprovante_ao_cliente",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0011612,
+            "ok": true,
+            "justificativa": "Não há nota fiscal emitida por Raimundo Mecanico para justificar o pagamento de R$380,00 no lançamento L057; portanto, deve-se pedir comprovante ao cliente."
+          },
+          {
+            "ref": "L059",
+            "tipo": "divergencia_valor",
+            "rep": 1,
+            "acao": "conferir_valor_com_fornecedor",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0017900000000000001,
+            "ok": true,
+            "justificativa": "O valor do pagamento no lançamento L059 (R$ 1.311,28) difere do valor da nota NF-019 (R$ 1.291,90). Recomenda-se conferir o valor com o fornecedor para esclarecer a diferença."
+          },
+          {
+            "ref": "NF-021",
+            "tipo": "nota_sem_pagamento",
+            "rep": 1,
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0016604000000000002,
+            "ok": true,
+            "justificativa": "A nota NF-021 está vencida e não há lançamento de pagamento correspondente no extrato, portanto é necessário verificar se a nota foi paga."
+          },
+          {
+            "ref": "NF-010",
+            "tipo": "nota_sem_pagamento",
+            "rep": 1,
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0016492,
+            "ok": true,
+            "justificativa": "A nota NF-010 está vencida e não há pagamento registrado nem mensagens explicativas. Portanto, é necessário verificar se a nota foi paga."
+          },
+          {
+            "ref": "NF-003",
+            "tipo": "nota_sem_pagamento",
+            "rep": 1,
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0011344,
+            "ok": true,
+            "justificativa": "A nota NF-003 está vencida e não há pagamento correspondente no extrato, indicando que a nota não foi paga."
+          },
+          {
+            "ref": "NF-038",
+            "tipo": "nota_duplicada",
+            "rep": 1,
+            "acao": "descartar_nota_duplicada",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0012852,
+            "ok": true,
+            "justificativa": "A nota NF 599 (NF-038) aparece apenas uma vez na base, não há duplicidade real, portanto a pendência é descartar a nota duplicada informada erroneamente."
+          },
+          {
+            "ref": "L007",
+            "tipo": "divergencia_valor",
+            "rep": 2,
+            "acao": "conferir_valor_com_fornecedor",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0017972,
+            "ok": true,
+            "justificativa": "O pagamento registrado em L007 é de R$371,75, enquanto a nota NF-033 tem valor de R$365,90. Como os valores diferem, a ação adequada é conferir o valor com o fornecedor."
+          },
+          {
+            "ref": "L019",
+            "tipo": "pagamento_duplicado",
+            "rep": 2,
+            "acao": "verificar_pagamento_duplicado",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0011252,
+            "ok": true,
+            "justificativa": "Os lançamentos L014 e L019 são pagamentos com descrições e valores muito semelhantes, indicando possível pagamento duplicado."
+          },
+          {
+            "ref": "L027",
+            "tipo": "despesa_sem_documento",
+            "rep": 2,
+            "acao": "pedir_comprovante_ao_cliente",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0011420000000000002,
+            "ok": true,
+            "justificativa": "Não há nota fiscal emitida por PEDRO ENTREGAS que justifique o pagamento PIX de R$120,00; portanto, solicitar comprovante ao cliente."
+          },
+          {
+            "ref": "L040",
+            "tipo": "divergencia_valor",
+            "rep": 2,
+            "acao": "conferir_valor_com_fornecedor",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0018,
+            "ok": true,
+            "justificativa": "O lançamento L040 tem valor de R$ 1.284,62, enquanto a nota NF-025 é de R$ 1.271,90, indicando diferença de valores que deve ser conferida com o fornecedor."
+          },
+          {
+            "ref": "L045",
+            "tipo": "despesa_sem_documento",
+            "rep": 2,
+            "acao": "pedir_comprovante_ao_cliente",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0011228,
+            "ok": true,
+            "justificativa": "Não há documento ou mensagem explicativa para o débito automático da taxa de lixo municipal, portanto é necessário pedir comprovante ao cliente."
+          },
+          {
+            "ref": "L053",
+            "tipo": "despesa_sem_documento",
+            "rep": 2,
+            "acao": "pedir_comprovante_ao_cliente",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0011412,
+            "ok": true,
+            "justificativa": "Não há nota fiscal da ASSOCIACAO COMERCIAL para o pagamento L053, que está sem documento; portanto, deve-se pedir comprovante ao cliente."
+          },
+          {
+            "ref": "L057",
+            "tipo": "despesa_sem_documento",
+            "rep": 2,
+            "acao": "pedir_comprovante_ao_cliente",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0011639999999999999,
+            "ok": true,
+            "justificativa": "Não há nota fiscal do emitente RAIMUNDO MECANICO para justificar o pagamento PIX de R$380,00, portanto é necessário pedir comprovante ao cliente."
+          },
+          {
+            "ref": "L059",
+            "tipo": "divergencia_valor",
+            "rep": 2,
+            "acao": "conferir_valor_com_fornecedor",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0017972,
+            "ok": true,
+            "justificativa": "O valor pago no lançamento L059 (R$ 1.311,28) difere do valor da nota NF-019 (R$ 1.291,90). É necessário conferir o valor com o fornecedor."
+          },
+          {
+            "ref": "NF-021",
+            "tipo": "nota_sem_pagamento",
+            "rep": 2,
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 3,
+            "custo": 0.0016732000000000001,
+            "ok": true,
+            "justificativa": "A nota NF-021 está vencida e não há lançamento de pagamento correspondente no extrato, portanto deve-se verificar se a nota foi paga."
+          },
+          {
+            "ref": "NF-010",
+            "tipo": "nota_sem_pagamento",
+            "rep": 2,
+            "acao": null,
+            "descartada": true,
+            "motivo": "terminated",
+            "passos": 0,
+            "custo": 0,
+            "ok": false
+          },
+          {
+            "ref": "NF-003",
+            "tipo": "nota_sem_pagamento",
+            "rep": 2,
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0012032,
+            "ok": true,
+            "justificativa": "A nota NF-003 está vencida e não há nenhum pagamento correspondente no extrato, indicando que o pagamento deve ser verificado."
+          },
+          {
+            "ref": "NF-038",
+            "tipo": "nota_duplicada",
+            "rep": 2,
+            "acao": "descartar_nota_duplicada",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0013104000000000002,
+            "ok": true,
+            "justificativa": "A nota 599 do emitente Forno Certo Manutenção Ltda aparece apenas uma vez na base, indicando que a duplicidade nos XMLs é um envio repetido da mesma nota, portanto deve ser descartada como duplicada."
+          }
+        ]
+      },
+      "redator": {
+        "passouNaChecagem": {
+          "k": 3,
+          "n": 3,
+          "valor": 1,
+          "ic95": [
+            0.43849391955098227,
+            1
+          ]
+        },
+        "notaMediaDoJuiz": 5,
+        "exemplos": [
+          {
+            "mensagem": "Olá, Aurora. Para finalizarmos o fechamento do mês, solicitamos o envio dos comprovantes dos seguintes itens: 12/10/2026, PIX enviado Pedro Entregas, R$ 120,00; 22/10/2026, débito automático taxa lixo municipal, R$ 150,00; 26/10/2026, pagamento boleto Associação Comercial, R$ 220,00; 28/10/2026, PIX enviado Raimundo Mecânico, R$ 380,00. Agradecemos o envio assim que possível.",
+            "falhas": [],
+            "juiz": {
+              "cordial": true,
+              "clara": true,
+              "sem_promessas": true,
+              "nota": 5,
+              "custo": 0.001776
+            }
+          },
+          {
+            "mensagem": "Prezada Aurora, para concluirmos o fechamento do mês, solicitamos o envio dos comprovantes dos seguintes itens: 12/10/2026, PIX enviado para Pedro Entregas, R$ 120,00; 22/10/2026, débito automático da taxa de lixo municipal, R$ 150,00; 26/10/2026, pagamento do boleto da Associação Comercial, R$ 220,00; 28/10/2026, PIX enviado para Raimundo Mecânico, R$ 380,00. Aguardamos o envio para dar continuidade ao processo. Obrigado.",
+            "falhas": [],
+            "juiz": {
+              "cordial": true,
+              "clara": true,
+              "sem_promessas": true,
+              "nota": 5,
+              "custo": 0.001869
+            }
+          },
+          {
+            "mensagem": "Prezada Aurora, para concluir o fechamento do mês, solicitamos o envio dos comprovantes dos seguintes itens: 12/10/2026, PIX enviado para Pedro Entregas, R$ 120,00; 22/10/2026, débito automático da taxa de lixo municipal, R$ 150,00; 26/10/2026, pagamento do boleto da Associação Comercial, R$ 220,00; 28/10/2026, PIX enviado para Raimundo Mecânico, R$ 380,00. Aguardamos os documentos para dar continuidade ao processo. Obrigado.",
+            "falhas": [],
+            "juiz": {
+              "cordial": true,
+              "clara": true,
+              "sem_promessas": true,
+              "nota": 5,
+              "custo": 0.001806
+            }
+          }
+        ]
+      }
+    }
+  }
+}

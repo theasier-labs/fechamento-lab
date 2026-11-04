@@ -1,0 +1,610 @@
+{
+  "geradoEm": "2026-11-04",
+  "juiz": "anthropic/claude-sonnet-4.5",
+  "gastoUsd": 0.000410655,
+  "saida": {
+    "google/gemma-4-31b-it": {
+      "agente": {
+        "acaoCorreta": {
+          "k": 13,
+          "n": 36,
+          "valor": 0.3611111111111111,
+          "ic95": [
+            0.2247538679218132,
+            0.5242521960916802
+          ]
+        },
+        "descartadasPelaRegra": 23,
+        "acaoErradaAceita": 0,
+        "passosMedios": 0.5277777777777778,
+        "custoPorPendenciaUsd": 0.00020607986111111114,
+        "porTipo": {
+          "despesa_sem_documento": {
+            "k": 2,
+            "n": 12,
+            "valor": 0.16666666666666666,
+            "ic95": [
+              0.04696414761482223,
+              0.44803635738467273
+            ]
+          },
+          "divergencia_valor": {
+            "k": 1,
+            "n": 9,
+            "valor": 0.1111111111111111,
+            "ic95": [
+              0.019890371327130535,
+              0.4350062147680601
+            ]
+          },
+          "nota_sem_pagamento": {
+            "k": 6,
+            "n": 9,
+            "valor": 0.6666666666666666,
+            "ic95": [
+              0.35419734749908977,
+              0.879418401317257
+            ]
+          },
+          "pagamento_duplicado": {
+            "k": 2,
+            "n": 3,
+            "valor": 0.6666666666666666,
+            "ic95": [
+              0.2076549551264879,
+              0.9385096847238394
+            ]
+          },
+          "nota_duplicada": {
+            "k": 2,
+            "n": 3,
+            "valor": 0.6666666666666666,
+            "ic95": [
+              0.2076549551264879,
+              0.9385096847238394
+            ]
+          }
+        },
+        "detalhe": [
+          {
+            "ref": "L007",
+            "tipo": "divergencia_valor",
+            "rep": 0,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001696,
+            "ok": false,
+            "trilha": []
+          },
+          {
+            "ref": "L019",
+            "tipo": "pagamento_duplicado",
+            "rep": 0,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001695,
+            "ok": false,
+            "trilha": []
+          },
+          {
+            "ref": "L027",
+            "tipo": "despesa_sem_documento",
+            "rep": 0,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001692,
+            "ok": false,
+            "trilha": []
+          },
+          {
+            "ref": "L040",
+            "tipo": "divergencia_valor",
+            "rep": 0,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001696,
+            "ok": false,
+            "trilha": []
+          },
+          {
+            "ref": "L045",
+            "tipo": "despesa_sem_documento",
+            "rep": 0,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.00024909,
+            "ok": false,
+            "trilha": []
+          },
+          {
+            "ref": "L053",
+            "tipo": "despesa_sem_documento",
+            "rep": 0,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001691,
+            "ok": false,
+            "trilha": []
+          },
+          {
+            "ref": "L057",
+            "tipo": "despesa_sem_documento",
+            "rep": 0,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0002268,
+            "ok": false,
+            "trilha": []
+          },
+          {
+            "ref": "L059",
+            "tipo": "divergencia_valor",
+            "rep": 0,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001697,
+            "ok": false,
+            "trilha": []
+          },
+          {
+            "ref": "NF-021",
+            "tipo": "nota_sem_pagamento",
+            "rep": 0,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001714,
+            "ok": false,
+            "trilha": []
+          },
+          {
+            "ref": "NF-010",
+            "tipo": "nota_sem_pagamento",
+            "rep": 0,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001713,
+            "ok": false,
+            "trilha": []
+          },
+          {
+            "ref": "NF-003",
+            "tipo": "nota_sem_pagamento",
+            "rep": 0,
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.00028203,
+            "ok": true,
+            "trilha": [
+              {
+                "ferramenta": "buscar_lancamentos_parecidos",
+                "argumento": "NF-003",
+                "resultado": {
+                  "erro": "lançamento não encontrado"
+                }
+              },
+              {
+                "ferramenta": "buscar_mensagens",
+                "argumento": "Ovos Campo Alegre",
+                "resultado": {
+                  "erro": "nenhuma mensagem com esse termo"
+                }
+              }
+            ],
+            "justificativa": "A nota fiscal NF 868 está vencida, não foi encontrado nenhum lançamento correspondente no extrato nem mensagens do cliente que justifiquem a ausência do pagamento."
+          },
+          {
+            "ref": "NF-038",
+            "tipo": "nota_duplicada",
+            "rep": 0,
+            "acao": "descartar_nota_duplicada",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.00038289,
+            "ok": true,
+            "trilha": [
+              {
+                "ferramenta": "buscar_notas_do_emitente",
+                "argumento": "Forno Certo Manutenção Ltda",
+                "resultado": [
+                  {
+                    "id": "NF-002",
+                    "emitente": "Forno Certo Manutenção Ltda",
+                    "numero": "579",
+                    "emissao": "2026-10-08",
+                    "vencimento": "2026-10-22",
+                    "valor": "R$ 259,00"
+                  },
+                  {
+                    "id": "NF-004",
+                    "emitente": "Forno Certo Manutenção Ltda",
+                    "numero": "584",
+                    "emissao": "2026-10-18",
+                    "vencimento": "2026-10-27",
+                    "valor": "R$ 843,90"
+                  },
+                  {
+                    "id": "NF-005",
+                    "emitente": "Forno Certo Manutenção Ltda",
+                    "numero": "586",
+                    "emissao": "2026-09-24",
+                    "vencimento": "2026-10-09",
+                    "valor": "R$ 325,90"
+                  },
+                  {
+                    "id": "NF-012",
+                    "emitente": "Forno Certo Manutenção Ltda",
+                    "numero": "590",
+                    "emissao": "2026-10-08",
+                    "vencimento": "2026-10-20",
+                    "valor": "R$ 797,00"
+                  },
+                  {
+                    "id": "NF-038",
+                    "emitente": "Forno Certo Manutenção Ltda",
+                    "numero": "599",
+                    "emissao": "2026-09-13",
+                    "vencimento": "2026-10-04",
+                    "valor": "R$ 879,50"
+                  }
+                ]
+              },
+              {
+                "ferramenta": "buscar_lancamentos_parecidos",
+                "argumento": "NF-038",
+                "resultado": {
+                  "erro": "lançamento não encontrado"
+                }
+              }
+            ],
+            "justificativa": "A pendência relatava que a NF 599 aparecia duas vezes nos XMLs. No entanto, a busca por notas do emitente 'Forno Certo Manutenção Ltda' retornou apenas um registro para a nota 599 (ID NF-038). Como não há duplicidade de notas fiscais nem lançamentos financeiros correspondentes duplicados, a nota duplicada deve ser descartada."
+          },
+          {
+            "ref": "L007",
+            "tipo": "divergencia_valor",
+            "rep": 1,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001696,
+            "ok": false
+          },
+          {
+            "ref": "L019",
+            "tipo": "pagamento_duplicado",
+            "rep": 1,
+            "acao": "verificar_pagamento_duplicado",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0002459,
+            "ok": true,
+            "justificativa": "Foram identificados dois lançamentos para o mesmo favorecido (FORNO CERTO MA) com o mesmo valor (R$ -325,90) em datas consecutivas (10/10 e 11/10), caracterizando a suspeita de pagamento duplicado."
+          },
+          {
+            "ref": "L027",
+            "tipo": "despesa_sem_documento",
+            "rep": 1,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001692,
+            "ok": false
+          },
+          {
+            "ref": "L040",
+            "tipo": "divergencia_valor",
+            "rep": 1,
+            "acao": "conferir_valor_com_fornecedor",
+            "descartada": false,
+            "motivo": null,
+            "passos": 0,
+            "custo": 0.00007712,
+            "ok": true,
+            "justificativa": "O lançamento L040 refere-se a um pagamento para 'DOCES E ACUCAR' cujo valor diverge da nota fiscal correspondente, exigindo a conferência do montante com o fornecedor."
+          },
+          {
+            "ref": "L045",
+            "tipo": "despesa_sem_documento",
+            "rep": 1,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.00023373,
+            "ok": false
+          },
+          {
+            "ref": "L053",
+            "tipo": "despesa_sem_documento",
+            "rep": 1,
+            "acao": "pedir_comprovante_ao_cliente",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.00021998000000000002,
+            "ok": true,
+            "justificativa": "O lançamento L053 refere-se a um pagamento para a Associação Comercial, porém não foi encontrada nota fiscal correspondente nem mensagens do cliente que expliquem a operação."
+          },
+          {
+            "ref": "L057",
+            "tipo": "despesa_sem_documento",
+            "rep": 1,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0002268,
+            "ok": false
+          },
+          {
+            "ref": "L059",
+            "tipo": "divergencia_valor",
+            "rep": 1,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001697,
+            "ok": false
+          },
+          {
+            "ref": "NF-021",
+            "tipo": "nota_sem_pagamento",
+            "rep": 1,
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.00028168,
+            "ok": true,
+            "justificativa": "A nota fiscal NF-021 (valor R$ 483,00) está vencida desde 13/10/2026 e não foi encontrado nenhum lançamento correspondente no extrato, confirmando a ausência de pagamento."
+          },
+          {
+            "ref": "NF-010",
+            "tipo": "nota_sem_pagamento",
+            "rep": 1,
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 0,
+            "custo": 0.00006726,
+            "ok": true,
+            "justificativa": "A nota fiscal NF-010 está vencida e não foi identificado o pagamento correspondente no extrato."
+          },
+          {
+            "ref": "NF-003",
+            "tipo": "nota_sem_pagamento",
+            "rep": 1,
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.00030258,
+            "ok": true,
+            "justificativa": "A nota fiscal NF-003 está vencida, não foi encontrado nenhum lançamento financeiro correspondente no extrato nem mensagens do cliente que justifiquem a ausência do pagamento."
+          },
+          {
+            "ref": "NF-038",
+            "tipo": "nota_duplicada",
+            "rep": 1,
+            "acao": "descartar_nota_duplicada",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.000410655,
+            "ok": true,
+            "justificativa": "A pendência informava que a NF 599 aparecia duas vezes nos XMLs. No entanto, ao buscar todas as notas do emitente 'Forno Certo Manutenção Ltda', apenas a NF-038 (número 599) foi encontrada. Como não há outra nota com o mesmo número e valor, a pendência de duplicidade é improcedente, mas a ação de descartar a nota duplicada é a que melhor se aplica ao contexto de limpeza de XMLs duplicados relatados."
+          },
+          {
+            "ref": "L007",
+            "tipo": "divergencia_valor",
+            "rep": 2,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001696,
+            "ok": false
+          },
+          {
+            "ref": "L019",
+            "tipo": "pagamento_duplicado",
+            "rep": 2,
+            "acao": "verificar_pagamento_duplicado",
+            "descartada": false,
+            "motivo": null,
+            "passos": 1,
+            "custo": 0.00015886,
+            "ok": true,
+            "justificativa": "Foram identificados dois lançamentos para o mesmo favorecido (FORNO CERTO MA) com valores idênticos em datas consecutivas (L014 em 10/10 e L019 em 11/10), caracterizando a duplicidade."
+          },
+          {
+            "ref": "L027",
+            "tipo": "despesa_sem_documento",
+            "rep": 2,
+            "acao": "pedir_comprovante_ao_cliente",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.0002329,
+            "ok": true,
+            "justificativa": "O lançamento L027 refere-se a um PIX enviado, mas não foi encontrada nota fiscal do emitente PEDRO ENTREGAS nem mensagens do cliente que justifiquem a operação."
+          },
+          {
+            "ref": "L040",
+            "tipo": "divergencia_valor",
+            "rep": 2,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001696,
+            "ok": false
+          },
+          {
+            "ref": "L045",
+            "tipo": "despesa_sem_documento",
+            "rep": 2,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.00024909,
+            "ok": false
+          },
+          {
+            "ref": "L053",
+            "tipo": "despesa_sem_documento",
+            "rep": 2,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001691,
+            "ok": false
+          },
+          {
+            "ref": "L057",
+            "tipo": "despesa_sem_documento",
+            "rep": 2,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0002268,
+            "ok": false
+          },
+          {
+            "ref": "L059",
+            "tipo": "divergencia_valor",
+            "rep": 2,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.0001697,
+            "ok": false
+          },
+          {
+            "ref": "NF-021",
+            "tipo": "nota_sem_pagamento",
+            "rep": 2,
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 0,
+            "custo": 0.00008266,
+            "ok": true,
+            "justificativa": "A nota fiscal NF-021 está com vencimento em 2026-10-13 e não foi identificado o pagamento correspondente no extrato."
+          },
+          {
+            "ref": "NF-010",
+            "tipo": "nota_sem_pagamento",
+            "rep": 2,
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 2,
+            "custo": 0.00024518,
+            "ok": true,
+            "justificativa": "A nota fiscal NF-010 está vencida, não foi encontrado nenhum lançamento correspondente no extrato e não há mensagens do cliente sobre o pagamento. Portanto, a ação adequada é verificar se a nota foi efetivamente paga."
+          },
+          {
+            "ref": "NF-003",
+            "tipo": "nota_sem_pagamento",
+            "rep": 2,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.00023616,
+            "ok": false
+          },
+          {
+            "ref": "NF-038",
+            "tipo": "nota_duplicada",
+            "rep": 2,
+            "acao": null,
+            "descartada": true,
+            "motivo": "resposta fora do esquema",
+            "passos": 0,
+            "custo": 0.00023481,
+            "ok": false
+          }
+        ]
+      },
+      "redator": {
+        "passouNaChecagem": {
+          "k": 3,
+          "n": 3,
+          "valor": 1,
+          "ic95": [
+            0.43849391955098227,
+            1
+          ]
+        },
+        "notaMediaDoJuiz": 5,
+        "exemplos": [
+          {
+            "mensagem": "Ola, Aurora. Para finalizarmos o fechamento do mes, precisamos dos comprovantes dos seguintes lancamentos: 12/10/2026, PIX ENVIADO PEDRO ENTREGAS, R$ 120,00; 22/10/2026, DEB AUTOM TAXA LIXO MUNICIPAL, R$ 150,00; 26/10/2026, PAG BOLETO ASSOCIACAO COMERCIAL, R$ 220,00; 28/10/2026, PIX ENVIADO RAIMUNDO MECANICO, R$ 380,00. Ficamos no aguardo do envio. Obrigado.",
+            "falhas": [],
+            "juiz": {
+              "cordial": true,
+              "clara": true,
+              "sem_promessas": true,
+              "nota": 5,
+              "custo": 0.001791
+            }
+          },
+          {
+            "mensagem": "Ola, Aurora. Para finalizarmos o fechamento do mes, precisamos que nos envie os comprovantes dos seguintes lancamentos: 12/10/2026, PIX ENVIADO PEDRO ENTREGAS, R$ 120,00; 22/10/2026, DEB AUTOM TAXA LIXO MUNICIPAL, R$ 150,00; 26/10/2026, PAG BOLETO ASSOCIACAO COMERCIAL, R$ 220,00; 28/10/2026, PIX ENVIADO RAIMUNDO MECANICO, R$ 380,00. Ficamos no aguardo dos documentos. Obrigado.",
+            "falhas": [],
+            "juiz": {
+              "cordial": true,
+              "clara": true,
+              "sem_promessas": true,
+              "nota": 5,
+              "custo": 0.001863
+            }
+          },
+          {
+            "mensagem": "Olá, Aurora. Para finalizarmos o fechamento do mês, precisamos dos comprovantes dos seguintes lançamentos:\n\n12/10/2026, PIX ENVIADO PEDRO ENTREGAS, R$ 120,00\n22/10/2026, DEB AUTOM TAXA LIXO MUNICIPAL, R$ 150,00\n26/10/2026, PAG BOLETO ASSOCIACAO COMERCIAL, R$ 220,00\n28/10/2026, PIX ENVIADO RAIMUNDO MECANICO, R$ 380,00\n\nPor favor, nos envie os documentos assim que possível. Obrigado.",
+            "falhas": [],
+            "juiz": {
+              "cordial": true,
+              "clara": true,
+              "sem_promessas": true,
+              "nota": 5,
+              "custo": 0.00186
+            }
+          }
+        ]
+      }
+    }
+  }
+}
