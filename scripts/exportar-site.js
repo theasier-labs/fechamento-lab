@@ -9,7 +9,7 @@ import { vincular } from '../src/ia/vincular.js';
 import { verificarCamposExtraidos } from '../src/motor/verificar.js';
 import { rodarMotor } from '../src/motor/dataset.js';
 
-const SITE = process.env.SITE ?? '/Users/edusc/Desenvolvimento/Workspaces/workspace_theasier/theasier-site';
+const SITE = process.env.SITE ?? new URL('../../theasier-site', import.meta.url).pathname;
 const dir = new URL('..', import.meta.url).pathname;
 const J = (f) => JSON.parse(readFileSync(`${dir}${f}`, 'utf8'));
 const gab = J('dataset/gabarito.json'); const cen = J('dataset/cenario.json'); const ext = J('resultados/ia-extracao.json').resultados;
