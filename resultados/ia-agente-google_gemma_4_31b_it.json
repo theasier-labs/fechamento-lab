@@ -1,7 +1,7 @@
 {
   "geradoEm": "2026-11-04",
   "juiz": "anthropic/claude-sonnet-4.5",
-  "gastoUsd": 0.000410655,
+  "gastoUsd": 0,
   "saida": {
     "google/gemma-4-31b-it": {
       "agente": {
@@ -76,7 +76,8 @@
             "passos": 0,
             "custo": 0.0001696,
             "ok": false,
-            "trilha": []
+            "trilha": [],
+            "evidencias": []
           },
           {
             "ref": "L019",
@@ -88,7 +89,8 @@
             "passos": 0,
             "custo": 0.0001695,
             "ok": false,
-            "trilha": []
+            "trilha": [],
+            "evidencias": []
           },
           {
             "ref": "L027",
@@ -100,7 +102,8 @@
             "passos": 0,
             "custo": 0.0001692,
             "ok": false,
-            "trilha": []
+            "trilha": [],
+            "evidencias": []
           },
           {
             "ref": "L040",
@@ -112,7 +115,8 @@
             "passos": 0,
             "custo": 0.0001696,
             "ok": false,
-            "trilha": []
+            "trilha": [],
+            "evidencias": []
           },
           {
             "ref": "L045",
@@ -124,7 +128,8 @@
             "passos": 0,
             "custo": 0.00024909,
             "ok": false,
-            "trilha": []
+            "trilha": [],
+            "evidencias": []
           },
           {
             "ref": "L053",
@@ -136,7 +141,8 @@
             "passos": 0,
             "custo": 0.0001691,
             "ok": false,
-            "trilha": []
+            "trilha": [],
+            "evidencias": []
           },
           {
             "ref": "L057",
@@ -148,7 +154,8 @@
             "passos": 0,
             "custo": 0.0002268,
             "ok": false,
-            "trilha": []
+            "trilha": [],
+            "evidencias": []
           },
           {
             "ref": "L059",
@@ -160,7 +167,8 @@
             "passos": 0,
             "custo": 0.0001697,
             "ok": false,
-            "trilha": []
+            "trilha": [],
+            "evidencias": []
           },
           {
             "ref": "NF-021",
@@ -172,7 +180,8 @@
             "passos": 0,
             "custo": 0.0001714,
             "ok": false,
-            "trilha": []
+            "trilha": [],
+            "evidencias": []
           },
           {
             "ref": "NF-010",
@@ -184,7 +193,8 @@
             "passos": 0,
             "custo": 0.0001713,
             "ok": false,
-            "trilha": []
+            "trilha": [],
+            "evidencias": []
           },
           {
             "ref": "NF-003",
@@ -212,7 +222,10 @@
                 }
               }
             ],
-            "justificativa": "A nota fiscal NF 868 está vencida, não foi encontrado nenhum lançamento correspondente no extrato nem mensagens do cliente que justifiquem a ausência do pagamento."
+            "justificativa": "A nota fiscal NF 868 está vencida, não foi encontrado nenhum lançamento correspondente no extrato nem mensagens do cliente que justifiquem a ausência do pagamento.",
+            "evidencias": [
+              "NF-003"
+            ]
           },
           {
             "ref": "NF-038",
@@ -279,7 +292,10 @@
                 }
               }
             ],
-            "justificativa": "A pendência relatava que a NF 599 aparecia duas vezes nos XMLs. No entanto, a busca por notas do emitente 'Forno Certo Manutenção Ltda' retornou apenas um registro para a nota 599 (ID NF-038). Como não há duplicidade de notas fiscais nem lançamentos financeiros correspondentes duplicados, a nota duplicada deve ser descartada."
+            "justificativa": "A pendência relatava que a NF 599 aparecia duas vezes nos XMLs. No entanto, a busca por notas do emitente 'Forno Certo Manutenção Ltda' retornou apenas um registro para a nota 599 (ID NF-038). Como não há duplicidade de notas fiscais nem lançamentos financeiros correspondentes duplicados, a nota duplicada deve ser descartada.",
+            "evidencias": [
+              "NF-038"
+            ]
           },
           {
             "ref": "L007",
@@ -290,7 +306,8 @@
             "motivo": "resposta fora do esquema",
             "passos": 0,
             "custo": 0.0001696,
-            "ok": false
+            "ok": false,
+            "evidencias": []
           },
           {
             "ref": "L019",
@@ -302,7 +319,11 @@
             "passos": 2,
             "custo": 0.0002459,
             "ok": true,
-            "justificativa": "Foram identificados dois lançamentos para o mesmo favorecido (FORNO CERTO MA) com o mesmo valor (R$ -325,90) em datas consecutivas (10/10 e 11/10), caracterizando a suspeita de pagamento duplicado."
+            "justificativa": "Foram identificados dois lançamentos para o mesmo favorecido (FORNO CERTO MA) com o mesmo valor (R$ -325,90) em datas consecutivas (10/10 e 11/10), caracterizando a suspeita de pagamento duplicado.",
+            "evidencias": [
+              "L014",
+              "L019"
+            ]
           },
           {
             "ref": "L027",
@@ -313,7 +334,8 @@
             "motivo": "resposta fora do esquema",
             "passos": 0,
             "custo": 0.0001692,
-            "ok": false
+            "ok": false,
+            "evidencias": []
           },
           {
             "ref": "L040",
@@ -325,7 +347,10 @@
             "passos": 0,
             "custo": 0.00007712,
             "ok": true,
-            "justificativa": "O lançamento L040 refere-se a um pagamento para 'DOCES E ACUCAR' cujo valor diverge da nota fiscal correspondente, exigindo a conferência do montante com o fornecedor."
+            "justificativa": "O lançamento L040 refere-se a um pagamento para 'DOCES E ACUCAR' cujo valor diverge da nota fiscal correspondente, exigindo a conferência do montante com o fornecedor.",
+            "evidencias": [
+              "L040"
+            ]
           },
           {
             "ref": "L045",
@@ -336,7 +361,8 @@
             "motivo": "resposta fora do esquema",
             "passos": 0,
             "custo": 0.00023373,
-            "ok": false
+            "ok": false,
+            "evidencias": []
           },
           {
             "ref": "L053",
@@ -348,7 +374,10 @@
             "passos": 2,
             "custo": 0.00021998000000000002,
             "ok": true,
-            "justificativa": "O lançamento L053 refere-se a um pagamento para a Associação Comercial, porém não foi encontrada nota fiscal correspondente nem mensagens do cliente que expliquem a operação."
+            "justificativa": "O lançamento L053 refere-se a um pagamento para a Associação Comercial, porém não foi encontrada nota fiscal correspondente nem mensagens do cliente que expliquem a operação.",
+            "evidencias": [
+              "L053"
+            ]
           },
           {
             "ref": "L057",
@@ -359,7 +388,8 @@
             "motivo": "resposta fora do esquema",
             "passos": 0,
             "custo": 0.0002268,
-            "ok": false
+            "ok": false,
+            "evidencias": []
           },
           {
             "ref": "L059",
@@ -370,7 +400,8 @@
             "motivo": "resposta fora do esquema",
             "passos": 0,
             "custo": 0.0001697,
-            "ok": false
+            "ok": false,
+            "evidencias": []
           },
           {
             "ref": "NF-021",
@@ -382,7 +413,10 @@
             "passos": 2,
             "custo": 0.00028168,
             "ok": true,
-            "justificativa": "A nota fiscal NF-021 (valor R$ 483,00) está vencida desde 13/10/2026 e não foi encontrado nenhum lançamento correspondente no extrato, confirmando a ausência de pagamento."
+            "justificativa": "A nota fiscal NF-021 (valor R$ 483,00) está vencida desde 13/10/2026 e não foi encontrado nenhum lançamento correspondente no extrato, confirmando a ausência de pagamento.",
+            "evidencias": [
+              "NF-021"
+            ]
           },
           {
             "ref": "NF-010",
@@ -394,7 +428,10 @@
             "passos": 0,
             "custo": 0.00006726,
             "ok": true,
-            "justificativa": "A nota fiscal NF-010 está vencida e não foi identificado o pagamento correspondente no extrato."
+            "justificativa": "A nota fiscal NF-010 está vencida e não foi identificado o pagamento correspondente no extrato.",
+            "evidencias": [
+              "NF-010"
+            ]
           },
           {
             "ref": "NF-003",
@@ -406,7 +443,10 @@
             "passos": 2,
             "custo": 0.00030258,
             "ok": true,
-            "justificativa": "A nota fiscal NF-003 está vencida, não foi encontrado nenhum lançamento financeiro correspondente no extrato nem mensagens do cliente que justifiquem a ausência do pagamento."
+            "justificativa": "A nota fiscal NF-003 está vencida, não foi encontrado nenhum lançamento financeiro correspondente no extrato nem mensagens do cliente que justifiquem a ausência do pagamento.",
+            "evidencias": [
+              "NF-003"
+            ]
           },
           {
             "ref": "NF-038",
@@ -418,7 +458,10 @@
             "passos": 2,
             "custo": 0.000410655,
             "ok": true,
-            "justificativa": "A pendência informava que a NF 599 aparecia duas vezes nos XMLs. No entanto, ao buscar todas as notas do emitente 'Forno Certo Manutenção Ltda', apenas a NF-038 (número 599) foi encontrada. Como não há outra nota com o mesmo número e valor, a pendência de duplicidade é improcedente, mas a ação de descartar a nota duplicada é a que melhor se aplica ao contexto de limpeza de XMLs duplicados relatados."
+            "justificativa": "A pendência informava que a NF 599 aparecia duas vezes nos XMLs. No entanto, ao buscar todas as notas do emitente 'Forno Certo Manutenção Ltda', apenas a NF-038 (número 599) foi encontrada. Como não há outra nota com o mesmo número e valor, a pendência de duplicidade é improcedente, mas a ação de descartar a nota duplicada é a que melhor se aplica ao contexto de limpeza de XMLs duplicados relatados.",
+            "evidencias": [
+              "NF-038"
+            ]
           },
           {
             "ref": "L007",
@@ -429,7 +472,8 @@
             "motivo": "resposta fora do esquema",
             "passos": 0,
             "custo": 0.0001696,
-            "ok": false
+            "ok": false,
+            "evidencias": []
           },
           {
             "ref": "L019",
@@ -441,7 +485,11 @@
             "passos": 1,
             "custo": 0.00015886,
             "ok": true,
-            "justificativa": "Foram identificados dois lançamentos para o mesmo favorecido (FORNO CERTO MA) com valores idênticos em datas consecutivas (L014 em 10/10 e L019 em 11/10), caracterizando a duplicidade."
+            "justificativa": "Foram identificados dois lançamentos para o mesmo favorecido (FORNO CERTO MA) com valores idênticos em datas consecutivas (L014 em 10/10 e L019 em 11/10), caracterizando a duplicidade.",
+            "evidencias": [
+              "L019",
+              "L014"
+            ]
           },
           {
             "ref": "L027",
@@ -453,7 +501,10 @@
             "passos": 2,
             "custo": 0.0002329,
             "ok": true,
-            "justificativa": "O lançamento L027 refere-se a um PIX enviado, mas não foi encontrada nota fiscal do emitente PEDRO ENTREGAS nem mensagens do cliente que justifiquem a operação."
+            "justificativa": "O lançamento L027 refere-se a um PIX enviado, mas não foi encontrada nota fiscal do emitente PEDRO ENTREGAS nem mensagens do cliente que justifiquem a operação.",
+            "evidencias": [
+              "L027"
+            ]
           },
           {
             "ref": "L040",
@@ -464,7 +515,8 @@
             "motivo": "resposta fora do esquema",
             "passos": 0,
             "custo": 0.0001696,
-            "ok": false
+            "ok": false,
+            "evidencias": []
           },
           {
             "ref": "L045",
@@ -475,7 +527,8 @@
             "motivo": "resposta fora do esquema",
             "passos": 0,
             "custo": 0.00024909,
-            "ok": false
+            "ok": false,
+            "evidencias": []
           },
           {
             "ref": "L053",
@@ -486,7 +539,8 @@
             "motivo": "resposta fora do esquema",
             "passos": 0,
             "custo": 0.0001691,
-            "ok": false
+            "ok": false,
+            "evidencias": []
           },
           {
             "ref": "L057",
@@ -497,7 +551,8 @@
             "motivo": "resposta fora do esquema",
             "passos": 0,
             "custo": 0.0002268,
-            "ok": false
+            "ok": false,
+            "evidencias": []
           },
           {
             "ref": "L059",
@@ -508,7 +563,8 @@
             "motivo": "resposta fora do esquema",
             "passos": 0,
             "custo": 0.0001697,
-            "ok": false
+            "ok": false,
+            "evidencias": []
           },
           {
             "ref": "NF-021",
@@ -520,7 +576,10 @@
             "passos": 0,
             "custo": 0.00008266,
             "ok": true,
-            "justificativa": "A nota fiscal NF-021 está com vencimento em 2026-10-13 e não foi identificado o pagamento correspondente no extrato."
+            "justificativa": "A nota fiscal NF-021 está com vencimento em 2026-10-13 e não foi identificado o pagamento correspondente no extrato.",
+            "evidencias": [
+              "NF-021"
+            ]
           },
           {
             "ref": "NF-010",
@@ -532,7 +591,10 @@
             "passos": 2,
             "custo": 0.00024518,
             "ok": true,
-            "justificativa": "A nota fiscal NF-010 está vencida, não foi encontrado nenhum lançamento correspondente no extrato e não há mensagens do cliente sobre o pagamento. Portanto, a ação adequada é verificar se a nota foi efetivamente paga."
+            "justificativa": "A nota fiscal NF-010 está vencida, não foi encontrado nenhum lançamento correspondente no extrato e não há mensagens do cliente sobre o pagamento. Portanto, a ação adequada é verificar se a nota foi efetivamente paga.",
+            "evidencias": [
+              "NF-010"
+            ]
           },
           {
             "ref": "NF-003",
@@ -543,7 +605,8 @@
             "motivo": "resposta fora do esquema",
             "passos": 0,
             "custo": 0.00023616,
-            "ok": false
+            "ok": false,
+            "evidencias": []
           },
           {
             "ref": "NF-038",
@@ -554,7 +617,8 @@
             "motivo": "resposta fora do esquema",
             "passos": 0,
             "custo": 0.00023481,
-            "ok": false
+            "ok": false,
+            "evidencias": []
           }
         ]
       },

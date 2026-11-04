@@ -1,7 +1,7 @@
 {
   "geradoEm": "2026-11-04",
   "juiz": "anthropic/claude-sonnet-4.5",
-  "gastoUsd": 0.0036969999999999998,
+  "gastoUsd": 0,
   "saida": {
     "anthropic/claude-haiku-4.5": {
       "agente": {
@@ -130,7 +130,11 @@
                 }
               }
             ],
-            "justificativa": "O lançamento L007 registra pagamento de R$ 371,75 em 2026-10-05, enquanto a nota NF-033 da Abrigo Seguradora tem valor de R$ 365,90. A diferença de R$ 5,85 deve ser esclarecida com o fornecedor para confirmar se houve acréscimo legítimo (juros, multa) ou erro no pagamento."
+            "justificativa": "O lançamento L007 registra pagamento de R$ 371,75 em 2026-10-05, enquanto a nota NF-033 da Abrigo Seguradora tem valor de R$ 365,90. A diferença de R$ 5,85 deve ser esclarecida com o fornecedor para confirmar se houve acréscimo legítimo (juros, multa) ou erro no pagamento.",
+            "evidencias": [
+              "L007",
+              "NF-033"
+            ]
           },
           {
             "ref": "L019",
@@ -173,7 +177,11 @@
                 }
               }
             ],
-            "justificativa": "Confirmado pagamento duplicado: L014 (2026-10-10) e L019 (2026-10-11) apresentam mesma descrição 'PAG BOLETO FORNO CERTO MA', mesmo valor (R$ -325,90) e datas consecutivas. Sem mensagens do cliente justificando os dois pagamentos, trata-se de duplicação que deve ser verificada com o fornecedor para possível devolução."
+            "justificativa": "Confirmado pagamento duplicado: L014 (2026-10-10) e L019 (2026-10-11) apresentam mesma descrição 'PAG BOLETO FORNO CERTO MA', mesmo valor (R$ -325,90) e datas consecutivas. Sem mensagens do cliente justificando os dois pagamentos, trata-se de duplicação que deve ser verificada com o fornecedor para possível devolução.",
+            "evidencias": [
+              "L019",
+              "L014"
+            ]
           },
           {
             "ref": "L027",
@@ -208,7 +216,10 @@
                 }
               }
             ],
-            "justificativa": "O PIX de R$ 12.000 enviado em 2026-10-12 para Pedro Entregas não possui nota fiscal, mensagem explicativa ou lançamentos similares que o justifiquem. Trata-se de saída no extrato sem documentação comprobatória. A ação apropriada é solicitar ao cliente o comprovante ou documento que explique este pagamento."
+            "justificativa": "O PIX de R$ 12.000 enviado em 2026-10-12 para Pedro Entregas não possui nota fiscal, mensagem explicativa ou lançamentos similares que o justifiquem. Trata-se de saída no extrato sem documentação comprobatória. A ação apropriada é solicitar ao cliente o comprovante ou documento que explique este pagamento.",
+            "evidencias": [
+              "L027"
+            ]
           },
           {
             "ref": "L040",
@@ -274,7 +285,11 @@
                 }
               }
             ],
-            "justificativa": "O lançamento L040 registra um pagamento de R$ 1.284,62 para Doces e Açúcar, enquanto a nota NF-025 (vencida em 2026-10-17) possui valor de R$ 1.271,90. A diferença de R$ 12,72 (aproximadamente 1%) sugere uma discrepância que deve ser esclarecida com o fornecedor antes de finalizar o fechamento contábil."
+            "justificativa": "O lançamento L040 registra um pagamento de R$ 1.284,62 para Doces e Açúcar, enquanto a nota NF-025 (vencida em 2026-10-17) possui valor de R$ 1.271,90. A diferença de R$ 12,72 (aproximadamente 1%) sugere uma discrepância que deve ser esclarecida com o fornecedor antes de finalizar o fechamento contábil.",
+            "evidencias": [
+              "L040",
+              "NF-025"
+            ]
           },
           {
             "ref": "L045",
@@ -312,7 +327,10 @@
                 }
               }
             ],
-            "justificativa": "O lançamento L045 é um débito automático de R$ 150,00 (não R$ 15.000 como indicado na pendência) referente a taxa de lixo municipal, sem documento fiscal ou comprovante associado. Não há mensagens do cliente explicando o débito, nem lançamentos parecidos que indiquem duplicação. Trata-se de uma saída no extrato sem documentação que a explique, portanto a ação apropriada é solicitar comprovante ao cliente."
+            "justificativa": "O lançamento L045 é um débito automático de R$ 150,00 (não R$ 15.000 como indicado na pendência) referente a taxa de lixo municipal, sem documento fiscal ou comprovante associado. Não há mensagens do cliente explicando o débito, nem lançamentos parecidos que indiquem duplicação. Trata-se de uma saída no extrato sem documentação que a explique, portanto a ação apropriada é solicitar comprovante ao cliente.",
+            "evidencias": [
+              "L045"
+            ]
           },
           {
             "ref": "L053",
@@ -350,7 +368,10 @@
                 }
               }
             ],
-            "justificativa": "O lançamento L053 registra um pagamento de R$ 220,00 (não R$ 22.000 como indicado na pendência) para Associação Comercial via boleto, sem qualquer documento fiscal ou comprovante associado. Não há notas, mensagens ou lançamentos relacionados que expliquem esta saída. Como se trata de uma saída no extrato sem documentação que a justifique, a ação apropriada é solicitar ao cliente o comprovante do boleto ou documento que explique este pagamento."
+            "justificativa": "O lançamento L053 registra um pagamento de R$ 220,00 (não R$ 22.000 como indicado na pendência) para Associação Comercial via boleto, sem qualquer documento fiscal ou comprovante associado. Não há notas, mensagens ou lançamentos relacionados que expliquem esta saída. Como se trata de uma saída no extrato sem documentação que a justifique, a ação apropriada é solicitar ao cliente o comprovante do boleto ou documento que explique este pagamento.",
+            "evidencias": [
+              "L053"
+            ]
           },
           {
             "ref": "L057",
@@ -381,7 +402,10 @@
                 }
               }
             ],
-            "justificativa": "O lançamento L057 registra uma saída de R$ 380,00 (não R$ 38.000 como indicado na pendência) via PIX para Raimundo Mecanico sem qualquer documento fiscal, nota ou comprovante associado. Trata-se de pagamento sem documentação que o explique. A ação apropriada é solicitar ao cliente o comprovante do serviço/produto fornecido por Raimundo Mecanico para regularizar este lançamento contábil."
+            "justificativa": "O lançamento L057 registra uma saída de R$ 380,00 (não R$ 38.000 como indicado na pendência) via PIX para Raimundo Mecanico sem qualquer documento fiscal, nota ou comprovante associado. Trata-se de pagamento sem documentação que o explique. A ação apropriada é solicitar ao cliente o comprovante do serviço/produto fornecido por Raimundo Mecanico para regularizar este lançamento contábil.",
+            "evidencias": [
+              "L057"
+            ]
           },
           {
             "ref": "L059",
@@ -447,7 +471,11 @@
                 }
               }
             ],
-            "justificativa": "O PIX enviado (L059) foi de R$ 1.311,28, mas a nota fiscal NF-019 da Potiguar Energ tem valor de R$ 1.291,90. Há uma diferença de R$ 19,38 que precisa ser esclarecida com o fornecedor para verificar se houve acréscimo legítimo (juros, multa) ou erro no pagamento."
+            "justificativa": "O PIX enviado (L059) foi de R$ 1.311,28, mas a nota fiscal NF-019 da Potiguar Energ tem valor de R$ 1.291,90. Há uma diferença de R$ 19,38 que precisa ser esclarecida com o fornecedor para verificar se houve acréscimo legítimo (juros, multa) ou erro no pagamento.",
+            "evidencias": [
+              "L059",
+              "NF-019"
+            ]
           },
           {
             "ref": "NF-021",
@@ -502,7 +530,10 @@
                 ]
               }
             ],
-            "justificativa": "A nota fiscal NF-021 (número 380, emitida em 2026-09-22, vencimento 2026-10-13) no valor de R$ 483,00 está vencida desde 2026-10-13 e não há lançamento de pagamento correspondente no extrato. Nenhuma busca retornou pagamento associado. Recomenda-se verificar junto ao fornecedor Gás Cabo Azul Distribuidora Ltda o status do pagamento desta nota."
+            "justificativa": "A nota fiscal NF-021 (número 380, emitida em 2026-09-22, vencimento 2026-10-13) no valor de R$ 483,00 está vencida desde 2026-10-13 e não há lançamento de pagamento correspondente no extrato. Nenhuma busca retornou pagamento associado. Recomenda-se verificar junto ao fornecedor Gás Cabo Azul Distribuidora Ltda o status do pagamento desta nota.",
+            "evidencias": [
+              "NF-021"
+            ]
           },
           {
             "ref": "NF-010",
@@ -573,7 +604,10 @@
                 ]
               }
             ],
-            "justificativa": "A nota fiscal NF-010 (número 327) da Papelaria Ponto Final Ltda, no valor de R$ 100,90, venceu em 2026-10-11 e não há lançamento de pagamento correspondente no extrato. Não há duplicatas da mesma nota. A ação apropriada é verificar se a nota foi efetivamente paga junto ao fornecedor ou se o pagamento está pendente."
+            "justificativa": "A nota fiscal NF-010 (número 327) da Papelaria Ponto Final Ltda, no valor de R$ 100,90, venceu em 2026-10-11 e não há lançamento de pagamento correspondente no extrato. Não há duplicatas da mesma nota. A ação apropriada é verificar se a nota foi efetivamente paga junto ao fornecedor ou se o pagamento está pendente.",
+            "evidencias": [
+              "NF-010"
+            ]
           },
           {
             "ref": "NF-003",
@@ -675,7 +709,10 @@
                 }
               }
             ],
-            "justificativa": "A nota fiscal NF-003 (número 868 de Ovos Campo Alegre Ltda) venceu em 2026-10-20 com valor de R$ 704,90. Não foi encontrado lançamento correspondente no extrato, nenhuma duplicata da nota e nenhuma mensagem explicando o atraso. A ação apropriada é verificar se a nota foi efetivamente paga junto ao fornecedor, pois pode estar em atraso ou o pagamento pode não ter sido registrado no sistema."
+            "justificativa": "A nota fiscal NF-003 (número 868 de Ovos Campo Alegre Ltda) venceu em 2026-10-20 com valor de R$ 704,90. Não foi encontrado lançamento correspondente no extrato, nenhuma duplicata da nota e nenhuma mensagem explicando o atraso. A ação apropriada é verificar se a nota foi efetivamente paga junto ao fornecedor, pois pode estar em atraso ou o pagamento pode não ter sido registrado no sistema.",
+            "evidencias": [
+              "NF-003"
+            ]
           },
           {
             "ref": "NF-038",
@@ -754,7 +791,10 @@
                 }
               }
             ],
-            "justificativa": "Investigação concluída: A nota NF-038 (número 599 de Forno Certo Manutenção Ltda, valor R$ 879,50, emissão 2026-09-13) aparece apenas uma vez no sistema de notas fiscais. A pendência relata duplicação nos XMLs, mas não há evidência de lançamento duplicado no extrato. Recomenda-se descartar a nota duplicada dos XMLs, mantendo apenas o registro NF-038 no sistema contábil."
+            "justificativa": "Investigação concluída: A nota NF-038 (número 599 de Forno Certo Manutenção Ltda, valor R$ 879,50, emissão 2026-09-13) aparece apenas uma vez no sistema de notas fiscais. A pendência relata duplicação nos XMLs, mas não há evidência de lançamento duplicado no extrato. Recomenda-se descartar a nota duplicada dos XMLs, mantendo apenas o registro NF-038 no sistema contábil.",
+            "evidencias": [
+              "NF-038"
+            ]
           },
           {
             "ref": "L007",
@@ -766,7 +806,11 @@
             "passos": 3,
             "custo": 0.007274000000000001,
             "ok": true,
-            "justificativa": "O lançamento L007 registra pagamento de R$ 371,75 em 2026-10-05, enquanto a nota fiscal NF-033 da Abrigo Seguradora tem valor de R$ 365,90. A diferença de R$ 5,85 deve ser esclarecida com o fornecedor para confirmar se houve acréscimo legítimo (juros, multa) ou erro no pagamento."
+            "justificativa": "O lançamento L007 registra pagamento de R$ 371,75 em 2026-10-05, enquanto a nota fiscal NF-033 da Abrigo Seguradora tem valor de R$ 365,90. A diferença de R$ 5,85 deve ser esclarecida com o fornecedor para confirmar se houve acréscimo legítimo (juros, multa) ou erro no pagamento.",
+            "evidencias": [
+              "L007",
+              "NF-033"
+            ]
           },
           {
             "ref": "L019",
@@ -778,7 +822,11 @@
             "passos": 3,
             "custo": 0.006462000000000001,
             "ok": true,
-            "justificativa": "Identificados dois lançamentos idênticos ao Forno Certo MA: L014 (2026-10-10) e L019 (2026-10-11), ambos no valor de R$ -325,90 com mesma descrição. Trata-se de pagamento duplicado que deve ser verificado com o fornecedor para identificar qual lançamento é o correto e proceder com a correção contábil."
+            "justificativa": "Identificados dois lançamentos idênticos ao Forno Certo MA: L014 (2026-10-10) e L019 (2026-10-11), ambos no valor de R$ -325,90 com mesma descrição. Trata-se de pagamento duplicado que deve ser verificado com o fornecedor para identificar qual lançamento é o correto e proceder com a correção contábil.",
+            "evidencias": [
+              "L019",
+              "L014"
+            ]
           },
           {
             "ref": "L027",
@@ -790,7 +838,10 @@
             "passos": 3,
             "custo": 0.006757000000000001,
             "ok": true,
-            "justificativa": "O lançamento L027 registra um PIX de R$ 120,00 enviado para Pedro Entregas sem qualquer documento fiscal ou comprovante associado. Não foram encontradas notas fiscais do emitente nem mensagens explicativas. Conforme as regras, saídas no extrato sem nota fiscal nem documento que as explique devem resultar em solicitação de comprovante ao cliente."
+            "justificativa": "O lançamento L027 registra um PIX de R$ 120,00 enviado para Pedro Entregas sem qualquer documento fiscal ou comprovante associado. Não foram encontradas notas fiscais do emitente nem mensagens explicativas. Conforme as regras, saídas no extrato sem nota fiscal nem documento que as explique devem resultar em solicitação de comprovante ao cliente.",
+            "evidencias": [
+              "L027"
+            ]
           },
           {
             "ref": "L040",
@@ -802,7 +853,11 @@
             "passos": 3,
             "custo": 0.007581,
             "ok": true,
-            "justificativa": "O lançamento L040 registra um pagamento de R$ 1.284,62 em 2026-10-19 para 'Doces e Açúcar'. A nota fiscal mais próxima em valor é NF-025 (R$ 1.271,90), vencida em 2026-10-17. A diferença de R$ 12,72 sugere discrepância entre o valor pago e o valor da nota. É necessário conferir com o fornecedor se houve acréscimos (juros, multa) ou se o pagamento foi feito por valor incorreto."
+            "justificativa": "O lançamento L040 registra um pagamento de R$ 1.284,62 em 2026-10-19 para 'Doces e Açúcar'. A nota fiscal mais próxima em valor é NF-025 (R$ 1.271,90), vencida em 2026-10-17. A diferença de R$ 12,72 sugere discrepância entre o valor pago e o valor da nota. É necessário conferir com o fornecedor se houve acréscimos (juros, multa) ou se o pagamento foi feito por valor incorreto.",
+            "evidencias": [
+              "L040",
+              "NF-025"
+            ]
           },
           {
             "ref": "L045",
@@ -814,7 +869,10 @@
             "passos": 3,
             "custo": 0.006557,
             "ok": true,
-            "justificativa": "O lançamento L045 é um débito automático de R$ 150,00 referente a taxa de lixo municipal, sem documento fiscal ou comprovante associado. Não há mensagens do cliente explicando o débito, nem lançamentos parecidos que indiquem duplicação. Trata-se de uma saída no extrato sem documentação que a explique, caracterizando a situação descrita na ação 'pedir_comprovante_ao_cliente'."
+            "justificativa": "O lançamento L045 é um débito automático de R$ 150,00 referente a taxa de lixo municipal, sem documento fiscal ou comprovante associado. Não há mensagens do cliente explicando o débito, nem lançamentos parecidos que indiquem duplicação. Trata-se de uma saída no extrato sem documentação que a explique, caracterizando a situação descrita na ação 'pedir_comprovante_ao_cliente'.",
+            "evidencias": [
+              "L045"
+            ]
           },
           {
             "ref": "L053",
@@ -826,7 +884,10 @@
             "passos": 3,
             "custo": 0.006569,
             "ok": true,
-            "justificativa": "O lançamento L053 registra um pagamento de R$ 220,00 (não R$ 22.000 como indicado na pendência) para Associação Comercial via boleto, sem qualquer documento fiscal ou comprovante associado. Não há notas, mensagens ou lançamentos relacionados que expliquem este pagamento. Deve-se solicitar ao cliente o comprovante do boleto ou a justificativa comercial para este desembolso."
+            "justificativa": "O lançamento L053 registra um pagamento de R$ 220,00 (não R$ 22.000 como indicado na pendência) para Associação Comercial via boleto, sem qualquer documento fiscal ou comprovante associado. Não há notas, mensagens ou lançamentos relacionados que expliquem este pagamento. Deve-se solicitar ao cliente o comprovante do boleto ou a justificativa comercial para este desembolso.",
+            "evidencias": [
+              "L053"
+            ]
           },
           {
             "ref": "L057",
@@ -838,7 +899,10 @@
             "passos": 3,
             "custo": 0.006616,
             "ok": true,
-            "justificativa": "O lançamento L057 registra um PIX de R$ 380,00 enviado para Raimundo Mecanico sem qualquer documento fiscal ou comprovante associado. Não foram encontradas notas, mensagens ou lançamentos relacionados que expliquem este pagamento. A ação apropriada é solicitar ao cliente o comprovante ou documento que justifique esta saída."
+            "justificativa": "O lançamento L057 registra um PIX de R$ 380,00 enviado para Raimundo Mecanico sem qualquer documento fiscal ou comprovante associado. Não foram encontradas notas, mensagens ou lançamentos relacionados que expliquem este pagamento. A ação apropriada é solicitar ao cliente o comprovante ou documento que justifique esta saída.",
+            "evidencias": [
+              "L057"
+            ]
           },
           {
             "ref": "L059",
@@ -850,7 +914,11 @@
             "passos": 3,
             "custo": 0.007193999999999999,
             "ok": true,
-            "justificativa": "O PIX L059 de R$ 1.311,28 foi enviado em 2026-10-29 para Potiguar Energia, mas a nota NF-019 mais próxima tem valor de R$ 1.291,90. A diferença é de R$ 19,38. Deve-se conferir com o fornecedor se houve acréscimo de juros, multa ou taxa, ou se o valor foi pago incorretamente."
+            "justificativa": "O PIX L059 de R$ 1.311,28 foi enviado em 2026-10-29 para Potiguar Energia, mas a nota NF-019 mais próxima tem valor de R$ 1.291,90. A diferença é de R$ 19,38. Deve-se conferir com o fornecedor se houve acréscimo de juros, multa ou taxa, ou se o valor foi pago incorretamente.",
+            "evidencias": [
+              "L059",
+              "NF-019"
+            ]
           },
           {
             "ref": "NF-021",
@@ -862,7 +930,10 @@
             "passos": 3,
             "custo": 0.007683,
             "ok": true,
-            "justificativa": "A nota fiscal NF-021 (Gás Cabo Azul, NF 380) foi localizada com valor de R$ 483,00, vencimento em 2026-10-13. Nenhum lançamento de pagamento correspondente foi encontrado no extrato. A pendência descreve valor de R$ 48.300, mas a nota real é de R$ 483,00 - possível erro de digitação na pendência. Recomenda-se verificar com o fornecedor se o pagamento foi efetivamente realizado ou se a nota permanece em aberto."
+            "justificativa": "A nota fiscal NF-021 (Gás Cabo Azul, NF 380) foi localizada com valor de R$ 483,00, vencimento em 2026-10-13. Nenhum lançamento de pagamento correspondente foi encontrado no extrato. A pendência descreve valor de R$ 48.300, mas a nota real é de R$ 483,00 - possível erro de digitação na pendência. Recomenda-se verificar com o fornecedor se o pagamento foi efetivamente realizado ou se a nota permanece em aberto.",
+            "evidencias": [
+              "NF-021"
+            ]
           },
           {
             "ref": "NF-010",
@@ -874,7 +945,10 @@
             "passos": 3,
             "custo": 0.007284,
             "ok": true,
-            "justificativa": "A nota fiscal NF-010 (número 327, valor R$ 100,90) está vencida desde 2026-10-11 e não foi localizado nenhum lançamento de pagamento correspondente no extrato. A busca por notas do emitente confirmou que NF-010 existe, mas nenhum pagamento foi encontrado. Ação recomendada: verificar se a nota foi efetivamente paga junto ao fornecedor ou se o pagamento está pendente."
+            "justificativa": "A nota fiscal NF-010 (número 327, valor R$ 100,90) está vencida desde 2026-10-11 e não foi localizado nenhum lançamento de pagamento correspondente no extrato. A busca por notas do emitente confirmou que NF-010 existe, mas nenhum pagamento foi encontrado. Ação recomendada: verificar se a nota foi efetivamente paga junto ao fornecedor ou se o pagamento está pendente.",
+            "evidencias": [
+              "NF-010"
+            ]
           },
           {
             "ref": "NF-003",
@@ -886,7 +960,10 @@
             "passos": 3,
             "custo": 0.007327,
             "ok": true,
-            "justificativa": "A nota fiscal NF-003 de Ovos Campo Alegre Ltda (NF 868, valor R$ 704,90) está vencida desde 2026-10-20 e não possui lançamento de pagamento correspondente no extrato. Nenhum pagamento similar foi encontrado. A ação apropriada é verificar junto ao fornecedor se o pagamento foi efetivamente realizado ou se a nota permanece pendente de quitação."
+            "justificativa": "A nota fiscal NF-003 de Ovos Campo Alegre Ltda (NF 868, valor R$ 704,90) está vencida desde 2026-10-20 e não possui lançamento de pagamento correspondente no extrato. Nenhum pagamento similar foi encontrado. A ação apropriada é verificar junto ao fornecedor se o pagamento foi efetivamente realizado ou se a nota permanece pendente de quitação.",
+            "evidencias": [
+              "NF-003"
+            ]
           },
           {
             "ref": "NF-038",
@@ -898,7 +975,10 @@
             "passos": 3,
             "custo": 0.008028,
             "ok": true,
-            "justificativa": "Investigação concluída: A nota NF-038 (número 599, Forno Certo Manutenção Ltda, R$ 879,50) aparece uma única vez no sistema de notas. A pendência relatava duplicação nos XMLs, mas a busca por notas do emitente e por lançamentos parecidos confirmou apenas um registro. Recomenda-se descartar a nota duplicada, pois a duplicação mencionada não se confirma nos dados atuais do sistema - pode ter sido um erro de processamento anterior já corrigido ou um XML com registro duplicado que deve ser removido."
+            "justificativa": "Investigação concluída: A nota NF-038 (número 599, Forno Certo Manutenção Ltda, R$ 879,50) aparece uma única vez no sistema de notas. A pendência relatava duplicação nos XMLs, mas a busca por notas do emitente e por lançamentos parecidos confirmou apenas um registro. Recomenda-se descartar a nota duplicada, pois a duplicação mencionada não se confirma nos dados atuais do sistema - pode ter sido um erro de processamento anterior já corrigido ou um XML com registro duplicado que deve ser removido.",
+            "evidencias": [
+              "NF-038"
+            ]
           },
           {
             "ref": "L007",
@@ -910,7 +990,11 @@
             "passos": 3,
             "custo": 0.007128,
             "ok": true,
-            "justificativa": "O lançamento L007 registra pagamento de R$ 371,75 enquanto a nota NF-033 (vencida em 2026-10-07) possui valor de R$ 365,90. A diferença de R$ 5,85 deve ser conferida com o fornecedor Abrigo Seguradora Fictícia Ltda para esclarecer se houve juros, multa ou erro no pagamento."
+            "justificativa": "O lançamento L007 registra pagamento de R$ 371,75 enquanto a nota NF-033 (vencida em 2026-10-07) possui valor de R$ 365,90. A diferença de R$ 5,85 deve ser conferida com o fornecedor Abrigo Seguradora Fictícia Ltda para esclarecer se houve juros, multa ou erro no pagamento.",
+            "evidencias": [
+              "L007",
+              "NF-033"
+            ]
           },
           {
             "ref": "L019",
@@ -922,7 +1006,12 @@
             "passos": 3,
             "custo": 0.007502,
             "ok": true,
-            "justificativa": "Confirmado pagamento duplicado: L014 (2026-10-10) e L019 (2026-10-11) são dois lançamentos idênticos de R$ 325,90 referentes à mesma nota fiscal NF-005 (número 586, valor R$ 325,90, vencimento 2026-10-09). O pagamento foi realizado duas vezes em dias consecutivos. Ação necessária: verificar qual lançamento deve ser revertido e processar a devolução ao fornecedor."
+            "justificativa": "Confirmado pagamento duplicado: L014 (2026-10-10) e L019 (2026-10-11) são dois lançamentos idênticos de R$ 325,90 referentes à mesma nota fiscal NF-005 (número 586, valor R$ 325,90, vencimento 2026-10-09). O pagamento foi realizado duas vezes em dias consecutivos. Ação necessária: verificar qual lançamento deve ser revertido e processar a devolução ao fornecedor.",
+            "evidencias": [
+              "L019",
+              "L014",
+              "NF-005"
+            ]
           },
           {
             "ref": "L027",
@@ -934,7 +1023,10 @@
             "passos": 3,
             "custo": 0.006278000000000001,
             "ok": true,
-            "justificativa": "O lançamento L027 (PIX de R$ 12.000 para Pedro Entregas em 12/10/2026) não possui nota fiscal, documento ou mensagem que o explique. Não há registros de notas do emitente nem lançamentos similares. Trata-se de saída no extrato sem comprovação, exigindo solicitação de comprovante ao cliente."
+            "justificativa": "O lançamento L027 (PIX de R$ 12.000 para Pedro Entregas em 12/10/2026) não possui nota fiscal, documento ou mensagem que o explique. Não há registros de notas do emitente nem lançamentos similares. Trata-se de saída no extrato sem comprovação, exigindo solicitação de comprovante ao cliente.",
+            "evidencias": [
+              "L027"
+            ]
           },
           {
             "ref": "L040",
@@ -946,7 +1038,11 @@
             "passos": 3,
             "custo": 0.0072239999999999995,
             "ok": true,
-            "justificativa": "A nota NF-025 tem valor de R$ 1.271,90, mas o pagamento realizado em L040 foi de R$ 1.284,62, resultando em uma diferença de R$ 12,72. Esta é a nota associada ao emitente 'Doces e Açúcar' com vencimento próximo à data do pagamento (17/10 vs 19/10). A ação apropriada é conferir com o fornecedor o motivo da diferença de valor."
+            "justificativa": "A nota NF-025 tem valor de R$ 1.271,90, mas o pagamento realizado em L040 foi de R$ 1.284,62, resultando em uma diferença de R$ 12,72. Esta é a nota associada ao emitente 'Doces e Açúcar' com vencimento próximo à data do pagamento (17/10 vs 19/10). A ação apropriada é conferir com o fornecedor o motivo da diferença de valor.",
+            "evidencias": [
+              "L040",
+              "NF-025"
+            ]
           },
           {
             "ref": "L045",
@@ -958,7 +1054,10 @@
             "passos": 3,
             "custo": 0.006625000000000001,
             "ok": true,
-            "justificativa": "O lançamento L045 é um débito automático de R$ 150,00 (não R$ 15.000 como indicado na pendência) referente a taxa de lixo municipal, sem documento fiscal ou comprovante associado. Não há mensagens do cliente, lançamentos parecidos ou duplicações. Trata-se de uma saída no extrato sem documentação que a explique, exigindo comprovante do cliente para validar se é legítima e se corresponde a um serviço/taxa municipal efetivamente devido."
+            "justificativa": "O lançamento L045 é um débito automático de R$ 150,00 (não R$ 15.000 como indicado na pendência) referente a taxa de lixo municipal, sem documento fiscal ou comprovante associado. Não há mensagens do cliente, lançamentos parecidos ou duplicações. Trata-se de uma saída no extrato sem documentação que a explique, exigindo comprovante do cliente para validar se é legítima e se corresponde a um serviço/taxa municipal efetivamente devido.",
+            "evidencias": [
+              "L045"
+            ]
           },
           {
             "ref": "L053",
@@ -970,7 +1069,10 @@
             "passos": 3,
             "custo": 0.006829999999999999,
             "ok": true,
-            "justificativa": "O lançamento L053 registra um pagamento de R$ 220,00 (não R$ 22.000 como descrito na pendência) para Associação Comercial via boleto, sem qualquer documento fiscal ou comprovante associado. Não há notas, mensagens ou lançamentos relacionados que expliquem este pagamento. Como se trata de uma saída no extrato sem documentação de suporte, a ação apropriada é solicitar ao cliente o comprovante (boleto, recibo ou nota fiscal) que justifique este pagamento."
+            "justificativa": "O lançamento L053 registra um pagamento de R$ 220,00 (não R$ 22.000 como descrito na pendência) para Associação Comercial via boleto, sem qualquer documento fiscal ou comprovante associado. Não há notas, mensagens ou lançamentos relacionados que expliquem este pagamento. Como se trata de uma saída no extrato sem documentação de suporte, a ação apropriada é solicitar ao cliente o comprovante (boleto, recibo ou nota fiscal) que justifique este pagamento.",
+            "evidencias": [
+              "L053"
+            ]
           },
           {
             "ref": "L057",
@@ -982,7 +1084,10 @@
             "passos": 3,
             "custo": 0.006618,
             "ok": true,
-            "justificativa": "Após investigação completa: não há mensagens do cliente explicando o pagamento, não há notas fiscais do emitente Raimundo Mecanico, e não há lançamentos parecidos que contextualizem a saída. O PIX de R$ 38.000 em 2026-10-28 para Raimundo Mecanico permanece sem documentação. Ação recomendada: solicitar ao cliente comprovante que justifique este pagamento."
+            "justificativa": "Após investigação completa: não há mensagens do cliente explicando o pagamento, não há notas fiscais do emitente Raimundo Mecanico, e não há lançamentos parecidos que contextualizem a saída. O PIX de R$ 38.000 em 2026-10-28 para Raimundo Mecanico permanece sem documentação. Ação recomendada: solicitar ao cliente comprovante que justifique este pagamento.",
+            "evidencias": [
+              "L057"
+            ]
           },
           {
             "ref": "L059",
@@ -994,7 +1099,11 @@
             "passos": 3,
             "custo": 0.0071909999999999995,
             "ok": true,
-            "justificativa": "O PIX L059 no valor de R$ 1.311,28 foi enviado para Potiguar Energ em 2026-10-29, mas a nota NF-019 relacionada tem valor de R$ 1.291,90. Há uma diferença de R$ 19,38 que não é justificada. É necessário conferir com o fornecedor se houve acréscimo de juros, multa, taxa ou se foi pagamento a maior."
+            "justificativa": "O PIX L059 no valor de R$ 1.311,28 foi enviado para Potiguar Energ em 2026-10-29, mas a nota NF-019 relacionada tem valor de R$ 1.291,90. Há uma diferença de R$ 19,38 que não é justificada. É necessário conferir com o fornecedor se houve acréscimo de juros, multa, taxa ou se foi pagamento a maior.",
+            "evidencias": [
+              "L059",
+              "NF-019"
+            ]
           },
           {
             "ref": "NF-021",
@@ -1006,7 +1115,10 @@
             "passos": 3,
             "custo": 0.007817,
             "ok": true,
-            "justificativa": "Investigação concluída. A nota fiscal NF-021 (Gás Cabo Azul Distribuidora Ltda, NF 380, valor R$ 483,00) venceu em 2026-10-13 e não foi encontrado nenhum lançamento de pagamento correspondente no extrato. A ação recomendada é verificar se a nota foi efetivamente paga junto ao fornecedor, pois pode estar em atraso ou o pagamento pode não ter sido registrado no sistema."
+            "justificativa": "Investigação concluída. A nota fiscal NF-021 (Gás Cabo Azul Distribuidora Ltda, NF 380, valor R$ 483,00) venceu em 2026-10-13 e não foi encontrado nenhum lançamento de pagamento correspondente no extrato. A ação recomendada é verificar se a nota foi efetivamente paga junto ao fornecedor, pois pode estar em atraso ou o pagamento pode não ter sido registrado no sistema.",
+            "evidencias": [
+              "NF-021"
+            ]
           },
           {
             "ref": "NF-010",
@@ -1018,7 +1130,10 @@
             "passos": 3,
             "custo": 0.006988,
             "ok": true,
-            "justificativa": "A nota fiscal NF-010 (Papelaria Ponto Final Ltda, NF 327, R$ 100,90) venceu em 2026-10-11 e não há lançamento de pagamento correspondente no extrato. Não há duplicatas da mesma nota. A ação apropriada é verificar junto ao fornecedor se o pagamento foi efetivamente realizado ou se a nota permanece em aberto."
+            "justificativa": "A nota fiscal NF-010 (Papelaria Ponto Final Ltda, NF 327, R$ 100,90) venceu em 2026-10-11 e não há lançamento de pagamento correspondente no extrato. Não há duplicatas da mesma nota. A ação apropriada é verificar junto ao fornecedor se o pagamento foi efetivamente realizado ou se a nota permanece em aberto.",
+            "evidencias": [
+              "NF-010"
+            ]
           },
           {
             "ref": "NF-003",
@@ -1030,7 +1145,10 @@
             "passos": 3,
             "custo": 0.006928999999999999,
             "ok": true,
-            "justificativa": "A nota fiscal NF-003 (número 868) emitida por Ovos Campo Alegre Ltda no valor de R$ 704,90 venceu em 2026-10-20 e não há registro de pagamento correspondente no extrato. A busca por lançamentos parecidos retornou erro, confirmando a ausência de pagamento. É necessário verificar se a nota foi efetivamente paga junto ao fornecedor ou se há atraso no pagamento."
+            "justificativa": "A nota fiscal NF-003 (número 868) emitida por Ovos Campo Alegre Ltda no valor de R$ 704,90 venceu em 2026-10-20 e não há registro de pagamento correspondente no extrato. A busca por lançamentos parecidos retornou erro, confirmando a ausência de pagamento. É necessário verificar se a nota foi efetivamente paga junto ao fornecedor ou se há atraso no pagamento.",
+            "evidencias": [
+              "NF-003"
+            ]
           },
           {
             "ref": "NF-038",
@@ -1042,7 +1160,10 @@
             "passos": 3,
             "custo": 0.007923,
             "ok": true,
-            "justificativa": "Investigação concluída: A nota NF-038 (número 599 de Forno Certo Manutenção Ltda, valor R$ 879,50, emissão 2026-09-13) aparece uma única vez no sistema de notas. A duplicação mencionada na pendência refere-se aos XMLs recebidos, não a registros duplicados no sistema contábil. Recomenda-se descartar a nota duplicada dos XMLs, mantendo apenas um registro de NF-038."
+            "justificativa": "Investigação concluída: A nota NF-038 (número 599 de Forno Certo Manutenção Ltda, valor R$ 879,50, emissão 2026-09-13) aparece uma única vez no sistema de notas. A duplicação mencionada na pendência refere-se aos XMLs recebidos, não a registros duplicados no sistema contábil. Recomenda-se descartar a nota duplicada dos XMLs, mantendo apenas um registro de NF-038.",
+            "evidencias": [
+              "NF-038"
+            ]
           }
         ]
       },

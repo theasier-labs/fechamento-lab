@@ -23,7 +23,7 @@ for (const modelo of MODELOS) {
     if (prov.gasto > TETO) throw new Error('teto de gasto');
     const pe = { ...p, rep }; // `rep` só diferencia a chamada no cache
     const r = await investigar({ provedor: { chamar: (q) => prov.chamar({ ...q, rotulo: `rep${rep}`, temperatura: rep === 0 ? 0 : 0.3 }) }, modelo, pendencia: { ref: p.ref, descricao: p.descricao, valor: p.valor, data: p.data }, ferramentas }).catch((e) => ({ proposta: null, motivo: e.message.slice(0, 80), trilha: [], custo: 0 }));
-    ag.push({ ref: p.ref, tipo: p.tipo, rep, acao: r.proposta?.acao ?? null, descartada: !r.proposta, motivo: r.motivo ?? null, passos: r.trilha.length, custo: r.custo, ok: r.proposta?.acao === ACAO_ESPERADA[p.tipo], trilha: rep === 0 ? r.trilha : undefined, justificativa: r.proposta?.justificativa });
+    ag.push({ ref: p.ref, tipo: p.tipo, rep, acao: r.proposta?.acao ?? null, descartada: !r.proposta, motivo: r.motivo ?? null, passos: r.trilha.length, custo: r.custo, ok: r.proposta?.acao === ACAO_ESPERADA[p.tipo], trilha: rep === 0 ? r.trilha : undefined, justificativa: r.proposta?.justificativa, evidencias: r.proposta?.evidencias ?? [] });
   }
   const itens = cen.extrato.filter((l) => gab.pendencias.some((p) => p.tipo === 'despesa_sem_documento' && p.ref === l.id)).map((l) => ({ data: l.data, descricao: l.descricao, valor: l.valor }));
   const red = [];

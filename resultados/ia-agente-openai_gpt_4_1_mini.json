@@ -1,23 +1,23 @@
 {
   "geradoEm": "2026-11-04",
   "juiz": "anthropic/claude-sonnet-4.5",
-  "gastoUsd": 0.0012236,
+  "gastoUsd": 0,
   "saida": {
     "openai/gpt-4.1-mini": {
       "agente": {
         "acaoCorreta": {
-          "k": 35,
+          "k": 36,
           "n": 36,
-          "valor": 0.9722222222222222,
+          "valor": 1,
           "ic95": [
-            0.8582996626496918,
-            0.9950797197044302
+            0.9035781695514236,
+            1
           ]
         },
-        "descartadasPelaRegra": 1,
+        "descartadasPelaRegra": 0,
         "acaoErradaAceita": 0,
-        "passosMedios": 2.4722222222222223,
-        "custoPorPendenciaUsd": 0.0014383222222222225,
+        "passosMedios": 2.5833333333333335,
+        "custoPorPendenciaUsd": 0.0015054222222222226,
         "porTipo": {
           "despesa_sem_documento": {
             "k": 12,
@@ -38,12 +38,12 @@
             ]
           },
           "nota_sem_pagamento": {
-            "k": 8,
+            "k": 9,
             "n": 9,
-            "valor": 0.8888888888888888,
+            "valor": 1,
             "ic95": [
-              0.5649937852319399,
-              0.9801096286728695
+              0.7008472464490407,
+              1
             ]
           },
           "pagamento_duplicado": {
@@ -130,7 +130,11 @@
                 }
               }
             ],
-            "justificativa": "O pagamento no lançamento L007 é de R$371,75, enquanto a nota NF-033 tem valor de R$365,90, indicando diferença de valores que deve ser conferida com o fornecedor."
+            "justificativa": "O pagamento no lançamento L007 é de R$371,75, enquanto a nota NF-033 tem valor de R$365,90, indicando diferença de valores que deve ser conferida com o fornecedor.",
+            "evidencias": [
+              "L007",
+              "NF-033"
+            ]
           },
           {
             "ref": "L019",
@@ -176,7 +180,11 @@
                 }
               }
             ],
-            "justificativa": "Os lançamentos L014 e L019 são pagamentos com mesma descrição, valores e datas próximas, indicando possível pagamento duplicado."
+            "justificativa": "Os lançamentos L014 e L019 são pagamentos com mesma descrição, valores e datas próximas, indicando possível pagamento duplicado.",
+            "evidencias": [
+              "L014",
+              "L019"
+            ]
           },
           {
             "ref": "L027",
@@ -207,7 +215,10 @@
                 }
               }
             ],
-            "justificativa": "Não há nota fiscal emitida por Pedro Entregas que justifique o pagamento do lançamento L027. Portanto, é necessário pedir comprovante ao cliente para esclarecer a origem do pagamento."
+            "justificativa": "Não há nota fiscal emitida por Pedro Entregas que justifique o pagamento do lançamento L027. Portanto, é necessário pedir comprovante ao cliente para esclarecer a origem do pagamento.",
+            "evidencias": [
+              "L027"
+            ]
           },
           {
             "ref": "L040",
@@ -273,7 +284,11 @@
                 }
               }
             ],
-            "justificativa": "O valor do lançamento L040 (R$ 1.284,62) difere do valor da nota NF-025 (R$ 1.271,90), indicando necessidade de conferência do valor com o fornecedor."
+            "justificativa": "O valor do lançamento L040 (R$ 1.284,62) difere do valor da nota NF-025 (R$ 1.271,90), indicando necessidade de conferência do valor com o fornecedor.",
+            "evidencias": [
+              "L040",
+              "NF-025"
+            ]
           },
           {
             "ref": "L045",
@@ -304,7 +319,10 @@
                 }
               }
             ],
-            "justificativa": "Não há documento ou mensagem que explique o lançamento da taxa de lixo municipal; portanto, é necessário pedir comprovante ao cliente."
+            "justificativa": "Não há documento ou mensagem que explique o lançamento da taxa de lixo municipal; portanto, é necessário pedir comprovante ao cliente.",
+            "evidencias": [
+              "L045"
+            ]
           },
           {
             "ref": "L053",
@@ -335,7 +353,10 @@
                 }
               }
             ],
-            "justificativa": "Não há nota fiscal da ASSOCIACAO COMERCIAL para o pagamento L053, portanto é necessário pedir comprovante ao cliente para justificar o lançamento."
+            "justificativa": "Não há nota fiscal da ASSOCIACAO COMERCIAL para o pagamento L053, portanto é necessário pedir comprovante ao cliente para justificar o lançamento.",
+            "evidencias": [
+              "L053"
+            ]
           },
           {
             "ref": "L057",
@@ -366,7 +387,10 @@
                 }
               }
             ],
-            "justificativa": "Não há nota fiscal do emitente Raimundo Mecanico para justificar o pagamento PIX, portanto solicitar comprovante ao cliente."
+            "justificativa": "Não há nota fiscal do emitente Raimundo Mecanico para justificar o pagamento PIX, portanto solicitar comprovante ao cliente.",
+            "evidencias": [
+              "L057"
+            ]
           },
           {
             "ref": "L059",
@@ -432,7 +456,11 @@
                 }
               }
             ],
-            "justificativa": "O pagamento L059 foi de R$ 1.311,28, enquanto a nota NF-019 tem valor de R$ 1.291,90, indicando diferença de valores que deve ser conferida com o fornecedor."
+            "justificativa": "O pagamento L059 foi de R$ 1.311,28, enquanto a nota NF-019 tem valor de R$ 1.291,90, indicando diferença de valores que deve ser conferida com o fornecedor.",
+            "evidencias": [
+              "L059",
+              "NF-019"
+            ]
           },
           {
             "ref": "NF-021",
@@ -472,7 +500,10 @@
                 }
               }
             ],
-            "justificativa": "A nota NF-021 está vencida e não há pagamento registrado nem mensagens explicativas. Portanto, é necessário verificar se a nota foi paga."
+            "justificativa": "A nota NF-021 está vencida e não há pagamento registrado nem mensagens explicativas. Portanto, é necessário verificar se a nota foi paga.",
+            "evidencias": [
+              "NF-021"
+            ]
           },
           {
             "ref": "NF-010",
@@ -550,7 +581,10 @@
                 }
               }
             ],
-            "justificativa": "A nota NF-010 está vencida e não há pagamento registrado no extrato nem mensagens ou comprovantes enviados pelo cliente. Portanto, é necessário verificar se a nota foi paga."
+            "justificativa": "A nota NF-010 está vencida e não há pagamento registrado no extrato nem mensagens ou comprovantes enviados pelo cliente. Portanto, é necessário verificar se a nota foi paga.",
+            "evidencias": [
+              "NF-010"
+            ]
           },
           {
             "ref": "NF-003",
@@ -645,7 +679,10 @@
                 ]
               }
             ],
-            "justificativa": "A nota NF-003 está vencida e não há lançamento de pagamento correspondente no extrato, portanto deve-se verificar se a nota foi paga."
+            "justificativa": "A nota NF-003 está vencida e não há lançamento de pagamento correspondente no extrato, portanto deve-se verificar se a nota foi paga.",
+            "evidencias": [
+              "NF-003"
+            ]
           },
           {
             "ref": "NF-038",
@@ -724,7 +761,10 @@
                 }
               }
             ],
-            "justificativa": "A nota NF-038 foi encontrada apenas uma vez nos registros, apesar da reclamação de duplicidade nos XMLs. Portanto, a nota é duplicada e deve ser descartada para evitar lançamento duplicado."
+            "justificativa": "A nota NF-038 foi encontrada apenas uma vez nos registros, apesar da reclamação de duplicidade nos XMLs. Portanto, a nota é duplicada e deve ser descartada para evitar lançamento duplicado.",
+            "evidencias": [
+              "NF-038"
+            ]
           },
           {
             "ref": "L007",
@@ -736,7 +776,11 @@
             "passos": 3,
             "custo": 0.0017668,
             "ok": true,
-            "justificativa": "O pagamento de R$ 371,75 difere do valor da nota NF-033 que é R$ 365,90. É necessário conferir com o fornecedor a razão dessa diferença."
+            "justificativa": "O pagamento de R$ 371,75 difere do valor da nota NF-033 que é R$ 365,90. É necessário conferir com o fornecedor a razão dessa diferença.",
+            "evidencias": [
+              "L007",
+              "NF-033"
+            ]
           },
           {
             "ref": "L019",
@@ -748,7 +792,11 @@
             "passos": 3,
             "custo": 0.0015584,
             "ok": true,
-            "justificativa": "Existem dois pagamentos com a mesma descrição, valores e datas próximas, indicando possível pagamento duplicado."
+            "justificativa": "Existem dois pagamentos com a mesma descrição, valores e datas próximas, indicando possível pagamento duplicado.",
+            "evidencias": [
+              "L014",
+              "L019"
+            ]
           },
           {
             "ref": "L027",
@@ -760,7 +808,10 @@
             "passos": 2,
             "custo": 0.0011516,
             "ok": true,
-            "justificativa": "Não há nota fiscal do emitente PEDRO ENTREGAS para justificar o pagamento PIX de R$120,00 no lançamento L027; solicitar comprovante ao cliente."
+            "justificativa": "Não há nota fiscal do emitente PEDRO ENTREGAS para justificar o pagamento PIX de R$120,00 no lançamento L027; solicitar comprovante ao cliente.",
+            "evidencias": [
+              "L027"
+            ]
           },
           {
             "ref": "L040",
@@ -772,7 +823,11 @@
             "passos": 3,
             "custo": 0.0017748,
             "ok": true,
-            "justificativa": "O valor do lançamento L040 (R$ 1.284,62) difere do valor da nota NF-025 (R$ 1.271,90). Portanto, a ação adequada é conferir o valor com o fornecedor."
+            "justificativa": "O valor do lançamento L040 (R$ 1.284,62) difere do valor da nota NF-025 (R$ 1.271,90). Portanto, a ação adequada é conferir o valor com o fornecedor.",
+            "evidencias": [
+              "L040",
+              "NF-025"
+            ]
           },
           {
             "ref": "L045",
@@ -784,7 +839,10 @@
             "passos": 2,
             "custo": 0.0011616,
             "ok": true,
-            "justificativa": "Não há nota fiscal associada ao lançamento L045 e não foi encontrada nota do emitente. Portanto, é necessário pedir comprovante ao cliente para justificar o débito automático da taxa de lixo municipal."
+            "justificativa": "Não há nota fiscal associada ao lançamento L045 e não foi encontrada nota do emitente. Portanto, é necessário pedir comprovante ao cliente para justificar o débito automático da taxa de lixo municipal.",
+            "evidencias": [
+              "L045"
+            ]
           },
           {
             "ref": "L053",
@@ -796,7 +854,10 @@
             "passos": 2,
             "custo": 0.0011404,
             "ok": true,
-            "justificativa": "Não há nota fiscal da ASSOCIACAO COMERCIAL para o pagamento L053, portanto é necessário pedir comprovante ao cliente para justificar o lançamento."
+            "justificativa": "Não há nota fiscal da ASSOCIACAO COMERCIAL para o pagamento L053, portanto é necessário pedir comprovante ao cliente para justificar o lançamento.",
+            "evidencias": [
+              "L053"
+            ]
           },
           {
             "ref": "L057",
@@ -808,7 +869,10 @@
             "passos": 2,
             "custo": 0.0011612,
             "ok": true,
-            "justificativa": "Não há nota fiscal emitida por Raimundo Mecanico para justificar o pagamento de R$380,00 no lançamento L057; portanto, deve-se pedir comprovante ao cliente."
+            "justificativa": "Não há nota fiscal emitida por Raimundo Mecanico para justificar o pagamento de R$380,00 no lançamento L057; portanto, deve-se pedir comprovante ao cliente.",
+            "evidencias": [
+              "L057"
+            ]
           },
           {
             "ref": "L059",
@@ -820,7 +884,11 @@
             "passos": 3,
             "custo": 0.0017900000000000001,
             "ok": true,
-            "justificativa": "O valor do pagamento no lançamento L059 (R$ 1.311,28) difere do valor da nota NF-019 (R$ 1.291,90). Recomenda-se conferir o valor com o fornecedor para esclarecer a diferença."
+            "justificativa": "O valor do pagamento no lançamento L059 (R$ 1.311,28) difere do valor da nota NF-019 (R$ 1.291,90). Recomenda-se conferir o valor com o fornecedor para esclarecer a diferença.",
+            "evidencias": [
+              "L059",
+              "NF-019"
+            ]
           },
           {
             "ref": "NF-021",
@@ -832,7 +900,10 @@
             "passos": 3,
             "custo": 0.0016604000000000002,
             "ok": true,
-            "justificativa": "A nota NF-021 está vencida e não há lançamento de pagamento correspondente no extrato, portanto é necessário verificar se a nota foi paga."
+            "justificativa": "A nota NF-021 está vencida e não há lançamento de pagamento correspondente no extrato, portanto é necessário verificar se a nota foi paga.",
+            "evidencias": [
+              "NF-021"
+            ]
           },
           {
             "ref": "NF-010",
@@ -844,7 +915,10 @@
             "passos": 3,
             "custo": 0.0016492,
             "ok": true,
-            "justificativa": "A nota NF-010 está vencida e não há pagamento registrado nem mensagens explicativas. Portanto, é necessário verificar se a nota foi paga."
+            "justificativa": "A nota NF-010 está vencida e não há pagamento registrado nem mensagens explicativas. Portanto, é necessário verificar se a nota foi paga.",
+            "evidencias": [
+              "NF-010"
+            ]
           },
           {
             "ref": "NF-003",
@@ -856,7 +930,10 @@
             "passos": 2,
             "custo": 0.0011344,
             "ok": true,
-            "justificativa": "A nota NF-003 está vencida e não há pagamento correspondente no extrato, indicando que a nota não foi paga."
+            "justificativa": "A nota NF-003 está vencida e não há pagamento correspondente no extrato, indicando que a nota não foi paga.",
+            "evidencias": [
+              "NF-003"
+            ]
           },
           {
             "ref": "NF-038",
@@ -868,7 +945,10 @@
             "passos": 2,
             "custo": 0.0012852,
             "ok": true,
-            "justificativa": "A nota NF 599 (NF-038) aparece apenas uma vez na base, não há duplicidade real, portanto a pendência é descartar a nota duplicada informada erroneamente."
+            "justificativa": "A nota NF 599 (NF-038) aparece apenas uma vez na base, não há duplicidade real, portanto a pendência é descartar a nota duplicada informada erroneamente.",
+            "evidencias": [
+              "NF-038"
+            ]
           },
           {
             "ref": "L007",
@@ -880,7 +960,11 @@
             "passos": 3,
             "custo": 0.0017972,
             "ok": true,
-            "justificativa": "O pagamento registrado em L007 é de R$371,75, enquanto a nota NF-033 tem valor de R$365,90. Como os valores diferem, a ação adequada é conferir o valor com o fornecedor."
+            "justificativa": "O pagamento registrado em L007 é de R$371,75, enquanto a nota NF-033 tem valor de R$365,90. Como os valores diferem, a ação adequada é conferir o valor com o fornecedor.",
+            "evidencias": [
+              "L007",
+              "NF-033"
+            ]
           },
           {
             "ref": "L019",
@@ -892,7 +976,11 @@
             "passos": 2,
             "custo": 0.0011252,
             "ok": true,
-            "justificativa": "Os lançamentos L014 e L019 são pagamentos com descrições e valores muito semelhantes, indicando possível pagamento duplicado."
+            "justificativa": "Os lançamentos L014 e L019 são pagamentos com descrições e valores muito semelhantes, indicando possível pagamento duplicado.",
+            "evidencias": [
+              "L014",
+              "L019"
+            ]
           },
           {
             "ref": "L027",
@@ -904,7 +992,10 @@
             "passos": 2,
             "custo": 0.0011420000000000002,
             "ok": true,
-            "justificativa": "Não há nota fiscal emitida por PEDRO ENTREGAS que justifique o pagamento PIX de R$120,00; portanto, solicitar comprovante ao cliente."
+            "justificativa": "Não há nota fiscal emitida por PEDRO ENTREGAS que justifique o pagamento PIX de R$120,00; portanto, solicitar comprovante ao cliente.",
+            "evidencias": [
+              "L027"
+            ]
           },
           {
             "ref": "L040",
@@ -916,7 +1007,11 @@
             "passos": 3,
             "custo": 0.0018,
             "ok": true,
-            "justificativa": "O lançamento L040 tem valor de R$ 1.284,62, enquanto a nota NF-025 é de R$ 1.271,90, indicando diferença de valores que deve ser conferida com o fornecedor."
+            "justificativa": "O lançamento L040 tem valor de R$ 1.284,62, enquanto a nota NF-025 é de R$ 1.271,90, indicando diferença de valores que deve ser conferida com o fornecedor.",
+            "evidencias": [
+              "L040",
+              "NF-025"
+            ]
           },
           {
             "ref": "L045",
@@ -928,7 +1023,10 @@
             "passos": 2,
             "custo": 0.0011228,
             "ok": true,
-            "justificativa": "Não há documento ou mensagem explicativa para o débito automático da taxa de lixo municipal, portanto é necessário pedir comprovante ao cliente."
+            "justificativa": "Não há documento ou mensagem explicativa para o débito automático da taxa de lixo municipal, portanto é necessário pedir comprovante ao cliente.",
+            "evidencias": [
+              "L045"
+            ]
           },
           {
             "ref": "L053",
@@ -940,7 +1038,10 @@
             "passos": 2,
             "custo": 0.0011412,
             "ok": true,
-            "justificativa": "Não há nota fiscal da ASSOCIACAO COMERCIAL para o pagamento L053, que está sem documento; portanto, deve-se pedir comprovante ao cliente."
+            "justificativa": "Não há nota fiscal da ASSOCIACAO COMERCIAL para o pagamento L053, que está sem documento; portanto, deve-se pedir comprovante ao cliente.",
+            "evidencias": [
+              "L053"
+            ]
           },
           {
             "ref": "L057",
@@ -952,7 +1053,10 @@
             "passos": 2,
             "custo": 0.0011639999999999999,
             "ok": true,
-            "justificativa": "Não há nota fiscal do emitente RAIMUNDO MECANICO para justificar o pagamento PIX de R$380,00, portanto é necessário pedir comprovante ao cliente."
+            "justificativa": "Não há nota fiscal do emitente RAIMUNDO MECANICO para justificar o pagamento PIX de R$380,00, portanto é necessário pedir comprovante ao cliente.",
+            "evidencias": [
+              "L057"
+            ]
           },
           {
             "ref": "L059",
@@ -964,7 +1068,11 @@
             "passos": 3,
             "custo": 0.0017972,
             "ok": true,
-            "justificativa": "O valor pago no lançamento L059 (R$ 1.311,28) difere do valor da nota NF-019 (R$ 1.291,90). É necessário conferir o valor com o fornecedor."
+            "justificativa": "O valor pago no lançamento L059 (R$ 1.311,28) difere do valor da nota NF-019 (R$ 1.291,90). É necessário conferir o valor com o fornecedor.",
+            "evidencias": [
+              "L059",
+              "NF-019"
+            ]
           },
           {
             "ref": "NF-021",
@@ -976,18 +1084,25 @@
             "passos": 3,
             "custo": 0.0016732000000000001,
             "ok": true,
-            "justificativa": "A nota NF-021 está vencida e não há lançamento de pagamento correspondente no extrato, portanto deve-se verificar se a nota foi paga."
+            "justificativa": "A nota NF-021 está vencida e não há lançamento de pagamento correspondente no extrato, portanto deve-se verificar se a nota foi paga.",
+            "evidencias": [
+              "NF-021"
+            ]
           },
           {
             "ref": "NF-010",
             "tipo": "nota_sem_pagamento",
             "rep": 2,
-            "acao": null,
-            "descartada": true,
-            "motivo": "terminated",
-            "passos": 0,
-            "custo": 0,
-            "ok": false
+            "acao": "verificar_se_a_nota_foi_paga",
+            "descartada": false,
+            "motivo": null,
+            "passos": 4,
+            "custo": 0.0024156000000000004,
+            "ok": true,
+            "justificativa": "A nota NF-010 está vencida e não há lançamento de pagamento correspondente no extrato, indicando que a nota não foi paga.",
+            "evidencias": [
+              "NF-010"
+            ]
           },
           {
             "ref": "NF-003",
@@ -999,7 +1114,10 @@
             "passos": 2,
             "custo": 0.0012032,
             "ok": true,
-            "justificativa": "A nota NF-003 está vencida e não há nenhum pagamento correspondente no extrato, indicando que o pagamento deve ser verificado."
+            "justificativa": "A nota NF-003 está vencida e não há nenhum pagamento correspondente no extrato, indicando que o pagamento deve ser verificado.",
+            "evidencias": [
+              "NF-003"
+            ]
           },
           {
             "ref": "NF-038",
@@ -1011,7 +1129,10 @@
             "passos": 2,
             "custo": 0.0013104000000000002,
             "ok": true,
-            "justificativa": "A nota 599 do emitente Forno Certo Manutenção Ltda aparece apenas uma vez na base, indicando que a duplicidade nos XMLs é um envio repetido da mesma nota, portanto deve ser descartada como duplicada."
+            "justificativa": "A nota 599 do emitente Forno Certo Manutenção Ltda aparece apenas uma vez na base, indicando que a duplicidade nos XMLs é um envio repetido da mesma nota, portanto deve ser descartada como duplicada.",
+            "evidencias": [
+              "NF-038"
+            ]
           }
         ]
       },

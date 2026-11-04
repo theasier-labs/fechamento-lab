@@ -1,7 +1,7 @@
 {
   "geradoEm": "2026-11-04",
   "juiz": "anthropic/claude-sonnet-4.5",
-  "gastoUsd": 0.0092494,
+  "gastoUsd": 0,
   "saida": {
     "google/gemini-2.5-flash-lite": {
       "agente": {
@@ -125,7 +125,11 @@
                 ]
               }
             ],
-            "justificativa": "O lançamento L007 tem valor de R$ 371,75 e a nota fiscal NF-033 tem valor de R$ 365,90. Ambos os valores são próximos, indicando que o lançamento se refere a esta nota, mas com um valor divergente. Portanto, a ação adequada é conferir o valor com o fornecedor."
+            "justificativa": "O lançamento L007 tem valor de R$ 371,75 e a nota fiscal NF-033 tem valor de R$ 365,90. Ambos os valores são próximos, indicando que o lançamento se refere a esta nota, mas com um valor divergente. Portanto, a ação adequada é conferir o valor com o fornecedor.",
+            "evidencias": [
+              "L007",
+              "NF-033"
+            ]
           },
           {
             "ref": "L019",
@@ -151,7 +155,11 @@
                 ]
               }
             ],
-            "justificativa": "O lançamento L019 e o lançamento L014 possuem a mesma descrição e valor, indicando um possível pagamento duplicado."
+            "justificativa": "O lançamento L019 e o lançamento L014 possuem a mesma descrição e valor, indicando um possível pagamento duplicado.",
+            "evidencias": [
+              "L019",
+              "L014"
+            ]
           },
           {
             "ref": "L027",
@@ -182,7 +190,10 @@
                 }
               }
             ],
-            "justificativa": "O lançamento L027 é um PIX enviado sem nota fiscal ou documento que o justifique. Não há mensagens relacionadas a ele. Portanto, solicito o comprovante ao cliente."
+            "justificativa": "O lançamento L027 é um PIX enviado sem nota fiscal ou documento que o justifique. Não há mensagens relacionadas a ele. Portanto, solicito o comprovante ao cliente.",
+            "evidencias": [
+              "L027"
+            ]
           },
           {
             "ref": "L040",
@@ -236,7 +247,11 @@
                 ]
               }
             ],
-            "justificativa": "O lançamento L040 tem valor de R$ 1.284,62 e a nota NF-025 tem valor de R$ 1.271,90. A diferença é pequena e pode ser um erro de arredondamento ou um ajuste. É necessário conferir o valor com o fornecedor."
+            "justificativa": "O lançamento L040 tem valor de R$ 1.284,62 e a nota NF-025 tem valor de R$ 1.271,90. A diferença é pequena e pode ser um erro de arredondamento ou um ajuste. É necessário conferir o valor com o fornecedor.",
+            "evidencias": [
+              "L040",
+              "NF-025"
+            ]
           },
           {
             "ref": "L045",
@@ -267,7 +282,10 @@
                 }
               }
             ],
-            "justificativa": "O lançamento L045 é uma taxa municipal sem nota fiscal ou comprovante associado, conforme verificado nas mensagens. Portanto, solicito o comprovante ao cliente."
+            "justificativa": "O lançamento L045 é uma taxa municipal sem nota fiscal ou comprovante associado, conforme verificado nas mensagens. Portanto, solicito o comprovante ao cliente.",
+            "evidencias": [
+              "L045"
+            ]
           },
           {
             "ref": "L053",
@@ -298,7 +316,10 @@
                 }
               }
             ],
-            "justificativa": "O lançamento L053 é um pagamento de boleto sem nota fiscal ou comprovante associado, e não há mensagens que o expliquem. Portanto, é necessário solicitar o comprovante ao cliente."
+            "justificativa": "O lançamento L053 é um pagamento de boleto sem nota fiscal ou comprovante associado, e não há mensagens que o expliquem. Portanto, é necessário solicitar o comprovante ao cliente.",
+            "evidencias": [
+              "L053"
+            ]
           },
           {
             "ref": "L057",
@@ -322,7 +343,10 @@
                 }
               }
             ],
-            "justificativa": "O lançamento L057 é um PIX enviado para RAIMUNDO MECANICO no valor de R$ 380,00. A descrição não fornece detalhes suficientes para identificar a natureza do pagamento ou vincular a uma nota fiscal. Como não há documento que explique a saída no extrato, é necessário solicitar um comprovante ao cliente."
+            "justificativa": "O lançamento L057 é um PIX enviado para RAIMUNDO MECANICO no valor de R$ 380,00. A descrição não fornece detalhes suficientes para identificar a natureza do pagamento ou vincular a uma nota fiscal. Como não há documento que explique a saída no extrato, é necessário solicitar um comprovante ao cliente.",
+            "evidencias": [
+              "L057"
+            ]
           },
           {
             "ref": "L059",
@@ -383,7 +407,12 @@
                 ]
               }
             ],
-            "justificativa": "O lançamento L059 tem valor de R$ 1.311,28. A nota NF-019 tem valor de R$ 1.291,90 e a nota NF-034 tem valor de R$ 1.323,50. Ambas são próximas ao valor do lançamento e emitidas pela Potiguar Energia. Para confirmar qual nota fiscal corresponde ao pagamento e qual a diferença, é necessário conferir o valor com o fornecedor."
+            "justificativa": "O lançamento L059 tem valor de R$ 1.311,28. A nota NF-019 tem valor de R$ 1.291,90 e a nota NF-034 tem valor de R$ 1.323,50. Ambas são próximas ao valor do lançamento e emitidas pela Potiguar Energia. Para confirmar qual nota fiscal corresponde ao pagamento e qual a diferença, é necessário conferir o valor com o fornecedor.",
+            "evidencias": [
+              "L059",
+              "NF-019",
+              "NF-034"
+            ]
           },
           {
             "ref": "NF-021",
@@ -416,7 +445,10 @@
                 }
               }
             ],
-            "justificativa": "A nota fiscal NF-021 está vencida e não foram encontrados lançamentos parecidos. A ação mais adequada é verificar se a nota foi paga."
+            "justificativa": "A nota fiscal NF-021 está vencida e não foram encontrados lançamentos parecidos. A ação mais adequada é verificar se a nota foi paga.",
+            "evidencias": [
+              "NF-021"
+            ]
           },
           {
             "ref": "NF-010",
@@ -449,7 +481,10 @@
                 }
               }
             ],
-            "justificativa": "A nota fiscal NF-010 está vencida e não há pagamento correspondente no extrato, nem mensagens relacionadas a ela. Portanto, a ação mais adequada é verificar se a nota foi paga."
+            "justificativa": "A nota fiscal NF-010 está vencida e não há pagamento correspondente no extrato, nem mensagens relacionadas a ela. Portanto, a ação mais adequada é verificar se a nota foi paga.",
+            "evidencias": [
+              "NF-010"
+            ]
           },
           {
             "ref": "NF-003",
@@ -482,7 +517,10 @@
                 }
               }
             ],
-            "justificativa": "A nota fiscal NF-003 está vencida e não foi encontrado nenhum lançamento parecido. A ação mais adequada é verificar se a nota foi paga."
+            "justificativa": "A nota fiscal NF-003 está vencida e não foi encontrado nenhum lançamento parecido. A ação mais adequada é verificar se a nota foi paga.",
+            "evidencias": [
+              "NF-003"
+            ]
           },
           {
             "ref": "NF-038",
@@ -515,7 +553,8 @@
                 }
               }
             ],
-            "justificativa": "A nota fiscal NF-038 foi verificada e não foram encontrados lançamentos parecidos com ela. Portanto, a pendência de duplicidade não procede."
+            "justificativa": "A nota fiscal NF-038 foi verificada e não foram encontrados lançamentos parecidos com ela. Portanto, a pendência de duplicidade não procede.",
+            "evidencias": []
           },
           {
             "ref": "L007",
@@ -527,7 +566,10 @@
             "passos": 3,
             "custo": 0.0003141,
             "ok": false,
-            "justificativa": "O lançamento L007 não possui nota fiscal correspondente e não há mensagens ou lançamentos parecidos que expliquem o valor. Solicitar comprovante ao cliente."
+            "justificativa": "O lançamento L007 não possui nota fiscal correspondente e não há mensagens ou lançamentos parecidos que expliquem o valor. Solicitar comprovante ao cliente.",
+            "evidencias": [
+              "L007"
+            ]
           },
           {
             "ref": "L019",
@@ -539,7 +581,11 @@
             "passos": 2,
             "custo": 0.00023569999999999998,
             "ok": true,
-            "justificativa": "Os lançamentos L019 e L014 possuem a mesma descrição e valor, e datas próximas, indicando um provável pagamento duplicado."
+            "justificativa": "Os lançamentos L019 e L014 possuem a mesma descrição e valor, e datas próximas, indicando um provável pagamento duplicado.",
+            "evidencias": [
+              "L019",
+              "L014"
+            ]
           },
           {
             "ref": "L027",
@@ -551,7 +597,10 @@
             "passos": 2,
             "custo": 0.0002445,
             "ok": true,
-            "justificativa": "O lançamento L027 é um PIX enviado para 'PEDRO ENTREGAS' no valor de R$ 120,00. Não há nota fiscal associada e nenhuma mensagem foi encontrada para explicar a origem ou a necessidade deste pagamento. Portanto, é necessário solicitar um comprovante ao cliente."
+            "justificativa": "O lançamento L027 é um PIX enviado para 'PEDRO ENTREGAS' no valor de R$ 120,00. Não há nota fiscal associada e nenhuma mensagem foi encontrada para explicar a origem ou a necessidade deste pagamento. Portanto, é necessário solicitar um comprovante ao cliente.",
+            "evidencias": [
+              "L027"
+            ]
           },
           {
             "ref": "L040",
@@ -563,7 +612,11 @@
             "passos": 2,
             "custo": 0.0002844,
             "ok": true,
-            "justificativa": "O lançamento L040 tem valor de R$ 1.284,62 e a nota fiscal NF-025, emitida pela Doces e Açúcar Estrela Ltda, tem valor de R$ 1.271,90. A diferença é pequena e pode ser um erro de digitação ou arredondamento. É necessário conferir o valor com o fornecedor."
+            "justificativa": "O lançamento L040 tem valor de R$ 1.284,62 e a nota fiscal NF-025, emitida pela Doces e Açúcar Estrela Ltda, tem valor de R$ 1.271,90. A diferença é pequena e pode ser um erro de digitação ou arredondamento. É necessário conferir o valor com o fornecedor.",
+            "evidencias": [
+              "L040",
+              "NF-025"
+            ]
           },
           {
             "ref": "L045",
@@ -575,7 +628,10 @@
             "passos": 1,
             "custo": 0.0001633,
             "ok": true,
-            "justificativa": "O lançamento L045 descreve um débito automático de taxa de lixo municipal sem referência a uma nota fiscal ou outro documento que o justifique. A ação mais adequada é solicitar o comprovante ao cliente para entender a origem dessa despesa."
+            "justificativa": "O lançamento L045 descreve um débito automático de taxa de lixo municipal sem referência a uma nota fiscal ou outro documento que o justifique. A ação mais adequada é solicitar o comprovante ao cliente para entender a origem dessa despesa.",
+            "evidencias": [
+              "L045"
+            ]
           },
           {
             "ref": "L053",
@@ -587,7 +643,10 @@
             "passos": 2,
             "custo": 0.00022889999999999998,
             "ok": true,
-            "justificativa": "O lançamento L053 é um pagamento de boleto sem nota fiscal ou documento comprobatório associado, e não foram encontradas mensagens que pudessem esclarecer a natureza da despesa. Portanto, é necessário solicitar um comprovante ao cliente."
+            "justificativa": "O lançamento L053 é um pagamento de boleto sem nota fiscal ou documento comprobatório associado, e não foram encontradas mensagens que pudessem esclarecer a natureza da despesa. Portanto, é necessário solicitar um comprovante ao cliente.",
+            "evidencias": [
+              "L053"
+            ]
           },
           {
             "ref": "L057",
@@ -599,7 +658,10 @@
             "passos": 2,
             "custo": 0.0002448,
             "ok": true,
-            "justificativa": "O lançamento L057 é um PIX enviado para RAIMUNDO MECANICO no valor de R$ 380,00. Não foram encontradas mensagens relacionadas a este PIX, indicando que não há um documento ou comprovante que explique essa saída no extrato. Portanto, a ação mais adequada é solicitar o comprovante ao cliente."
+            "justificativa": "O lançamento L057 é um PIX enviado para RAIMUNDO MECANICO no valor de R$ 380,00. Não foram encontradas mensagens relacionadas a este PIX, indicando que não há um documento ou comprovante que explique essa saída no extrato. Portanto, a ação mais adequada é solicitar o comprovante ao cliente.",
+            "evidencias": [
+              "L057"
+            ]
           },
           {
             "ref": "L059",
@@ -611,7 +673,8 @@
             "passos": 3,
             "custo": 0.0003345,
             "ok": true,
-            "justificativa": "O lançamento L059 apresenta um valor de R$ -1.311,28, e a descrição indica 'POTIGUAR ENERG', sugerindo uma ligação com a fornecedora de energia. Não foram encontradas mensagens ou lançamentos parecidos que expliquem a diferença. A ação mais adequada é conferir o valor com o fornecedor para entender a discrepância."
+            "justificativa": "O lançamento L059 apresenta um valor de R$ -1.311,28, e a descrição indica 'POTIGUAR ENERG', sugerindo uma ligação com a fornecedora de energia. Não foram encontradas mensagens ou lançamentos parecidos que expliquem a diferença. A ação mais adequada é conferir o valor com o fornecedor para entender a discrepância.",
+            "evidencias": []
           },
           {
             "ref": "NF-021",
@@ -623,7 +686,8 @@
             "passos": 2,
             "custo": 0.0002523,
             "ok": true,
-            "justificativa": "A nota fiscal NF-021, com vencimento em 2026-10-13, não possui pagamento correspondente no extrato, conforme a busca por lançamentos parecidos não retornou resultados. Portanto, a ação adequada é verificar se a nota foi paga."
+            "justificativa": "A nota fiscal NF-021, com vencimento em 2026-10-13, não possui pagamento correspondente no extrato, conforme a busca por lançamentos parecidos não retornou resultados. Portanto, a ação adequada é verificar se a nota foi paga.",
+            "evidencias": []
           },
           {
             "ref": "NF-010",
@@ -635,7 +699,10 @@
             "passos": 2,
             "custo": 0.0002559,
             "ok": true,
-            "justificativa": "A nota fiscal NF-010 está vencida e não há pagamento correspondente no extrato. Não foram encontradas mensagens relacionadas a esta nota. Portanto, a ação mais adequada é verificar se a nota foi paga."
+            "justificativa": "A nota fiscal NF-010 está vencida e não há pagamento correspondente no extrato. Não foram encontradas mensagens relacionadas a esta nota. Portanto, a ação mais adequada é verificar se a nota foi paga.",
+            "evidencias": [
+              "NF-010"
+            ]
           },
           {
             "ref": "NF-003",
@@ -647,7 +714,10 @@
             "passos": 2,
             "custo": 0.0002396,
             "ok": true,
-            "justificativa": "A nota fiscal NF-003 está vencida e não foi encontrada nenhuma informação sobre seu pagamento no extrato. É necessário verificar se o pagamento foi realizado."
+            "justificativa": "A nota fiscal NF-003 está vencida e não foi encontrada nenhuma informação sobre seu pagamento no extrato. É necessário verificar se o pagamento foi realizado.",
+            "evidencias": [
+              "NF-003"
+            ]
           },
           {
             "ref": "NF-038",
@@ -659,7 +729,10 @@
             "passos": 2,
             "custo": 0.0002374,
             "ok": true,
-            "justificativa": "A nota fiscal NF-038 foi verificada e não foram encontrados lançamentos parecidos. Portanto, a nota não está duplicada no extrato."
+            "justificativa": "A nota fiscal NF-038 foi verificada e não foram encontrados lançamentos parecidos. Portanto, a nota não está duplicada no extrato.",
+            "evidencias": [
+              "NF-038"
+            ]
           },
           {
             "ref": "L007",
@@ -671,7 +744,10 @@
             "passos": 3,
             "custo": 0.0003251,
             "ok": true,
-            "justificativa": "O lançamento L007 apresenta um valor diferente da nota fiscal, e não há mensagens ou lançamentos parecidos que expliquem essa discrepância. Portanto, a ação mais adequada é conferir o valor com o fornecedor."
+            "justificativa": "O lançamento L007 apresenta um valor diferente da nota fiscal, e não há mensagens ou lançamentos parecidos que expliquem essa discrepância. Portanto, a ação mais adequada é conferir o valor com o fornecedor.",
+            "evidencias": [
+              "L007"
+            ]
           },
           {
             "ref": "L019",
@@ -683,7 +759,11 @@
             "passos": 2,
             "custo": 0.00023119999999999998,
             "ok": true,
-            "justificativa": "Os lançamentos L019 e L014 possuem a mesma descrição e valor, e datas próximas, indicando um pagamento duplicado."
+            "justificativa": "Os lançamentos L019 e L014 possuem a mesma descrição e valor, e datas próximas, indicando um pagamento duplicado.",
+            "evidencias": [
+              "L019",
+              "L014"
+            ]
           },
           {
             "ref": "L027",
@@ -695,7 +775,10 @@
             "passos": 2,
             "custo": 0.0002424,
             "ok": true,
-            "justificativa": "O lançamento L027 é um PIX enviado para PEDRO ENTREGAS sem documento associado. Não foram encontradas mensagens relacionadas a \"PEDRO ENTREGAS\" que pudessem esclarecer a natureza do pagamento. Portanto, solicito o comprovante ao cliente para justificar este lançamento."
+            "justificativa": "O lançamento L027 é um PIX enviado para PEDRO ENTREGAS sem documento associado. Não foram encontradas mensagens relacionadas a \"PEDRO ENTREGAS\" que pudessem esclarecer a natureza do pagamento. Portanto, solicito o comprovante ao cliente para justificar este lançamento.",
+            "evidencias": [
+              "L027"
+            ]
           },
           {
             "ref": "L040",
@@ -707,7 +790,11 @@
             "passos": 2,
             "custo": 0.0002783,
             "ok": true,
-            "justificativa": "O lançamento L040 tem valor de R$ 1.284,62. A nota fiscal NF-025, emitida pela Doces e Açúcar Estrela Ltda, tem valor de R$ 1.271,90. A diferença de valor entre o lançamento e a nota justifica a ação de conferir o valor com o fornecedor."
+            "justificativa": "O lançamento L040 tem valor de R$ 1.284,62. A nota fiscal NF-025, emitida pela Doces e Açúcar Estrela Ltda, tem valor de R$ 1.271,90. A diferença de valor entre o lançamento e a nota justifica a ação de conferir o valor com o fornecedor.",
+            "evidencias": [
+              "L040",
+              "NF-025"
+            ]
           },
           {
             "ref": "L045",
@@ -719,7 +806,10 @@
             "passos": 2,
             "custo": 0.0002499,
             "ok": true,
-            "justificativa": "O lançamento L045 é uma saída de R$150,00 referente a 'DEB AUTOM TAXA LIXO MUNICIPAL'. Não foram encontradas mensagens relacionadas a este termo, indicando que não há um documento ou comprovante que explique essa saída. Portanto, solicito o comprovante ao cliente."
+            "justificativa": "O lançamento L045 é uma saída de R$150,00 referente a 'DEB AUTOM TAXA LIXO MUNICIPAL'. Não foram encontradas mensagens relacionadas a este termo, indicando que não há um documento ou comprovante que explique essa saída. Portanto, solicito o comprovante ao cliente.",
+            "evidencias": [
+              "L045"
+            ]
           },
           {
             "ref": "L053",
@@ -731,7 +821,10 @@
             "passos": 2,
             "custo": 0.0002471,
             "ok": true,
-            "justificativa": "O lançamento L053 é um pagamento de boleto para a Associação Comercial sem documento associado. As buscas por mensagens relacionadas à Associação Comercial não retornaram resultados. Portanto, é necessário solicitar o comprovante ao cliente para justificar essa saída."
+            "justificativa": "O lançamento L053 é um pagamento de boleto para a Associação Comercial sem documento associado. As buscas por mensagens relacionadas à Associação Comercial não retornaram resultados. Portanto, é necessário solicitar o comprovante ao cliente para justificar essa saída.",
+            "evidencias": [
+              "L053"
+            ]
           },
           {
             "ref": "L057",
@@ -743,7 +836,10 @@
             "passos": 2,
             "custo": 0.000243,
             "ok": true,
-            "justificativa": "O lançamento L057 é um PIX para RAIMUNDO MECANICO, no valor de R$ 380,00. Não foram encontradas mensagens associadas a este termo, indicando que não há um documento ou comprovante que justifique essa saída no extrato. Portanto, é necessário solicitar o comprovante ao cliente."
+            "justificativa": "O lançamento L057 é um PIX para RAIMUNDO MECANICO, no valor de R$ 380,00. Não foram encontradas mensagens associadas a este termo, indicando que não há um documento ou comprovante que justifique essa saída no extrato. Portanto, é necessário solicitar o comprovante ao cliente.",
+            "evidencias": [
+              "L057"
+            ]
           },
           {
             "ref": "L059",
@@ -755,7 +851,11 @@
             "passos": 3,
             "custo": 0.0004232,
             "ok": true,
-            "justificativa": "O lançamento L059 (PIX ENVIADO POTIGUAR ENERG) no valor de R$ 1.311,28 difere da nota fiscal NF-034 no valor de R$ 1.323,50. A ação mais adequada é conferir o valor com o fornecedor para entender a discrepância."
+            "justificativa": "O lançamento L059 (PIX ENVIADO POTIGUAR ENERG) no valor de R$ 1.311,28 difere da nota fiscal NF-034 no valor de R$ 1.323,50. A ação mais adequada é conferir o valor com o fornecedor para entender a discrepância.",
+            "evidencias": [
+              "L059",
+              "NF-034"
+            ]
           },
           {
             "ref": "NF-021",
@@ -767,7 +867,10 @@
             "passos": 2,
             "custo": 0.0002536,
             "ok": true,
-            "justificativa": "A nota fiscal NF-021 está vencida e não foi encontrado nenhum lançamento parecido. Portanto, é necessário verificar se o pagamento correspondente a esta nota foi realizado."
+            "justificativa": "A nota fiscal NF-021 está vencida e não foi encontrado nenhum lançamento parecido. Portanto, é necessário verificar se o pagamento correspondente a esta nota foi realizado.",
+            "evidencias": [
+              "NF-021"
+            ]
           },
           {
             "ref": "NF-010",
@@ -779,7 +882,8 @@
             "passos": 2,
             "custo": 0.00024249999999999999,
             "ok": true,
-            "justificativa": "A nota fiscal NF-010 está vencida e não foi encontrado nenhum lançamento parecido que pudesse indicar um pagamento. Portanto, a ação mais adequada é verificar se a nota foi paga."
+            "justificativa": "A nota fiscal NF-010 está vencida e não foi encontrado nenhum lançamento parecido que pudesse indicar um pagamento. Portanto, a ação mais adequada é verificar se a nota foi paga.",
+            "evidencias": []
           },
           {
             "ref": "NF-003",
@@ -791,7 +895,10 @@
             "passos": 2,
             "custo": 0.0002423,
             "ok": true,
-            "justificativa": "A nota fiscal NF-003 está vencida e não foi encontrado nenhum lançamento parecido. A ação mais adequada é verificar se a nota foi paga."
+            "justificativa": "A nota fiscal NF-003 está vencida e não foi encontrado nenhum lançamento parecido. A ação mais adequada é verificar se a nota foi paga.",
+            "evidencias": [
+              "NF-003"
+            ]
           },
           {
             "ref": "NF-038",
@@ -803,7 +910,10 @@
             "passos": 2,
             "custo": 0.0002451,
             "ok": true,
-            "justificativa": "A nota fiscal NF-038 foi encontrada, mas não há lançamentos parecidos com ela. Isso sugere que, apesar de a nota ter sido enviada duas vezes, apenas uma delas está sendo considerada para pagamento. Portanto, a duplicidade pode ser descartada."
+            "justificativa": "A nota fiscal NF-038 foi encontrada, mas não há lançamentos parecidos com ela. Isso sugere que, apesar de a nota ter sido enviada duas vezes, apenas uma delas está sendo considerada para pagamento. Portanto, a duplicidade pode ser descartada.",
+            "evidencias": [
+              "NF-038"
+            ]
           }
         ]
       },
