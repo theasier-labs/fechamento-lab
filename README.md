@@ -20,7 +20,7 @@ Este repositório **não deve receber dado real**.
 
 ## Resultado em uma linha
 
-Das 54 linhas do extrato, a regra resolve 50 e aponta 4 como pendentes; a IA lê
+Das 64 linhas do extrato, 54 cabiam à regra: ela resolve 50 e aponta 4 como pendentes; a IA lê
 comprovantes que a regra não alcança e a conferência barra os erros dela. Os números
 completos e a comparação entre seis modelos estão em `resultados/` e no
 [placar](placar/index.html). Eles valem para **este cenário e estes modelos nas datas
